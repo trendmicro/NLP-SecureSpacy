@@ -1,0 +1,434 @@
+Jointworm
+CDRThief
+APT18
+Axiom
+Putter Panda
+APT12
+Mozi
+Qakbot
+Rampant Kitten
+Dust Storm
+BuhTrap
+MMCore
+CIRCUS SPIDER
+Konni
+SWEED
+Tor2Mine
+WizardOpium
+NEODYMIUM
+LYCEUM
+TeleBots
+Outlaw
+Pinchy Spider
+TA2719
+Moafee
+BlackOasis
+TA459
+FIN5
+Threat Group-1314
+Thrip
+Soft Cell
+Gallmaker
+The White Company
+WIRTE
+Group5
+Stolen Pencil
+FinSpy
+Rencor
+Red Salt
+NovaLoader
+Echobot
+Citadel
+GermanWiper
+Nodersok
+MyKings
+STC
+UPS
+DragonOK
+SEA
+Vivin
+Scarlet Mimic
+Oceansalt
+BRONZE PRESIDENT
+Groundbait
+Janus Cybercrime Solutions
+Zyklon
+Dexter
+Fullz House
+Graboid
+IceID
+FTCODE
+Leverage
+SectopRAT
+Vault7
+KoffeyMaker
+Sun Team
+Ghostminer
+PoisonIvyMongol
+FBot
+Waterbear
+PKPLUG
+Bisonal
+ZeroT
+Brazilian cybercrime group
+Boleto
+Tortoiseshell
+Gh0st
+Nazar
+HummingBad
+RATicate
+FareIT
+Roaming Mantis
+Redaman
+Temper Panda
+Muhstik
+Spelevo
+Iran
+Neuron
+Kasper
+Mirai
+Vermin
+HydSeven
+LockerGoga
+Conimes
+KovCoreG
+Roboto
+Nile Phish
+Innaput
+SystemBC
+ElTest
+Roaming Tiger
+Necurs
+GossipGirl
+Locky
+PcCastle
+FullofDeep
+Infy
+GhostCringe
+Storm Cloud
+Coinhive
+NanHaiShu
+hagga
+Urpage
+Snowglobe
+Kraken
+Vendetta
+Nokki
+Phorpiex
+Stonedrill
+PowerStager
+Triton
+Panda
+Cyberbit
+JsOutProx
+Heatstroke-Jun-2020
+Ryuk
+Dharma
+HQWar
+Ragnarok
+TwoSail Junk
+KrBanker
+Henbox
+Orangeworm
+Lokibot
+BalkanRat
+SmokeLdr
+SunOrcal
+DNSpionage
+Eli
+TeamXRat
+Babar
+Smominru
+Pakistan
+SamSa
+Olympic Destroyer
+WatchBog
+Cookie Monster
+Heartbeat
+EyePyramid
+Snake Wine
+Callisto
+ChinaZ
+LoudMiner
+Kingphish
+Rafiki
+Farseer
+Shaheen
+TajMahal
+Crimson
+KingKong
+Magnitude
+PsiXBot
+PcShare
+Suckfly
+Mispadu
+Slingshot
+Wolf Research
+Sowbug
+SageCrypt
+Regin
+Rusha
+UrlZone
+Moonlight
+Jaff
+Retefe
+Glupteba
+RevengeHotels
+Gamarue
+Stealthworker
+Casbaneiro
+COBALT DICKENS
+Ixeshe
+Double Guns
+Micropsia
+EvilGrab
+Domen
+InstallCapital
+Nymaim
+Magecart Group 12
+Hworm
+Rotexy
+Lurk
+WildPressure
+CardinalRat
+Aurora Panda
+Zacinlo
+Rocketman
+Operation Transparent Tribe
+NextCry
+NSO
+Plead
+Fallout
+Magecart Group 1
+GRIM SPIDER
+Snatch Team
+Packrat
+MageCart Group 9
+StrongPity
+Rockethack
+Cosmic Lynx
+Bouncing Golf
+FIN10
+SilverTerrier
+China APT Group
+GCMAN
+Poseidon Group
+Deep Panda
+Strider
+Blue Mockingbird
+Sharpshooter
+DarkVishnya
+RTM
+Frankenstein
+FIN4
+PittyTiger
+InvisiMole Group
+Oldgremlin
+Butterfly
+Andariel
+CopyKittens
+Shamoon
+Wicked Panda
+admin@338
+PassCV
+Elderwood
+Mofang
+XDSpy Group
+TA2552
+Leafminer
+Silent Librarian
+Boss Spider
+Greenbug
+APT33
+Blackgear
+Nomadic Octopus
+Brushaloader
+Equation
+HackingTeam
+Ploutus
+Iron Group
+SeaTurtle
+Silence
+FinFisher
+APT-C-23
+Lamberts
+United Cyber Caliphate
+APT-C-27
+APT-C-12
+SilencerLion
+APT-C-38
+APT-C-37
+0ffsecurity
+Goblin Panda
+AirNaine
+APT.3102
+Cobalt Group
+MartyMcFly
+Whitefly
+Magecart Group 4
+APT20
+APT36
+Phosphorous
+Stealth Falcon
+Lotus Blossom
+Dragonfly
+Cloud Atlas
+APT29
+Leviathan
+APT3
+Taidoor
+Itroublve
+Turla Group
+China APT
+Transparent Tribe
+Ke3chang
+POSSIBLE_UNC1878
+IAmTheKing
+Naikon
+TA542
+Stantinko Group
+POSSIBLE_TURLA
+Rancor
+Machete
+PLATINUM
+Darkhotel
+Golden Chickens
+Redalpha
+Inception
+The Big Bang
+Evil Corp
+Dridex
+DanaBot
+BITTER
+Molerats
+DarkHydrus
+Charming Kitten
+Gorgon Group
+HIGAISA
+Ursnif
+Egregor RaaS group
+NetWalker
+AveMaria
+CobaltGoblin
+CopyPaste
+FIN7
+APT19
+APT37
+Earth Empusa
+Water Nue
+Earth Kitsune
+TrickBot Group
+Zebrocy
+FIN11
+ItaDuke
+DarkUniverse
+xHunt
+FIN6
+Wizard Spider
+Chimera
+Fox Kitten
+TrickBot
+TeamTNT
+APT Group Chimera
+Earth Wendigo
+OilRig
+Kimsuky
+Gamaredon Group
+Thallium
+APT39
+DeathStalker
+Mustang Panda
+Dark Caracal
+Magecart
+APT38
+APT-C-44
+Windshift
+TA2101
+LODEINFO
+LIFARS
+WannaCry
+Gozi
+AZOrult
+Syrian Electronic Army
+PROMETHIUM
+Magic Hound
+Carbanak
+APT21
+Ghimob
+Microcin
+AcidBox
+DoNot Team
+APT-C-36
+Dragonfly 2.0
+APT30
+GOLD SOUTHFIELD
+APT16
+Night Dragon
+TEMP.Veles
+APT1
+Cleaver
+Honeybee
+Aurora
+Attor
+APT17
+Astaroth
+TH-261
+MooBot Group
+Evilnum
+Confucius
+Patchwork
+Bahamut
+Rocke Group
+UltraRank
+Maze
+NSO Group
+Sandworm Team
+Turkey Dog
+APT32
+RedEcho
+TA551
+PyXie
+RandomU
+StrangeU
+APT31
+Lucky Elephant
+TA413
+Turla
+Domestic Kitten
+StellarParticle
+BlackTech
+InvisiMole
+UNC2546
+UNC2582
+Lebanese Cedar
+Rocke
+APT28
+UNC1878
+Netbounce
+Winnti Group
+A41APT
+menuPass
+PlugX
+MuddyWater
+TA505
+Water Roc
+Websiic
+DLTMiner
+APT41
+Barium
+Keksec Group
+HAFNIUM
+Tropic Trooper
+TA428
+IceFog
+Earth Akhlut
+Winnti
+UNC2198
+Calypso
+Threat Group-3390
+BRONZE BUTLER
+NOBELIUM
+FIN8
+VICIOUS PANDA
+SideWinder
+Lazarus Group
