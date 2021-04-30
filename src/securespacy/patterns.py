@@ -1,4 +1,7 @@
 
+from .tokenizer import intrusion_sets
+
+
 #
 # [2021-04-12] I'm actually kinda lost in how the Spacy configurations work. 
 # This is taken from a Spacy tutorial
@@ -145,3 +148,15 @@ patterns = [
     },
 ]
 
+#
+# we add the intrusion set list into our patterns
+#
+for intrusion_set in intrusion_sets:
+    patterns.append(
+        {
+            "label": "INTRUSION_SET",
+            "pattern": [
+                { "LOWER": intrusion_set.lower() }
+            ]
+        }
+    )

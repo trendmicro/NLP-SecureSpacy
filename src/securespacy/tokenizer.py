@@ -10,22 +10,29 @@ from .expressions import (
 )
 
 
+intrusion_sets = []
+pwd = os.path.dirname(os.path.realpath(__file__))
+with open(os.path.join(pwd, "data", "intrusion_set.txt"), "r") as fh:
+    for l in fh:
+        line = l.strip()
+        intrusion_sets.append(line)
+
+
 def build_special_cases():
-
     special_cases = {}
-    pwd = os.path.dirname(os.path.realpath(__file__))
-
-    with open(os.path.join(pwd, "data", "intrusion_set.txt"), "r") as fh:
-        for l in fh:
-            line = l.strip()
-
-            special_cases[line] = [
-                {
-                    "ORTH": line
-                }
-            ]
+    for intrusion_set in intrusion_sets:
+        special_cases[intrusion_set] = [
+            {
+                "ORTH": intrusion_set
+            }
+        ]
 
     return special_cases
+
+
+def token_match(text):
+    if text.lower == "circus spider":
+        return True
 
 
 #
