@@ -27,7 +27,8 @@ setuptools.setup(
     package_dir={"": "src"},
     packages=setuptools.find_packages(where="src"),
     test_suite='nose.collector',
-    tests_require=['nose'],
+    tests_require=['nose', 'publicsuffix2'],
     python_requires=">=3.6",
-    install_requires=["spacy>=3.0.5"],
+    install_requires=["spacy>=3.0.5", "publicsuffix2>=2.20191221"],
+    include_package_data=True,
 )
