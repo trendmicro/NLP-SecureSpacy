@@ -27,7 +27,8 @@ text = ('However, at the time of writing, we were unable to decrypt this file si
         '71cfd7d692a301ac9bff0e1e7605e7c2  corpus/trendBlogDocs.json\n'
         'These are cve numbers: CVE-1999-2012 CVE-2004-0003 CVE-2021-26855\n'
         'Meanwhile, CIRCUS SPIDER and Wolf Research are in the house.\n'
-        'Additional detections: Win32.Virlock.A and Win64.Virlock.A and not a valid detection Win65.Virlock.A')
+        'Additional detections: Win32.Virlock.A and Win64.Virlock.A and not a valid detection Win65.Virlock.A\n'
+        'These strings 103[.]5.3.123 63.234[.]34.2 90.234.51[.]5 9[.]9[.]9[.]9 9{.}9{.}9{.}9 are examples of obfuscated ipaddresses')
 
 
 
@@ -78,7 +79,15 @@ class TestTagger(TestCase):
         ],
         "ORDINAL": ['first', 'second'],
         "MALWARE": ['Trojan.MacOS.GMERA.B', 'TROJ_DLOADR.SULQ', 'Win32.Virlock.A', 'Win64.Virlock.A'],
-        "IPv4": ['10.2.13.1', '192.168.2.14'],
+        "IPv4": [
+            '10.2.13.1',
+            '192.168.2.14',
+            '103[.]5.3.123',
+            '63.234[.]34.2',
+            '90.234.51[.]5',
+            '9[.]9[.]9[.]9',
+            '9{.}9{.}9{.}9'
+        ],
         "IPv6": ['2404:6800:4008:801::2004', '2600:1408:5c00:1a9::356e/64', '2600:1408:5c00:198::356e'],
         "WORK_OF_ART": ['Ascentor Loader'],
         "EMAIL": ['joey_costoya@trendmicro.com', 'joey.costoya@trendmicro.com'],
@@ -96,8 +105,8 @@ class TestTagger(TestCase):
 
         label_counts = Counter([ent.label_ for ent in doc.ents])
         for label in label_counts:
-            print(f"expected {len(self.expected_results[label]):02} {label}")
-            print(f"got      {len([ent.text for ent in doc.ents if ent.label_ == label]):02} {label}")
+            print(f"expected {len(self.expected_results[label]):02} {label}: {self.expected_results[label]}")
+            print(f"got      {len([ent.text for ent in doc.ents if ent.label_ == label]):02} {label}: {[ent.text for ent in doc.ents if ent.label_ == label]}")
             print()
             self.assertTrue(len(self.expected_results[label]) == label_counts[label])
 
