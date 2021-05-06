@@ -38,7 +38,7 @@ patterns = [
 #         ]
 #     },
     {
-        "label": "IPv4",
+        "label": "IP",
         "pattern": [
             {
                 "_": {
@@ -48,7 +48,7 @@ patterns = [
         ]
     },
     {
-        "label": "IPv6",
+        "label": "IP",
         "pattern": [
             {
                 "_": {
@@ -110,7 +110,7 @@ patterns = [
         ]
     },
     {
-        "label": "MD5",
+        "label": "HASH",
         "pattern": [
             {
                 "_": {
@@ -120,7 +120,7 @@ patterns = [
         ]
     },
     {
-        "label": "SHA1",
+        "label": "HASH",
         "pattern": [
             {
                 "_": {
@@ -130,7 +130,7 @@ patterns = [
         ]
     },
     {
-        "label": "SHA256",
+        "label": "HASH",
         "pattern": [
             {
                 "_": {
@@ -140,7 +140,7 @@ patterns = [
         ]
     },
     {
-        "label": "SHA512",
+        "label": "HASH",
         "pattern": [
             {
                 "_": {
