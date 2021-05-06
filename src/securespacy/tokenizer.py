@@ -26,6 +26,14 @@ with open(os.path.join(pwd, "data", "countries.txt"), "r") as fh:
             countries.append(line)
 
 
+cities = []
+with open(os.path.join(pwd, "data", "cities.txt"), "r") as fh:
+    for l in fh:
+        line = l.strip()
+        if len(line) > 0:
+            cities.append(line)
+
+
 def build_special_cases():
     special_cases = {}
     for intrusion_set in intrusion_sets:
@@ -39,6 +47,13 @@ def build_special_cases():
         special_cases[country] = [
             {
                 "ORTH": country
+            }
+        ]
+
+    for city in cities:
+        special_cases[city] = [
+            {
+                "ORTH": city
             }
         ]
 

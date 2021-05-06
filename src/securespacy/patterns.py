@@ -1,7 +1,8 @@
 
 from .tokenizer import (
     intrusion_sets,
-    countries
+    countries,
+    cities
 )
 
 
@@ -174,6 +175,20 @@ for country in countries:
             "label": "COUNTRY",
             "pattern": [
                 { "LOWER": country.lower() }
+            ]
+        }
+    )
+
+
+#
+# we add the cities list into our patterns
+#
+for city in cities:
+    patterns.append(
+        {
+            "label": "CITY",
+            "pattern": [
+                { "LOWER": city.lower() }
             ]
         }
     )
