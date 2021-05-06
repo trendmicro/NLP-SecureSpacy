@@ -28,7 +28,8 @@ text = ('However, at the time of writing, we were unable to decrypt this file si
         'These are cve numbers: CVE-1999-2012 CVE-2004-0003 CVE-2021-26855\n'
         'Meanwhile, CIRCUS SPIDER and Wolf Research are in the house.\n'
         'Additional detections: Win32.Virlock.A and Win64.Virlock.A and not a valid detection Win65.Virlock.A\n'
-        'These strings 103[.]5.3.123 63.234[.]34.2 90.234.51[.]5 9[.]9[.]9[.]9 9{.}9{.}9{.}9 are examples of obfuscated ipaddresses')
+        'These strings 103[.]5.3.123 63.234[.]34.2 90.234.51[.]5 9[.]9[.]9[.]9 9{.}9{.}9{.}9 are examples of obfuscated ipaddresses.\n'
+        'Taiwan, Philippines, Czech Republic, and United States of America (USA) are countries to be recognized by ner.')
 
 
 
@@ -96,7 +97,14 @@ class TestTagger(TestCase):
         "SHA512": ['90f9fe128f01562b5d87565ac669cf8ff4883f07abf6a56ec074cc7a8b0f3411343ce8aef6fe07afb511ddc811ed06997a1a1e7c451303e390aff72753581615'],
         "MD5": ['71cfd7d692a301ac9bff0e1e7605e7c2'],
         "CVE": ['CVE-1999-2012', 'CVE-2004-0003', 'CVE-2021-26855'],
-        "INTRUSION_SET": ['CIRCUS SPIDER', 'Wolf Research']
+        "INTRUSION_SET": ['CIRCUS SPIDER', 'Wolf Research'],
+        "COUNTRY": [
+            'Taiwan',
+            'Philippines',
+            'Czech Republic',
+            'United States of America',
+            'USA'
+        ]
     }
 
     def test_entity_extractor(self):
