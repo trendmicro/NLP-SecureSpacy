@@ -1,5 +1,8 @@
 
-from .tokenizer import intrusion_sets
+from .tokenizer import (
+    intrusion_sets,
+    countries
+)
 
 
 #
@@ -157,6 +160,20 @@ for intrusion_set in intrusion_sets:
             "label": "INTRUSION_SET",
             "pattern": [
                 { "LOWER": intrusion_set.lower() }
+            ]
+        }
+    )
+
+
+#
+# we add the countries list into our patterns
+#
+for country in countries:
+    patterns.append(
+        {
+            "label": "COUNTRY",
+            "pattern": [
+                { "LOWER": country.lower() }
             ]
         }
     )

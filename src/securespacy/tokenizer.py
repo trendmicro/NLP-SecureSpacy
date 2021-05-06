@@ -18,12 +18,27 @@ with open(os.path.join(pwd, "data", "intrusion_set.txt"), "r") as fh:
         intrusion_sets.append(line)
 
 
+countries = []
+with open(os.path.join(pwd, "data", "countries.txt"), "r") as fh:
+    for l in fh:
+        line = l.strip()
+        if len(line) > 0:
+            countries.append(line)
+
+
 def build_special_cases():
     special_cases = {}
     for intrusion_set in intrusion_sets:
         special_cases[intrusion_set] = [
             {
                 "ORTH": intrusion_set
+            }
+        ]
+
+    for country in countries:
+        special_cases[country] = [
+            {
+                "ORTH": country
             }
         ]
 
