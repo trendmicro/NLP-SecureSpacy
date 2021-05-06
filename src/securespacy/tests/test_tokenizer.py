@@ -80,22 +80,26 @@ class TestTagger(TestCase):
         ],
         "ORDINAL": ['first', 'second'],
         "MALWARE": ['Trojan.MacOS.GMERA.B', 'TROJ_DLOADR.SULQ', 'Win32.Virlock.A', 'Win64.Virlock.A'],
-        "IPv4": [
+        "IP": [
             '10.2.13.1',
             '192.168.2.14',
             '103[.]5.3.123',
             '63.234[.]34.2',
             '90.234.51[.]5',
             '9[.]9[.]9[.]9',
-            '9{.}9{.}9{.}9'
+            '9{.}9{.}9{.}9',
+            '2404:6800:4008:801::2004',
+            '2600:1408:5c00:1a9::356e/64',
+            '2600:1408:5c00:198::356e'
         ],
-        "IPv6": ['2404:6800:4008:801::2004', '2600:1408:5c00:1a9::356e/64', '2600:1408:5c00:198::356e'],
         "WORK_OF_ART": ['Ascentor Loader'],
         "EMAIL": ['joey_costoya@trendmicro.com', 'joey.costoya@trendmicro.com'],
-        "SHA1": ['54efe3af6406673464eef89bb032f96e8b98bd16'],
-        "SHA256": ['fa7fe0a7271b3b07ed4fdfa7a59298527f57f11511b6699bc80f9ded7f11ad06'],
-        "SHA512": ['90f9fe128f01562b5d87565ac669cf8ff4883f07abf6a56ec074cc7a8b0f3411343ce8aef6fe07afb511ddc811ed06997a1a1e7c451303e390aff72753581615'],
-        "MD5": ['71cfd7d692a301ac9bff0e1e7605e7c2'],
+        "HASH": [
+            '71cfd7d692a301ac9bff0e1e7605e7c2',
+            '54efe3af6406673464eef89bb032f96e8b98bd16',
+            'fa7fe0a7271b3b07ed4fdfa7a59298527f57f11511b6699bc80f9ded7f11ad06',
+            '90f9fe128f01562b5d87565ac669cf8ff4883f07abf6a56ec074cc7a8b0f3411343ce8aef6fe07afb511ddc811ed06997a1a1e7c451303e390aff72753581615'
+        ],
         "CVE": ['CVE-1999-2012', 'CVE-2004-0003', 'CVE-2021-26855'],
         "INTRUSION_SET": ['CIRCUS SPIDER', 'Wolf Research'],
         "COUNTRY": [
