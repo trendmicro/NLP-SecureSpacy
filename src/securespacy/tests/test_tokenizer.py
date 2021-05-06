@@ -29,7 +29,8 @@ text = ('However, at the time of writing, we were unable to decrypt this file si
         'Meanwhile, CIRCUS SPIDER and Wolf Research are in the house.\n'
         'Additional detections: Win32.Virlock.A and Win64.Virlock.A and not a valid detection Win65.Virlock.A\n'
         'These strings 103[.]5.3.123 63.234[.]34.2 90.234.51[.]5 9[.]9[.]9[.]9 9{.}9{.}9{.}9 are examples of obfuscated ipaddresses.\n'
-        'Taiwan, Philippines, Czech Republic, and United States of America (USA) are countries to be recognized by ner.')
+        'Taiwan, Philippines, Czech Republic, and United States of America (USA) are countries to be recognized by ner. '
+        'As well the following cities: Taipei, Manila, Saint Petersburg, The Hague, Nukuʻalofa')
 
 
 
@@ -108,6 +109,13 @@ class TestTagger(TestCase):
             'Czech Republic',
             'United States of America',
             'USA'
+        ],
+        "CITY": [
+            'Taipei',
+            'Manila',
+            'Saint Petersburg',
+            'The Hague',
+            'Nukuʻalofa'
         ]
     }
 
