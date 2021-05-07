@@ -2,18 +2,16 @@
 
 `securespacy` is a Python module that contains our custom tokenizer and named entity extractor for Spacy v3. The following named entities can be extracted by using `securespacy`:
 
-- IPv4
-- IPv6
+- IP
 - URL
 - DOMAIN
 - EMAIL
 - MALWARE
 - CVE
-- MD5
-- SHA1
-- SHA256
-- SHA512
+- HASH
 - INTRUSION_SET
+- CITY
+- COUNTRY
 
 `securespacy` uses Spacy's **Entity Ruler**, which is a rules-based matching approach in order to extract additional named entities from the text. In other words, this is a fancy way of saying that we're using regex and other static rules to detect entities, in order to complement Spacy's named entity recognition (NER) that uses trained language models.
 
@@ -35,7 +33,8 @@ Alternatively, you can download and install from the latest binary release here:
 >>> from securespacy.tokenizer import custom_tokenizer
 >>> from securespacy.patterns import config, patterns
 >>>
->>> text = 'The quick brown fox owns the domain quickbrownfox.sh'
+>>> text = ('The quick brown fox owns the domain quickbrownfox[.]sh with the ip address 10.231.31.8 '
+>>>         'with the server located in Manila, Philippines.')
 >>>
 >>> nlp = spacy.load("en_core_web_sm")
 >>> nlp.tokenizer = custom_tokenizer(nlp)
@@ -46,7 +45,10 @@ Alternatively, you can download and install from the latest binary release here:
 >>> for ent in doc.ents:
 ...     print(f"{ent.label_:<15} {ent}")
 ...
-DOMAIN          quickbrownfox.sh
+DOMAIN          quickbrownfox[.]sh
+IP              10.231.31.8
+CITY            Manila
+COUNTRY         Philippines
 ```
 
 ## References
