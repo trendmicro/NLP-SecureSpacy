@@ -1,0 +1,9 @@
+libprocesshider
+upx
+team viewer
+teamviwer
+vnc
+rdp
+powershell
+bash
+xmrig

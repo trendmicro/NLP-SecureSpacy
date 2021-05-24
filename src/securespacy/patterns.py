@@ -2,7 +2,11 @@
 from .tokenizer import (
     INTRUSION_SETS,
     COUNTRIES,
-    CITIES
+    CITIES,
+    CAMPAIGNS,
+    MALWARE,
+    TOOLS,
+    ORGS,
 )
 
 
@@ -160,7 +164,7 @@ for intrusion_set in INTRUSION_SETS:
         {
             "label": "INTRUSION_SET",
             "pattern": [
-                { "LOWER": intrusion_set.lower() }
+                { "LOWER": intrusion_set }
             ]
         }
     )
@@ -174,7 +178,7 @@ for country in COUNTRIES:
         {
             "label": "COUNTRY",
             "pattern": [
-                { "LOWER": country.lower() }
+                { "TEXT": country }
             ]
         }
     )
@@ -188,7 +192,20 @@ for city in CITIES:
         {
             "label": "CITY",
             "pattern": [
-                { "LOWER": city.lower() }
+                { "TEXT": city }
             ]
         }
     )
+
+
+for i in CAMPAIGNS:
+    patterns.append( { "label": "CAMPAIGN", "pattern": [ { "TEXT": i } ] } )
+
+for i in MALWARES:
+    patterns.append( { "label": "MALWARE", "pattern": [ { "LOWER": i } ] } )
+
+for i in TOOLS:
+    patterns.append( { "label": "TOOL", "pattern": [ { "LOWER": i } ] } )
+
+for i in ORGS:
+    patterns.append( { "label": "ORG", "pattern": [ { "TEXT": i } ] } )

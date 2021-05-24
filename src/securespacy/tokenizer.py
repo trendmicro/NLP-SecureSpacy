@@ -12,13 +12,22 @@ from .expressions import (
 
 pwd = os.path.dirname(os.path.realpath(__file__))
 with open(os.path.join(pwd, "data", "intrusion_set.txt"), "r") as fh:
-    INTRUSION_SETS = [l.strip() for x in fh]
+    INTRUSION_SETS = [l.strip().lower() for x in fh]
 
 with open(os.path.join(pwd, "data", "countries.txt"), "r") as fh:
     COUNTRIES = [l.strip() for l in fh]
 
-with open(os.path.join(pwd, "data", "cities.txt"), "r") as fh:
-    CITIES = [l.strip() for l in fh]
+with open(os.path.join(pwd, "data", "campaigns.txt"), "r") as fh:
+    CAMPAIGNS = [l.strip() for l in fh]
+
+with open(os.path.join(pwd, "data", "malwares.txt"), "r") as fh:
+    MALWARES = [l.strip().lower() for l in fh]
+
+with open(os.path.join(pwd, "data", "tools.txt"), "r") as fh:
+    TOOLS = [l.strip().lower() for l in fh]
+
+with open(os.path.join(pwd, "data", "orgs.txt"), "r") as fh:
+    ORGS = [l.strip() for l in fh]
 
 def build_special_cases():
     special_cases = {}
