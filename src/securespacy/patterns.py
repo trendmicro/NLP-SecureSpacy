@@ -201,7 +201,7 @@ for city in CITIES:
 for i in CAMPAIGNS:
     patterns.append( { "label": "CAMPAIGN", "pattern": [ { "TEXT": i } ] } )
 
-for i in MALWARES:
+for i in MALWARE:
     patterns.append( { "label": "MALWARE", "pattern": [ { "LOWER": i } ] } )
 
 for i in TOOLS:
