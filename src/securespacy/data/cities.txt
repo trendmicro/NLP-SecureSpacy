@@ -1,1239 +1,329 @@
-'s-Hertogenbosch
-Aachen
-Aachen-Liège-Maastricht
-Aberdeen
 Abidjan
 Abu Dhabi
 Abuja
 Accra
-Acıpayam
 Adamstown
 Addis Ababa
-Adelaide
 Aden
-Ahmedabad
-Akron
-Aksu
-Albal
-Albany
-Alblasserdam
-Albuquerque
-Alexandria
 Algiers
-Alkmaar
-Allendale
-Allentown
-Almada
-Almaty
-Almelo
 Alofi
-America
 Amman
 Amsterdam
 Anaheim
-Ancona
 Andorra la Vella
-Andover
 Ankara
-Ann Arbor
-Anshan
-Antalya
 Antananarivo
-Antwerpen
-Anápolis
-Apache
 Apia
-Arcore
-Arezzo
-Arlington Heights
-Arnhem-Nijmegen
-Arzamas
-Arāk
-Asan
-Aschheim
-Ashburn
-Ashburton
-Asheville
 Ashgabat
 Asmara
-Assis
-Astwood Bank
 Asunción
-Ataşehir
 Athens
 Atlanta
-Aubervilliers
-Auckland
-Augsburg
-Aulendorf
 Austin
 Avarua
-Aviatorske
-Avignon
-Baabda
-Babu
 Baghdad
-Bakersfield
 Baku
-Ballarat
 Baltimore
 Bamako
 Bandar Seri Begawan
-Bandar-e Māhshahr
-Bandung
-Bang Rak
 Bangkok
 Bangui
 Banjul
-Banqiao
-Baotou
 Barcelona
-Barueri
-Basel-Mulhouse
-Bassendean
 Basseterre
-Batam
-Baton Rouge
-Bayonne
-Bayraklı
-Bayreuth
-Beeston
-Beheira
 Beijing
 Beirut
-Belfast
 Belgrade
-Belize City
-Bellevue
 Belmopan
-Belo Horizonte
-Bendigo
-Bengaluru
-Benghazi
-Berkeley
 Berlin
 Bern
-Bethnal Green
-Bhopal
-Białystok
-Bielefeld-Detmold
-Bijie
-Bikaner
-Bilbao
-Biot
-Birmingham
-Birmingham, Alabama
 Bishkek
-Bishnupur
 Bissau
-Bissen
-Bistriţa
-Biên Hòa
-Blanchardstown
 Bloemfontein
-Bochnia
-Bochum
 Bogotá
-Bologna
-Bolzano
-Bordeaux
 Boston
-Boulogne-Billancourt
-Bradenton
 Brades
 Brasília
 Bratislava
-Braunschweig-Wolfsburg
 Brazzaville
-Bremen
-Brescia
-Bridgeport
 Bridgetown
-Brilliant
 Brisbane
-Bristol
 Brussels
-Bryansk
 Bucharest
 Budapest
 Buenos Aires
-Buffalo
 Bujumbura
-Burbank
-Burlington
-Burngreave
-Bursa
-Busan-Ulsan
-Busto Arsizio
-Cabanatuan City
-Cagliari
-Cairns
+Busan
 Cairo
-Caldas da Rainha
 Calgary
-Cali
-Cambridge
-Campinas
-Campo Grande
-Campos dos Goytacazes
 Canberra
-Cancún
-Candiac
-Canterbury
 Cape Town
-Capelle aan den IJssel
 Caracas
-Cardiff-Newport
-Casablanca
-Castelló de la Plana
 Castries
-Central
 Cetinje
-Chandigarh
-Chang-hua
-Changchun
-Changji
-Changsha
-Changzhi
-Changzhou
-Chantilly
-Charleston
 Charlotte
 Charlotte Amalie
-Chengde
-Chengdu
-Chennai
-Chestermere
-Chetput
-Cheyenne
 Chicago
-Chiguayante
-Chisinau
-Chittagong
 Chișinău
-Chongqing
-Cikarang
-Cincinnati
-City of Westminster
-Ciudad Sahagun
-Clark
-Clarksville
-Cleveland
-Clichy
-Clifton
-Cluj-Napoca
-Cluster Springs
 Cockburn Town
-Coimbatore
-Colegiales
-Collegeville
-Collie
+Cologne
 Colombo
-Columbia
-Columbus
-Commack
 Conakry
-Constância
-Coolbinia
 Copenhagen
-Cork
-Corona
-Corwin
 Cotonou
-Coventry
-Cremona
-Culiacán
-Curitiba
-Curtea de Argeş
-Cuttack
-Cuyahoga Heights
-Częstochowa
-Cần Thơ
-Cầu Giấy
-Da Nang
-Daegu
-Daejeon
 Dakar
-Dalian
 Dallas
-Dallas–Fort Worth
 Damascus
-Dannenberg
-Daqing
 Dar es Salaam
-Darlington
-Darmstadt
-Dayton
-Dağkızılca
-Dehra Dūn
-Dehui
-Del Monte
-Delhi
-Delingha
-Denizli
 Denver
-Deoli
-Depok
-Des Moines
 Detroit
-Deurne
 Dhaka
-Dhanbad
-Diamond Bar
-Dijon
 Dili
 Djibouti
-Dod Ballāpur
 Dodoma
-Doetinchem
 Doha
-Domaszczyn
-Dongguan
-Dongqu
-Dongying
-Dordrecht
-Dortmund
-Dorval
-Douala
 Douglas
-Douliu
-Doylestown
-Drogheda
-Dronten
 Dubai
 Dublin
-Duisburg
-Dunchurch
-Durban
 Durham
 Dushanbe
-Dusit
-Dzerzhinsky
 Düsseldorf
-Dương Đông
-East London
-East Rand
-Eastbourne
-Ede
 Edinburgh
-Edison
-Edmonton
-Eindhoven
-Eindhoven-Den Bosch
 El Aaiún
-El Oued
-El Paso
-El Segundo
-Elk Grove Village
-Epsom
-Erlangen
-Esenler
-Eslāmshahr
-Etobicoke
-Faisalabad
-Favoriten
-Fayetteville
-Fengshan
-Fernhill Heath
-Finlyandskiy
-Flekkefjord
-Florence
 Flying Fish Cove
-Footscray
 Fort Lauderdale
-Fortaleza
-Fortitude Valley
-Foshan
+Fort Worth
 Frankfurt
-Frankfurt am Main
-Franklin
-Fredericton
 Freetown
-Fremont
-Fresno
-Fukuoka–Kitakyushu
 Funafuti
-Fuzhou
 Gaborone
-Gabrovo
-Garwood
-Gates
-Gaya
-Gdańsk
-Geelong
-Geghanist
-Geneva
-Genoa
-Gent
-Genève
 George Town
 Georgetown
-Ghaziabad
-Ghāziābād
 Gibraltar
 Gitega
-Giv'at Shmuel
-Giza
-Gladbeck
-Gladstone
-Glasgow
-Gloucester
-Godech
-Goiânia
-Gold Coast
-Gonghe
-Gothenburg
-Gramercy Park
-Grand Rapids
-Greensboro
-Greenville
-Grimsby
-Groningen
-Grottaglie
-Guadalajara
 Guangzhou
-Guarujá
-Guarulhos
 Guatemala City
-Guayaquil
-Guelph
-Guixi
-Gujranwala
-Gumudi
-Gunzenhausen
-Gurgaon
 Gustavia
-Guwahati
-Gwalior
-Gwangju
-Gwangtan
-Góra Kalwaria
-Göteborg
-Haarlem
 Hagåtña
-Haifa
-Halle (Saale)
-Hamadān
-Hamamatsu
 Hamburg
-Hami
 Hamilton
-Hampden Sydney
-Hangzhou
-Hannover
 Hanoi
 Harare
-Harbin
-Harderwijk
 Hargeisa
-Haridwar
-Harrells
-Harrisburg
-Hartford
-Hartlepool
 Havana
-Hazro City
-Hefei
-Hell's Kitchen
 Helsinki
-Hemel Hempstead
-Herzogenrath
-Heumen
-Hietzing
-Hilden
-Hirara
-Hiroshima
-Ho Chi Minh City
-Hobart
-Hofgeismar
-Holbeck
 Hong Kong
 Honiara
 Honolulu
-Horoměřice
-Hostavice
-Hostim
-Hotan
 Houston
-Hsinchu
-Huhehaote
-Huntingdon
-Huntsville
-Huochezhan
-Hyderabad
-Hà Tĩnh
-Hürth
-Iaşi
-Ibagué
-Idaho Falls
-Incheon
-Indianapolis
-Indore
-Ingleside
-Irkutsk
-Irvine
-Isfahan
 Islamabad
-Islington
-Issy-les-Moulineaux
 Istanbul
-Itagüí
-Izmir
-Jacksonville
-Jaipur
 Jakarta
-Jalandhar
 Jamestown
-Jammu
-Jaunay-Clan
-Jeddah
-Jersey City
 Jerusalem
-Jiaozhou
-Jinan
-Jinačovice
-Jindřichův Hradec
-Jinrongjie
-Jodhpur
-Johannesburg
-Johor Bahru
-Josipovac Punitovački
 Juba
-Jundiaí
-Kaarst
 Kabul
-Kagoshima
-Kaiyuan
 Kampala
-Kampung Ayer Keroh
-Kampung Sungai Ara
-Kanchipuram
-Kandal Stueng
-Kano
 Kansas City
-Kanwal
-Kaohsiung
-Karachi
-Karagandy
-Karaj
-Karamay
-Karlsruhe
-Karlín
-Karīmnagar
-Kasur
 Kathmandu
-Katowice
-Kaunas
-Kayseri
-Kecskemét
-Kelowna
-Kerman
-Kharagpur
-Kharkiv
 Khartoum
-Khlong Luang
 Kigali
-Kilsyth
 King Edward Point
 Kingston
-Kingston-upon-Hull
 Kingstown
 Kinshasa
-Kirkland
-Kjellerup
-Klaipėda
-Klemme
-Knokke-Heist
-Knoxville
-Knysna
-Kolkata
-Konya
-Korla
-Kota
-Kotsyubyns’ke
-Kowloon
-Krakow
-Kraków
-Krotoszyn
-Krynica-Zdrój
 Kuala Lumpur
-Kumamoto
-Kunming
 Kuwait City
 Kyiv
-Kíti
-Köln
-La Celle-sous-Gouzon
-La Costa
+Kyoto
 La Paz
-Lagos
-Lahore
-Langenthal
-Langenzersdorf
-Lansing
 Las Vegas
-Launceston
-Lee-on-the-Solent
-Leeds
-Leicester
-Leiden
-Leipzig-Halle
-Lianjiang
-Liaoyang
 Libreville
-Lille
 Lilongwe
 Lima
-Lindon
-Linz
 Lisbon
-Little Rock
-Livermore
-Liverpool
 Ljubljana
 Lobamba
-Logroño
 Lomé
 London
-Longview
-Longyan
 Los Angeles
-Louisville
-Louth
 Luanda
-Lubliniec
-Lucknow
-Ludhiana
-Ludwigshafen am Rhein
-Lugo
 Lusaka
-Luton
 Luxembourg
-Luxembourg-Trier
-Luís Correia
-Lykóvrysi
 Lyon
-Lái Thiêu
-Macau
-Mackay
-Madison
 Madrid
-Mahmutbey
-Maidenhead
-Maidstone
 Majuro
-Makassar
-Makhachkala
 Malabo
-Malakwal
-Male
-Maltepe
-Malá Strana
 Malé
 Managua
 Manama
-Manaus
 Manchester
-Mandi Bahauddin
 Manila
-Manisa
 Maputo
-Marbella
-Maribor
 Mariehamn
-Marietta
 Marigot
-Marple
-Marseille
 Maseru
-Mashhad
 Mata Utu
 Mbabane
-Medan
-Medellín
-Medina
 Melbourne
-Melville
-Memphis
-Menifee
-Meppel
-Mestre
 Mexico City
 Miami
-Middelburg
-Midway
 Milan
-Milpitas
-Milwaukee
-Minneapolis/St. Paul
+Minneapolis
 Minsk
-Mississauga
-Mittakpheap
-Miyang
-Modica
-Moffat
 Mogadishu
-Mokotów
 Monaco
-Moncalieri
-Monroe
 Monrovia
-Mont-Saint-Hilaire
-Montabaur
-Montego Bay
-Monterrey
 Montevideo
-Montpellier
-Montreal
-Montreux
 Montréal
-Morley
 Moroni
 Moscow
-Mossoró
-Mount Airy
-Mulfingen
-Multan
 Mumbai
 Munich
-Munkkiniemi
-Munūf
 Muscat
-Mölndal
-Münster
 N'Djamena
-Naaldwijk
-Nagano
-Nagoya
-Nagpur
 Nairobi
-Nam Định
-Nanchang
-Nanjing
-Nanning
-Nantes
-Nantong
-Naples
 Nashville
 Nassau
 Naypyidaw
-Negotin
-New Cairo
 New Delhi
-New Haven
-New Orleans
 New York
-New York City
 Newark
-Newcastle
-Newport Beach
 Ngerulmud
 Niamey
-Nice
 Nicosia
-Niederdorla
-Niigata
-Nijmegen
-Nilüfer
-Ningbo
-Niterói
-Nocera Inferiore
-Noida
-Noisy-le-Grand
-Norbury
-North Bergen
-Northampton
-Notre-Dame-de-Grâce
-Nottingham
-Nottingham-Derby
 Nouakchott
 Nouméa
-Nova Friburgo
-Novi Beograd
-Novi Pazar
-Nové Hrady
 Nukuʻalofa
 Nur-Sultan
 Nuuk
-Nyeri
-Néa Smýrni
-Nürnberg
-Nürnberg-Fürth
-O'Fallon
-Oakville
-Oberdorla
-Ochota
-Offenbach
-Ogden
-Okara
-Okayama
-Oklahoma City
-Old Westbury
-Olpād
-Olsztyn
-Omaha
-Oostkamp
-Orange
+Oakland
 Oranjestad
 Orlando
-Orūmīyeh
-Osaka–Kobe
-Oshawa
+Osaka
 Oslo
 Ottawa
 Ouagadougou
-Oud-Turnhout
-Oulu
-Oxnard
-Padova
 Pago Pago
-Paialvo
-Palaió Fáliro
-Palembang
-Palermo
-Palestine
 Palikir
-Palo Alto
-Palotina
-Pamulang
-Panaji
 Panama City
-Panamá
-Panzhihua
-Paola
 Papeete
 Paramaribo
 Paris
-Pasadena
-Passignano sul Trasimeno
-Passos
-Paterna
-Patna
-Pensacola
-Pereiaslav-Khmelnytskyi
-Pereira
-Peristéri
-Perth
-Perugia
-Peshawar
-Petaling Jaya
-Peterborough
-Pfäffikon
 Philadelphia
 Philipsburg
 Phnom Penh
 Phoenix
-Pingliang
-Piombino
-Piteşti
 Pittsburgh
-Pittsford
-Plano
-Plovdiv
 Plymouth
-Plymouth Meeting
 Podgorica
-Pohang
-Pompano Beach
-Pordenone
 Port Louis
 Port Moresby
 Port Vila
 Port of Spain
-Port-Gentil
 Port-au-Prince
 Portland
-Porto
-Porto Alegre
 Porto-Novo
-Portsmouth
-Powai
-Poznań
-Praga Południe
 Prague
 Praia
-Presnenskiy
 Pretoria
 Pristina
 Providence
-Provo
-Préverenges
-Puducherry
-Puebla
-Pula
-Pune
 Putrajaya
-Pyeongchang
 Pyongyang
-Pālghāt
-QQ-city
-Qazvin
-Qingdao
-Qinghe
-Qionghai
-Qom
-Quartu Sant'Elena
-Quebec City
-Quedlinburg
 Quito
-Quận Sáu
+Québec
 Rabat
 Raleigh
 Ramallah
-Rangoon
-Rankweil
-Rasht
-Ratchaburi
-Raurkela
-Rawalpindi
-Recife
-Recreo
-Redmond
-Redwood Shores
-Reinach
-Rembertów
-Reston
 Reykjavík
-Reynosa
-Rheine
-Rhine-Ruhr
-Richfield
-Richmond
 Riga
-Rio de Janeiro
-Riobamba
-Rivadavia
-Riverside–San Bernardino
+Riverside
 Riyadh
 Road Town
-Rochester
-Rockhampton
-Roeselare
 Rome
-Romero de Guzmán
-Romford
-Roosendaal
 Roseau
-Rostov-na-Donu
 Rotterdam
-Roubaix
-Royse City
-Ruswil
-Rybnik
-Râmnicu Vâlcea
-Rājkot
-Rạch Giá
-Saarbrücken
 Sacramento
-Saggart
-Sai Mai
-Saint Paul
-Saint Petersburg
-Saint-Denis
-Saint-Siméon-de-Bressieux
 Saipan
-Salatiga
-Salt Lake City
-Salvador
 San Antonio
 San Diego
-San Donato Milanese
 San Francisco
 San Jose
 San José
 San Juan
-San Juan Capistrano
-San Luis Potosí
 San Marino
-San Martin
-San Miguel
 San Salvador
 Sana'a
-Sanaa
-Sanandaj
-Sandane
-Sankt Gallen
 Santa Ana
-Santa Clara
-Santa Cruz de la Sierra
-Santa María Chimalhuacán
-Santander
 Santiago
-Santiago de Compostela
 Santo Domingo
-Santos
-Sapporo
 Sarajevo
-Sarapul
-Sarkhej
-Scharbeutz
-Scottsdale
 Seattle
-Secaucus
-Secunderabad
-Sedaví
-Semarang
-Sendai
-Senica
-Seongnam-si
 Seoul
-Seuzach Dorf
-Seville
-Sfântu Gheorghe
-Shah Alam
-Shahr-e Kord
-Sham Shui Po
 Shanghai
-Shantou
-Shaping
-Sharjah
-Sheffield
-Shelekhov
-Shenyang
 Shenzhen
-Shijiazhuang
-Shimla
-Shiraz
-Shizuoka
-Shuanghe
-Shāhpur
-Sierra Vista
 Singapore
-Skanderborg
-Skarżysko-Kamienna
 Skopje
-Slavonski Brod
-Slevik
-Slough
 Sofia
-Solna
-Solnechnoye
-Solrød
-Sorocaba
-South Bend
-South Tangerang
 South Tarawa
-Southampton
-Southfield
-Spring
-Springfield
 Sri Jayawardenepura Kotte
 St. George's
 St. Helier
 St. John's
 St. Louis
+St. Paul
 St. Peter Port
-St. Petersburg
 St. Pierre
-Stalowa Wola
 Stanley
-Stara Zagora
-Steinfeld
 Stepanakert
 Stockholm
-Stockton-on-Tees
-Strasbourg
-Stretford
 Stuttgart
 Sucre
 Sukhumi
-Summer Hill
-Sunshine Coast
-Suptay
-Surabaya
-Surat
-Sutton
 Suva
-Suwon
-Suzhou
 Sydney
-Syracuse
-Szamosszeg
-Szczecin
-Szigetszentmiklós
-São Gabriel
-São José dos Campos
-São José dos Pinhais
 São Paulo
 São Tomé
-Sóc Trăng
-Sępólno Krajeńskie
-Sūrat
-Tabriz
-Tai Po
-Taichung
-Tainan
 Taipei
-Taiyuan
 Tallinn
 Tampa
-Taneytown
-Tangerang
-Tangshan
-Taohua
-Taoyuan
-Taoyuan City
 Tashkent
 Tbilisi
 Tegucigalpa
 Tehran
 Tel Aviv
-Temerluh
-Tempe
-Tena
-Terrafino
 The Hague
 The Valley
-Thessaloniki
 Thimphu
-Three Points
-Thái Nguyên
-Tianjin
 Tifariti
-Tilburg
-Tilton
-Tinton Falls
 Tirana
-Tiszaújváros
-Tochigi
 Tokyo
-Toowoomba
 Toronto
-Toulouse
-Town and Country
-Townsville
 Tripoli
-Trutnov
 Tskhinvali
-Tsuen Wan
-Tucson
-Tulsa
 Tunis
-Turda
-Turin
-Tuy Hòa
-Tyarlevo
-Tân An
-Tårnby
 Tórshavn
-Tønsberg
-Uberlandia
-Uberlândia
-Udaipur
 Ulaanbaatar
-Ulbroka
-Ulsan
-Uran
-Urk
 Vaduz
-Valencia
-Valledupar
 Valletta
-Valmiera
 Valparaíso
 Vancouver
-Varna
-Vasyl'evsky Ostrov
 Vatican City
-Venice-Padua
-Vernier
 Victoria
-Vidnoye
 Vienna
 Vientiane
-Vila Nova de Milfontes
-Vilaflor
-Villa San Giovanni
-Villars-sur-Ollon
 Vilnius
-Virginia Beach
-Visakhapatnam
-Vitória
-Vlissingen
-Voerendaal
-Vogt
-Volgodonsk
-Volgograd
-Volos
-Voluntari
-Wagga Wagga
-Wallisellen
-Wandsworth
-Warangal
-Warminster
 Warsaw
-Washington
+Washington DC
 Washington, D.C.
-Wayne
-Weinheim
 Wellington
-Wendell
-Wenzhou
-Wesoła
-West Chicago
-West End
 West Island
-Wichita
-Wilber
 Willemstad
-Wilmington
 Windhoek
-Winnipeg
-Wissous
-Wollongong
-Wong Tai Sin
-Woodstock
-Woolwich
-Worcester
-Worthing
-Wrocław
-Wuchuan
-Wuhan
-Wulumuqi
-Wuxi
-Wuyishan
-Wysoka
-Wysokie Mazowieckie
-Włochy
-Xiamen
-Xian
-Xinhualu
-Xining
-Xinxiang
-Xi’an
-Xuzhou
 Yamoussoukro
-Yanshi Chengguanzhen
-Yantai
 Yaoundé
 Yaren
-Yashan
-Yekaterinburg
-Yeola
-Yeovil
-Yerba Buena
 Yerevan
-Yicheng
-Yixing
-Yongsan-dong
-Yuanlin
-Yuquan
 Zagreb
-Zaragoza
-Zgierz
-Zhaotong
-Zhengzhou
-Zhongshan
-Zhongxing
-Zhuhai
-Zibo
 Zürich
-Zürich (Kreis 1) / Lindenhof
-Çankaya
-Úžice
-Ümraniye
-Üsküdar
-İskenderun
-İzmir
-Şişli
-Šiauliai
