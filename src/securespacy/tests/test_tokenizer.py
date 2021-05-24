@@ -31,7 +31,8 @@ text = ('However, at the time of writing, we were unable to decrypt this file si
         'These strings 103[.]5.3.123 63.234[.]34.2 90.234.51[.]5 9[.]9[.]9[.]9 9{.}9{.}9{.}9 are examples of obfuscated ipaddresses.\n'
         'Taiwan, Philippines, Czech Republic, and United States of America (USA) are countries to be recognized by ner. \n'
         'As well the following cities: Taipei, Manila, Saint Petersburg, The Hague, Nukuʻalofa\n'
-        'Cities in lower case like taipei, manila, san jose should no longer be extracted.\n')
+        'Cities in lower case like taipei, manila, san jose should no longer be extracted.\n'
+        'Detection names in lower case like tspy_gammarue.a should not be detected, either.\n')
 
 
 
@@ -74,7 +75,7 @@ class TestTagger(TestCase):
             'https://appstockfolio.com/panel/upload.php',
             'hxxps://appstockfolio.com/panel/upload[.]php'
         ],
-        "ORG": ['VirusTotal', 'TOR', 'VirusTotal', 'IP', 'IP', 'GrandSoft’s', 'IPv6', 'Wolf Research'],
+        "ORG": ['VirusTotal', 'TOR', 'VirusTotal', 'IP', 'IP', 'GrandSoft’s', 'IPv6'],
         "DATE": ['January to February 2019', 'June 2019'],
         "DOMAIN":  [
             'gmzera54l5qpa6lm.onion',

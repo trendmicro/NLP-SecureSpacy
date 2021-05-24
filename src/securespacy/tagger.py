@@ -20,7 +20,7 @@ from .expressions import (
 ipv4_re = re.compile(ipv4_expr, re.VERBOSE | re.I | re.UNICODE)
 ipv6_re = re.compile(ipv6_expr, re.VERBOSE | re.I | re.UNICODE)
 url_re = re.compile(url_expr, re.VERBOSE | re.I | re.UNICODE)
-detection_re = re.compile(detection_expr, re.VERBOSE | re.I | re.UNICODE)
+detection_re = re.compile(detection_expr, re.VERBOSE | re.UNICODE)
 cve_re = re.compile(cve_expr, re.VERBOSE | re.I | re.UNICODE)
 
 md5_re = re.compile(md5_expr, re.VERBOSE | re.I | re.UNICODE)

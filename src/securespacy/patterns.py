@@ -164,7 +164,7 @@ for intrusion_set in INTRUSION_SETS:
         {
             "label": "INTRUSION_SET",
             "pattern": [
-                { "LOWER": intrusion_set }
+                { "LOWER": intrusion_set.lower() }
             ]
         }
     )
@@ -202,10 +202,10 @@ for i in CAMPAIGNS:
     patterns.append( { "label": "CAMPAIGN", "pattern": [ { "TEXT": i } ] } )
 
 for i in MALWARE:
-    patterns.append( { "label": "MALWARE", "pattern": [ { "LOWER": i } ] } )
+    patterns.append( { "label": "MALWARE", "pattern": [ { "LOWER": i.lower() } ] } )
 
 for i in TOOLS:
-    patterns.append( { "label": "TOOL", "pattern": [ { "LOWER": i } ] } )
+    patterns.append( { "label": "TOOL", "pattern": [ { "LOWER": i.lower() } ] } )
 
 for i in ORGS:
     patterns.append( { "label": "ORG", "pattern": [ { "TEXT": i } ] } )

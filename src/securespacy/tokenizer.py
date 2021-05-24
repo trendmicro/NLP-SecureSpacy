@@ -12,7 +12,7 @@ from .expressions import (
 
 pwd = os.path.dirname(os.path.realpath(__file__))
 with open(os.path.join(pwd, "data", "intrusion_set.txt"), "r") as fh:
-    INTRUSION_SETS = [l.strip().lower() for l in fh]
+    INTRUSION_SETS = [l.strip() for l in fh]
 
 with open(os.path.join(pwd, "data", "countries.txt"), "r") as fh:
     COUNTRIES = [l.strip() for l in fh]
@@ -24,10 +24,10 @@ with open(os.path.join(pwd, "data", "campaigns.txt"), "r") as fh:
     CAMPAIGNS = [l.strip() for l in fh]
 
 with open(os.path.join(pwd, "data", "malware.txt"), "r") as fh:
-    MALWARE = [l.strip().lower() for l in fh]
+    MALWARE = [l.strip() for l in fh]
 
 with open(os.path.join(pwd, "data", "tools.txt"), "r") as fh:
-    TOOLS = [l.strip().lower() for l in fh]
+    TOOLS = [l.strip() for l in fh]
 
 with open(os.path.join(pwd, "data", "orgs.txt"), "r") as fh:
     ORGS = [l.strip() for l in fh]
