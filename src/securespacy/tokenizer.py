@@ -55,6 +55,9 @@ def build_special_cases():
             }
         ]
 
+    for i in CAMPAIGNS + MALWARE + TOOLS + ORGS:
+        special_cases[i] = [ { "ORTH": i } ]
+
     return special_cases
 
 
