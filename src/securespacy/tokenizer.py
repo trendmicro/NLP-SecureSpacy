@@ -10,47 +10,33 @@ from .expressions import (
 )
 
 
-intrusion_sets = []
 pwd = os.path.dirname(os.path.realpath(__file__))
 with open(os.path.join(pwd, "data", "intrusion_set.txt"), "r") as fh:
-    for l in fh:
-        line = l.strip()
-        intrusion_sets.append(line)
+    INTRUSION_SETS = [l.strip() for x in fh]
 
-
-countries = []
 with open(os.path.join(pwd, "data", "countries.txt"), "r") as fh:
-    for l in fh:
-        line = l.strip()
-        if len(line) > 0:
-            countries.append(line)
+    COUNTRIES = [l.strip() for l in fh]
 
-
-cities = []
 with open(os.path.join(pwd, "data", "cities.txt"), "r") as fh:
-    for l in fh:
-        line = l.strip()
-        if len(line) > 0:
-            cities.append(line)
-
+    CITIES = [l.strip() for l in fh]
 
 def build_special_cases():
     special_cases = {}
-    for intrusion_set in intrusion_sets:
+    for intrusion_set in INTRUSION_SETS:
         special_cases[intrusion_set] = [
             {
                 "ORTH": intrusion_set
             }
         ]
 
-    for country in countries:
+    for country in COUNTRIES:
         special_cases[country] = [
             {
                 "ORTH": country
             }
         ]
 
-    for city in cities:
+    for city in CITIES:
         special_cases[city] = [
             {
                 "ORTH": city
