@@ -10,7 +10,7 @@ from securespacy.tokenizer import custom_tokenizer
 from securespacy.patterns import config, patterns
 
 
-text = ('However, at the time of writing, we were unable to decrypt this file since the upload URL https://appstockfolio.com/panel/upload.php '
+text = ('However, at the time of writing, we were unable to decrypt this file since the upload URL https://appstockfolio.com/panel/upload.com '
         'was inaccessible (according to VirusTotal, the domain was active from January to February 2019). Furthermore, we suspect that the full '
         'malware routine uses the TOR network due to the presence of the unused address gmzera54l5qpa6lm.onion.\nUsing the digital certificate '
         'of the first sample, we were able to find a second variant (detected as Trojan.MacOS.GMERA.B) that was uploaded to VirusTotal on June '
@@ -32,7 +32,9 @@ text = ('However, at the time of writing, we were unable to decrypt this file si
         'Taiwan, Philippines, Czech Republic, and United States of America (USA) are countries to be recognized by ner. \n'
         'As well the following cities: Taipei, Manila, Saint Petersburg, The Hague, Nukuʻalofa\n'
         'Cities in lower case like taipei, manila, san jose should no longer be extracted.\n'
-        'Detection names in lower case like tspy_gammarue.a should not be detected, either.\n')
+        'Detection names in lower case like tspy_gammarue.a should not be detected, either.\n'
+        'https://appstockfolio.com/panel/upload.com?asdf=adf#werss\n'
+        'hxxp://drivestransfer[.]com')
 
 
 
@@ -72,8 +74,9 @@ class TestTagger(TestCase):
 
     expected_results = {
         "URL": [
-            'https://appstockfolio.com/panel/upload.php',
-            'hxxps://appstockfolio.com/panel/upload[.]php'
+            'https://appstockfolio.com/panel/upload.com',
+            'hxxps://appstockfolio.com/panel/upload[.]php',
+            'https://appstockfolio.com/panel/upload.com?asdf=adf#werss',
         ],
         "ORG": ['VirusTotal', 'TOR', 'VirusTotal', 'IP', 'IP', 'GrandSoft’s', 'IPv6'],
         "DATE": ['January to February 2019', 'June 2019'],
