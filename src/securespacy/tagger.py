@@ -69,14 +69,14 @@ def is_domain(token):
         text = text.replace('[', '').replace(']', '')
     
     sld = psl.get_sld(text, strict=True)
-    
+
     if bool(sld):
         if (len(text) >= len(sld)) and \
-           (sld.find(".") > 0) and \
-           (sld.find("@") == -1) and \
-           (sld.find(":") == -1) and \
-           (sld.find("\\") == -1) and \
-           (sld.find("/") == -1):
+           (text.find(".") > 0) and \
+           (text.find("@") == -1) and \
+           (text.find(":") == -1) and \
+           (text.find("\\") == -1) and \
+           (text.find("/") == -1):
             return True
         else:
             return False
