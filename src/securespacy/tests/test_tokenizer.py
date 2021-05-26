@@ -34,7 +34,17 @@ text = ('However, at the time of writing, we were unable to decrypt this file si
         'Cities in lower case like taipei, manila, san jose should no longer be extracted.\n'
         'Detection names in lower case like tspy_gammarue.a should not be detected, either.\n'
         'https://appstockfolio.com/panel/upload.com?asdf=adf#werss\n'
-        'hxxp://drivestransfer[.]com')
+        'hxxp://drivestransfer.com\n'
+        'hxxp://drivestransfer[.]com\n'
+        'hxxps://drivestransfer[.]com\n'
+        'hxxp://subs[.]drivestransfer.com\n'
+        'hxxps://subs[.]drivestransfer.com\n'
+        'hxxps://subs[.]drivestransfer[.]com\n'
+        'hxxps://103[.]7.224.25\n'
+        'hxxps://103.7[.]224.25\n'
+        'hxxps://103.7.224[.]25\n'
+        'hxxps://103[.]7[.]224[.]25\n'
+        )
 
 
 
@@ -77,6 +87,16 @@ class TestTagger(TestCase):
             'https://appstockfolio.com/panel/upload.com',
             'hxxps://appstockfolio.com/panel/upload[.]php',
             'https://appstockfolio.com/panel/upload.com?asdf=adf#werss',
+            'hxxp://drivestransfer.com',
+            'hxxp://drivestransfer[.]com',
+            'hxxps://drivestransfer[.]com',
+            'hxxp://subs[.]drivestransfer.com',
+            'hxxps://subs[.]drivestransfer.com',
+            'hxxps://subs[.]drivestransfer[.]com',
+            'hxxps://103[.]7.224.25',
+            'hxxps://103.7[.]224.25',
+            'hxxps://103.7.224[.]25',
+            'hxxps://103[.]7[.]224[.]25',
         ],
         "ORG": ['VirusTotal', 'TOR', 'VirusTotal', 'IP', 'IP', 'GrandSoft’s', 'IPv6'],
         "DATE": ['January to February 2019', 'June 2019'],
