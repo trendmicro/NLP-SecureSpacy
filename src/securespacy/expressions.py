@@ -95,7 +95,7 @@ detection_expr = r"""
 # cve numbers
 cve_expr = r"""
 (?:
-   ^(?:CVE)\-
+   ^(?:CVE[ -])
    (?:(?:19|20)\d{2})\-
    (?:\d{3,5})$
 )

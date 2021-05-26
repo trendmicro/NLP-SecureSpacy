@@ -7,7 +7,7 @@ import spacy
 import securespacy
 from securespacy import tagger
 from securespacy.tokenizer import custom_tokenizer
-from securespacy.patterns import config, patterns
+from securespacy.patterns import add_entity_ruler_pipeline
 
 
 text = ('However, at the time of writing, we were unable to decrypt this file since the upload URL https://appstockfolio.com/panel/upload.com '
@@ -67,9 +67,7 @@ class TestTagger(TestCase):
     def setUp(self):
         self.nlp = spacy.load("en_core_web_sm")
         self.nlp.tokenizer = custom_tokenizer(self.nlp)
-
-        ruler = self.nlp.add_pipe("entity_ruler", config=config)
-        ruler.add_patterns(patterns)
+        add_entity_ruler_pipeline(self.nlp)
 
 
     expected_results = {

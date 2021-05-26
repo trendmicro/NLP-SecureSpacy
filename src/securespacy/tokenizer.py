@@ -32,35 +32,6 @@ with open(os.path.join(pwd, "data", "tools.txt"), "r") as fh:
 with open(os.path.join(pwd, "data", "orgs.txt"), "r") as fh:
     ORGS = [l.strip() for l in fh]
 
-def build_special_cases():
-    special_cases = {}
-    for intrusion_set in INTRUSION_SETS:
-        special_cases[intrusion_set] = [
-            {
-                "ORTH": intrusion_set
-            }
-        ]
-
-    for country in COUNTRIES:
-        special_cases[country] = [
-            {
-                "ORTH": country
-            }
-        ]
-
-    for city in CITIES:
-        special_cases[city] = [
-            {
-                "ORTH": city
-            }
-        ]
-
-    for i in CAMPAIGNS + MALWARE + TOOLS + ORGS:
-        special_cases[i] = [ { "ORTH": i } ]
-
-    return special_cases
-
-
 def token_match(text):
     if text.lower == "circus spider":
         return True
@@ -77,11 +48,6 @@ def custom_tokenizer(nlp):
     #
     token_re = re.compile(f"{detection_expr}|{cve_expr}", re.VERBOSE | re.I | re.UNICODE)
 
-    #
-    # special cases dictionary
-    #
-    special_cases = build_special_cases()
-
     default_prefixes = nlp.Defaults.prefixes
     default_infixes = nlp.Defaults.infixes
     default_suffixes = nlp.Defaults.suffixes
@@ -92,7 +58,7 @@ def custom_tokenizer(nlp):
     infixes_re  = spacy.util.compile_infix_regex(default_infixes)
 
     return Tokenizer(nlp.vocab,
-                     rules=special_cases,
+                     # rules=special_cases,
                      prefix_search=prefixes_re.search,
                      suffix_search=suffixes_re.search,
                      infix_finditer=infixes_re.finditer,

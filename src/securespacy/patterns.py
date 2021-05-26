@@ -1,3 +1,4 @@
+from spacy.matcher import PhraseMatcher
 
 from .tokenizer import (
     INTRUSION_SETS,
@@ -156,56 +157,26 @@ patterns = [
     },
 ]
 
-#
-# we add the intrusion set list into our patterns
-#
-for intrusion_set in INTRUSION_SETS:
-    patterns.append(
-        {
-            "label": "INTRUSION_SET",
-            "pattern": [
-                { "LOWER": intrusion_set.lower() }
-            ]
-        }
-    )
 
+def add_entity_ruler_pipeline(nlp):
+    ruler_1 = nlp.add_pipe("entity_ruler", name='entity_ruler_case_sensitive', config=config)
+    ruler_2 = nlp.add_pipe("entity_ruler", name='entity_ruler_case_insensitive', config=config)
+    ruler_3 = nlp.add_pipe("entity_ruler", name='entity_ruler_regex', config=config)
 
-#
-# we add the countries list into our patterns
-#
-for country in COUNTRIES:
-    patterns.append(
-        {
-            "label": "COUNTRY",
-            "pattern": [
-                { "TEXT": country }
-            ]
-        }
-    )
+# PhraseMathcer for case sensitive terms
+    matcher = PhraseMatcher(nlp.vocab)
+    matcher.add('COUNTRY', nlp.tokenizer.pipe(COUNTRIES))
+    matcher.add('CITY', nlp.tokenizer.pipe(CITIES))
+    matcher.add('ORG', nlp.tokenizer.pipe(ORGS))
 
+# Second PhraseMathcer for case insensitive terms :(
+    i_matcher = PhraseMatcher(nlp.vocab, attr='LOWER')
+    i_matcher.add('INTRUSION_SET', nlp.tokenizer.pipe(INTRUSION_SETS))
+    i_matcher.add('MALWARE', nlp.tokenizer.pipe(MALWARE))
+    i_matcher.add('TOOL', nlp.tokenizer.pipe(TOOLS))
+    i_matcher.add('CAMPAIGN', nlp.tokenizer.pipe(CAMPAIGNS))
 
-#
-# we add the cities list into our patterns
-#
-for city in CITIES:
-    patterns.append(
-        {
-            "label": "CITY",
-            "pattern": [
-                { "TEXT": city }
-            ]
-        }
-    )
-
-
-for i in CAMPAIGNS:
-    patterns.append( { "label": "CAMPAIGN", "pattern": [ { "TEXT": i } ] } )
-
-for i in MALWARE:
-    patterns.append( { "label": "MALWARE", "pattern": [ { "LOWER": i.lower() } ] } )
-
-for i in TOOLS:
-    patterns.append( { "label": "TOOL", "pattern": [ { "LOWER": i.lower() } ] } )
-
-for i in ORGS:
-    patterns.append( { "label": "ORG", "pattern": [ { "TEXT": i } ] } )
+    ruler_1.phrase_matcher = matcher
+    ruler_2.phrase_matcher = i_matcher
+    ruler_3.add_patterns(patterns)
+    return nlp
