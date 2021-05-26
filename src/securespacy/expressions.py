@@ -55,49 +55,69 @@ ipv6_expr = r"""
 #
 # Modified the regex in the protocol part so we could identify obfuscated URLs (hxxp, fxp).
 # Original protocal RE: (?:(?:(?:https?|ftp):)?//)
-url_expr = r"""
-    (?:(?:(?:ht|hx|f)[tx]p(?:s?):)?//)
-    (?:\S+(?::\S*)?@)?
-    (?:
-    (?!(?:10|127)(?:\.\d{1,3}){3})
-    (?!(?:169\.254|192\.168)(?:\.\d{1,3}){2})
-    (?!172\.(?:1[6-9]|2\d|3[0-1])(?:\.\d{1,3}){2})
-    (?:[1-9]\d?|1\d\d|2[01]\d|22[0-3])
-    (?:\.(?:1?\d{1,2}|2[0-4]\d|25[0-5])){2}
-    (?:\.(?:[1-9]\d?|1\d\d|2[0-4]\d|25[0-4]))
-    |
-    (?:\.(?:[a-z\u00a1-\uffff0-9]-?)*[a-z\u00a1-\uffff0-9]+)*
-    (?:
-    (?:
-    [a-z0-9\u00a1-\uffff]
-    [a-z0-9\u00a1-\uffff_-]{0,62}
-    )?
-    [a-z0-9\u00a1-\uffff]\.
-    )+
-    (?:[a-z\u00a1-\uffff]{2,}\.?)
-    )
-    (?::\d{2,5})?
-    (?:[/?#]\S*)
-"""
+url_expr = (
+    r"^"
+    # protocol identifier
+    r"(?:(?:(?:ht|hx|f)[tx]p(?:s?):)?//)"
+    # user:pass authentication
+    r"(?:\S+(?::\S*)?@)?"
+    r"(?:"
+    # IP address exclusion
+    # private & local networks
+    r"(?!(?:10|127)(?:\.\d{1,3}){3})"
+    r"(?!(?:169\.254|192\.168)(?:\.\d{1,3}){2})"
+    r"(?!172\.(?:1[6-9]|2\d|3[0-1])(?:\.\d{1,3}){2})"
+    # IP address dotted notation octets
+    # excludes loopback network 0.0.0.0
+    # excludes reserved space >= 224.0.0.0
+    # excludes network & broadcast addresses
+    # (first & last IP address of each class)
+    r"(?:[1-9]\d?|1\d\d|2[01]\d|22[0-3])"
+    r"(?:\[?\.\]?(?:1?\d{1,2}|2[0-4]\d|25[0-5])){2}"
+    r"(?:\[?\.\]?(?:[1-9]\d?|1\d\d|2[0-4]\d|25[0-4]))"
+    r"|"
+    # host & domain names, may end with dot
+    # can be replaced by a shortest alternative
+    # r"(?![-_])(?:[-\w\u00a1-\uffff]{0,63}[^-_]\.)+"
+    # r"(?:(?:[a-z\u00a1-\uffff0-9]-?)*[a-z\u00a1-\uffff0-9]+)"
+    # # domain name
+    # r"(?:\.(?:[a-z\u00a1-\uffff0-9]-?)*[a-z\u00a1-\uffff0-9]+)*"
+    r"(?:"
+    r"(?:"
+    r"[a-z0-9\u00a1-\uffff]"
+    r"[a-z0-9\u00a1-\uffff_-]{0,62}"
+    r")?"
+    r"[a-z0-9\u00a1-\uffff]\[?\.\]?"
+    r")+"
+    # TLD identifier name, may end with dot
+    r"(?:[a-z\u00a1-\uffff]{2,}\.?)"
+    r")"
+    # port number (optional)
+    r"(?::\d{2,5})?"
+    # resource path (optional)
+    r"(?:[/?#]\S*)?"
+    r"$"
+)
+
 
 #
 # Malware detection
 #
 detection_expr = r"""
 (?:
-   ^(?:[A-Z][A-Za-z]+(?:32|64)?[\._])
-   (?:[A-Za-z0-9]+)
-   (?:[\._][A-Za-z0-9]+)
-   (?:[\._][A-Za-z0-9]+)?$
+    ^(?:[A-Z][A-Za-z]+(?:32|64)?[\._])
+    (?:[A-Za-z0-9]+)
+    (?:[\._][A-Za-z0-9]+)
+    (?:[\._][A-Za-z0-9]+)?$
 )
 """
 
 # cve numbers
 cve_expr = r"""
 (?:
-   ^(?:CVE)\-
-   (?:(?:19|20)\d{2})\-
-   (?:\d{3,5})$
+    ^(?:CVE)\-
+    (?:(?:19|20)\d{2})\-
+    (?:\d{3,5})$
 )
 """
 
