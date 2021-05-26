@@ -31,15 +31,15 @@ Alternatively, you can download and install from the latest binary release here:
 >>> import securespacy
 >>> from securespacy import tagger
 >>> from securespacy.tokenizer import custom_tokenizer
->>> from securespacy.patterns import config, patterns
+>>> from securespacy.patterns import add_entity_ruler_pipeline
 >>>
 >>> text = ('The quick brown fox owns the domain quickbrownfox[.]sh with the ip address 10.231.31.8 '
 >>>         'with the server located in Manila, Philippines.')
 >>>
 >>> nlp = spacy.load("en_core_web_sm")
 >>> nlp.tokenizer = custom_tokenizer(nlp)
->>> ruler = nlp.add_pipe("entity_ruler", config=config)
->>> ruler.add_patterns(patterns)
+>>> self.nlp.tokenizer = custom_tokenizer(self.nlp)
+>>> add_entity_ruler_pipeline(self.nlp)
 >>> doc = nlp(text)
 >>>
 >>> for ent in doc.ents:
