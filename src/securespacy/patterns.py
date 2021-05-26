@@ -159,9 +159,11 @@ patterns = [
 
 
 def add_entity_ruler_pipeline(nlp):
-    ruler_1 = nlp.add_pipe("entity_ruler", name='entity_ruler_case_sensitive', config=config)
-    ruler_2 = nlp.add_pipe("entity_ruler", name='entity_ruler_case_insensitive', config=config)
-    ruler_3 = nlp.add_pipe("entity_ruler", name='entity_ruler_regex', config=config)
+    rulers = []
+    for pipe in ['entity_ruler_case_sensitive', 'entity_ruler_case_insensitive', 'entity_ruler_regex']:
+        if pipe in nlp.pipe_names:
+            nlp.remove_pipe(pipe)
+        rulers.append(nlp.add_pipe("entity_ruler", name=pipe, config=config))
 
 # PhraseMathcer for case sensitive terms
     matcher = PhraseMatcher(nlp.vocab)
@@ -176,7 +178,7 @@ def add_entity_ruler_pipeline(nlp):
     i_matcher.add('TOOL', nlp.tokenizer.pipe(TOOLS))
     i_matcher.add('CAMPAIGN', nlp.tokenizer.pipe(CAMPAIGNS))
 
-    ruler_1.phrase_matcher = matcher
-    ruler_2.phrase_matcher = i_matcher
-    ruler_3.add_patterns(patterns)
+    rulers[0].phrase_matcher = matcher
+    rulers[1].phrase_matcher = i_matcher
+    rulers[2].add_patterns(patterns)
     return nlp
