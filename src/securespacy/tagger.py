@@ -82,9 +82,11 @@ def is_domain(token):
 
     # if domain is obfuscated with [.]
     text = text.replace('[.]', '.').replace('{.}', '.')
-    # Special case for *.sh
-    if text.endswith('.sh'):
-        return False
+
+    # Special cases
+    for suffix in ['.sh', '.zip']:
+        if text.endswith(suffix):
+            return False
     
     sld = psl.get_sld(text, strict=True)
 

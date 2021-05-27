@@ -33,7 +33,7 @@ text = ('However, at the time of writing, we were unable to decrypt this file si
         'As well the following cities: Taipei, Manila, Saint Petersburg, The Hague, Nukuʻalofa\n'
         'Cities in lower case like taipei, manila, san jose should no longer be extracted.\n'
         'Detection names in lower case like tspy_gammarue.a should not be detected, either.\n'
-        'Malware deploys newinit.sh in /var/lib/www/\n'
+        'Malware deploys newinit.sh in /var/lib/www/ and extracts download.zip to directories\n'
         'https://appstockfolio.com/panel/upload.com?asdf=adf#werss\n'
         'hxxp://drivestransfer.com\n'
         'hxxp://drivestransfer[.]com\n'
