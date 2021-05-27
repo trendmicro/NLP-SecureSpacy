@@ -11,7 +11,7 @@ ipv4_expr = r"""
 (?:25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])[\[{]?\.[\]}]?
 (?:25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])[\[{]?\.[\]}]?
 (?:25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])
-)
+)(?:/(3[0-2]|[1-2][0-9]|[0-9]))?
 """
 
 #
@@ -47,7 +47,7 @@ ipv6_expr = r"""
  (?:(?:[0-9A-F]{1,4}:){1,7}|:)(?:(?::[0-9A-F]{1,4}){1,7}|:)
  # Compressed with 8 colons
 |(?:[A-F0-9]{1,4}:){7}:|:(?::[A-F0-9]{1,4}){7}
-)
+)(/(12[0-8]|1[0-1][0-9]|[1-9][0-9]|[0-9]))?
 """
 
 # from https://gist.github.com/pchc2005/b5f13e136a9c9bb2984e5b92802fc7c9, which is based on
@@ -62,20 +62,8 @@ url_expr = (
     # user:pass authentication
     r"(?:\S+(?::\S*)?@)?"
     r"(?:"
-    # IP address exclusion
-    # private & local networks
-    r"(?!(?:10|127)(?:\.\d{1,3}){3})"
-    r"(?!(?:169\.254|192\.168)(?:\.\d{1,3}){2})"
-    r"(?!172\.(?:1[6-9]|2\d|3[0-1])(?:\.\d{1,3}){2})"
-    # IP address dotted notation octets
-    # excludes loopback network 0.0.0.0
-    # excludes reserved space >= 224.0.0.0
-    # excludes network & broadcast addresses
-    # (first & last IP address of each class)
-    r"(?:[1-9]\d?|1\d\d|2[01]\d|22[0-3])"
-    r"(?:\[?\.\]?(?:1?\d{1,2}|2[0-4]\d|25[0-5])){2}"
-    r"(?:\[?\.\]?(?:[1-9]\d?|1\d\d|2[0-4]\d|25[0-4]))"
-    r"|"
+    + ipv4_expr + r"|"
+    + ipv6_expr + r"|"
     # host & domain names, may end with dot
     # can be replaced by a shortest alternative
     # r"(?![-_])(?:[-\w\u00a1-\uffff]{0,63}[^-_]\.)+"
