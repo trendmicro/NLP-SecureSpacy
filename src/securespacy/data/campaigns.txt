@@ -40,3 +40,4 @@ Operation DRBControl
 Egregor
 NightScout
 Heatstroke
+WatchDog

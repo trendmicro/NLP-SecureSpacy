@@ -3,7 +3,6 @@ Norse
 Kaspersky
 Symantec
 Palo Alto Networks
-Palo Alto
 CrowdStrike
 Crowd Strike
 RedTorch
@@ -13,3 +12,4 @@ Facebook
 Google
 Amazon
 Nortel
+Unit 42
