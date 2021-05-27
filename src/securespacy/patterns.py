@@ -160,7 +160,7 @@ patterns = [
 
 def add_entity_ruler_pipeline(nlp):
     rulers = []
-    for pipe in ['entity_ruler_case_sensitive', 'entity_ruler_case_insensitive', 'entity_ruler_regex']:
+    for pipe in ['entity_ruler_regex', 'entity_ruler_case_sensitive', 'entity_ruler_case_insensitive']:
         if pipe in nlp.pipe_names:
             nlp.remove_pipe(pipe)
         rulers.append(nlp.add_pipe("entity_ruler", name=pipe, config=config))
@@ -178,7 +178,7 @@ def add_entity_ruler_pipeline(nlp):
     i_matcher.add('TOOL', nlp.tokenizer.pipe(TOOLS))
     i_matcher.add('CAMPAIGN', nlp.tokenizer.pipe(CAMPAIGNS))
 
-    rulers[0].phrase_matcher = matcher
-    rulers[1].phrase_matcher = i_matcher
-    rulers[2].add_patterns(patterns)
+    rulers[0].add_patterns(patterns)
+    rulers[1].phrase_matcher = matcher
+    rulers[2].phrase_matcher = i_matcher
     return nlp
