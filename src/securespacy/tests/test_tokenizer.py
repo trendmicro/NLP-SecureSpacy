@@ -50,6 +50,12 @@ text = ('However, at the time of writing, we were unable to decrypt this file si
         'hxxp://146.71.79[.]230/363A3EDC10A2930DVNICE/sysguard\n'
         'hxxp://146.71.79[.]230/363A3EDC10A2930DVNICE/sysupdate\n'
         'hxxp://146.71.79[.]230/363A3EDC10A2930DVNICE/update.sh\n'
+        # 'dl[.]haqo[.]net/ins2.exez\n'
+        # 'i[.]haqo[.]net/i.png\n'
+        # 'ii[.]haqo[.]net/u.png\n'
+        # 'v[.]beahh[.]com/v\n'
+        # '132[.]162[.]107[.]97/xmrig-32_1.mlz\n'
+        # '139[.]162[.]107[.]97/h.bat\n'
         )
 
 
@@ -104,6 +110,12 @@ class TestTagger(TestCase):
             'hxxp://146.71.79[.]230/363A3EDC10A2930DVNICE/sysguard',
             'hxxp://146.71.79[.]230/363A3EDC10A2930DVNICE/sysupdate',
             'hxxp://146.71.79[.]230/363A3EDC10A2930DVNICE/update.sh',
+            # 'dl[.]haqo[.]net/ins2.exez',
+            # 'i[.]haqo[.]net/i.png',
+            # 'ii[.]haqo[.]net/u.png',
+            # 'v[.]beahh[.]com/v',
+            # '132[.]162[.]107[.]97/xmrig-32_1.mlz',
+            # '139[.]162[.]107[.]97/h.bat',
         ],
         "ORG": ['VirusTotal', 'TOR', 'VirusTotal', 'IP', 'IP', 'GrandSoft’s', 'IPv6'],
         "DATE": ['January to February 2019', 'June 2019'],

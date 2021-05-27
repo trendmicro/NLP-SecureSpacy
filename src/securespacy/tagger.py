@@ -36,8 +36,23 @@ def is_ipv6(token):
     return bool(ipv6_re.match(token.text))
 
 def is_url(token):
-    "There should be at least one / in URL, either in http:// or in the URL itself."
-    return bool(url_re.match(token.text) and token.text.find('/') != -1)
+    return bool(url_re.match(token.text))
+
+def is_url_without_protocol(token):
+    # There should be at least one / in URL, either in :// or in the URL itself.
+    if token.text.find('/') == -1:
+        return False
+    # Calculate how much information is left when IPv4 and IPv6 are taken away
+    l = len(token)
+    ipv4 = ipv4_re.match(token.text)
+    if ipv4:
+        l = l - len(ipv4[0])
+    ipv6 = ipv6_re.match(token.text)
+    if ipv6:
+        l = l - len(ipv6[0])
+    if l < 3:                       # a heuristic threshold
+        return False
+    return bool(url_re.match(token.text))
 
 def is_detection(token):
     return bool(detection_re.match(token.text))
@@ -66,8 +81,7 @@ def is_domain(token):
     text = token.text
 
     # if domain is obfuscated with [.]
-    if any([x for x in token.text if x in ['[', ']']]):
-        text = text.replace('[', '').replace(']', '')
+    text = text.replace('[.]', '.').replace('{.}', '.')
     
     sld = psl.get_sld(text, strict=True)
 
