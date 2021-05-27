@@ -6,7 +6,8 @@ from spacy.tokenizer import Tokenizer
 
 from .expressions import (
     detection_expr,
-    cve_expr
+    cve_expr,
+    url_expr,
 )
 
 
@@ -46,7 +47,7 @@ def custom_tokenizer(nlp):
     # we can optionally define regex to tokenize target text. We use the detection
     # regex because Spacy sometimes tokenizes detection string wrong
     #
-    token_re = re.compile(f"{detection_expr}|{cve_expr}", re.VERBOSE | re.I | re.UNICODE)
+    token_re = re.compile(f"{detection_expr}|{cve_expr}|{url_expr}", re.VERBOSE | re.I | re.UNICODE)
 
     default_prefixes = nlp.Defaults.prefixes
     default_infixes = nlp.Defaults.infixes

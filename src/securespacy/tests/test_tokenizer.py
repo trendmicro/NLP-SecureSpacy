@@ -44,6 +44,12 @@ text = ('However, at the time of writing, we were unable to decrypt this file si
         'hxxps://103.7[.]224.25\n'
         'hxxps://103.7.224[.]25\n'
         'hxxps://103[.]7[.]224[.]25\n'
+        'de.gengine[.]com.de\n'
+        'de.gsearch[.]com.de\n'
+        'global.bitmex[.]com.de\n'
+        'hxxp://146.71.79[.]230/363A3EDC10A2930DVNICE/sysguard\n'
+        'hxxp://146.71.79[.]230/363A3EDC10A2930DVNICE/sysupdate\n'
+        'hxxp://146.71.79[.]230/363A3EDC10A2930DVNICE/update.sh\n'
         )
 
 
@@ -95,12 +101,18 @@ class TestTagger(TestCase):
             'hxxps://103.7[.]224.25',
             'hxxps://103.7.224[.]25',
             'hxxps://103[.]7[.]224[.]25',
+            'hxxp://146.71.79[.]230/363A3EDC10A2930DVNICE/sysguard',
+            'hxxp://146.71.79[.]230/363A3EDC10A2930DVNICE/sysupdate',
+            'hxxp://146.71.79[.]230/363A3EDC10A2930DVNICE/update.sh',
         ],
         "ORG": ['VirusTotal', 'TOR', 'VirusTotal', 'IP', 'IP', 'GrandSoft’s', 'IPv6'],
         "DATE": ['January to February 2019', 'June 2019'],
         "DOMAIN":  [
             'gmzera54l5qpa6lm.onion',
-            'gmzera54l5qpa6lm[.]onion'
+            'gmzera54l5qpa6lm[.]onion',
+            'de.gengine[.]com.de',
+            'de.gsearch[.]com.de',
+            'global.bitmex[.]com.de',
         ],
         "ORDINAL": ['first', 'second'],
         "MALWARE": ['Trojan.MacOS.GMERA.B', 'TROJ_DLOADR.SULQ', 'Win32.Virlock.A', 'Win64.Virlock.A'],

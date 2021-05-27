@@ -63,12 +63,12 @@ patterns = [
             }
         ]
     },
-    {
-        "label": "URL",
-        "pattern": [
-            {"LIKE_URL": True},
-        ]
-    },
+#    {
+#        "label": "URL",
+#        "pattern": [
+#            {"LIKE_URL": True},
+#        ]
+#    },
     {
         "label": "URL",
         "pattern": [

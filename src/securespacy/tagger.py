@@ -36,7 +36,8 @@ def is_ipv6(token):
     return bool(ipv6_re.match(token.text))
 
 def is_url(token):
-    return bool(url_re.match(token.text))
+    "There should be at least one / in URL, either in http:// or in the URL itself."
+    return bool(url_re.match(token.text) and token.text.find('/') != -1)
 
 def is_detection(token):
     return bool(detection_re.match(token.text))
