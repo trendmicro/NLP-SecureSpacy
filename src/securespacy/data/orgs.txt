@@ -13,3 +13,9 @@ Google
 Amazon
 Nortel
 Unit 42
+f2pool
+nanopool
+GNTL
+Apache
+90sec
+Oracle
