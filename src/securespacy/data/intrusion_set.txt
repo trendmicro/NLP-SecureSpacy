@@ -58,7 +58,6 @@ Fullz House
 Graboid
 IceID
 FTCODE
-Leverage
 SectopRAT
 Vault7
 KoffeyMaker

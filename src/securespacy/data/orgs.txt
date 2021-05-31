@@ -19,3 +19,6 @@ GNTL
 Apache
 90sec
 Oracle
+Alibaba
+Tencent
+Qihoo
