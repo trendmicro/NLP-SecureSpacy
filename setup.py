@@ -3,12 +3,11 @@ import setuptools
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
-with open("VERSION", "r", encoding="utf-8") as fh:
-    version = fh.read().strip()
+exec(open('src/securespacy/version.py').read())
 
 setuptools.setup(
     name="securespacy",
-    version=version,
+    version=__version__,
     author="Joey Costoya",
     author_email="joey_costoya@trendmicro.com",
     description="Custom Spacy tokenizer and NER extractor for IoCs",
