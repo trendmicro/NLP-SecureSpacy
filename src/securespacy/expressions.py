@@ -50,6 +50,24 @@ ipv6_expr = r"""
 )(/(12[0-8]|1[0-1][0-9]|[1-9][0-9]|[0-9]))?
 """
 
+# Should cover regular domain, one letter (x.com), xn-- IDN domain, and [.] escaped domains
+# https://stackoverflow.com/questions/10306690/what-is-a-regular-expression-which-will-match-a-valid-domain-name-without-a-subd
+domain_expr = r"""
+(?:
+  ^(?:
+    (?!-)
+    (?:xn--|_{1,1})?
+    [a-z0-9-]{0,61}[a-z0-9]{1,1}
+    (?:\.|\[\.\])
+  )*
+  (?:xn--)?
+  (?:[a-z0-9][a-z0-9\-]{0,60}|[a-z0-9-]{1,30}
+    (?:\.|\[\.\])
+    (?:[a-z]{2,})
+  )$
+)
+"""
+
 # from https://gist.github.com/pchc2005/b5f13e136a9c9bb2984e5b92802fc7c9, which is based on
 # https://gist.github.com/dperini/729294
 #

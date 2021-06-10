@@ -14,7 +14,7 @@ from .expressions import (
     md5_expr,
     sha1_expr,
     sha256_expr,
-    sha512_expr
+    sha512_expr,
 )
 
 ipv4_re = re.compile(ipv4_expr, re.VERBOSE | re.I | re.UNICODE)

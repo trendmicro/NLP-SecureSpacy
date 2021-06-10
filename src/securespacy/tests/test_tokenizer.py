@@ -51,6 +51,9 @@ text = ('However, at the time of writing, we were unable to decrypt this file si
         'hxxp://146.71.79[.]230/363A3EDC10A2930DVNICE/sysguard\n'
         'hxxp://146.71.79[.]230/363A3EDC10A2930DVNICE/sysupdate\n'
         'hxxp://146.71.79[.]230/363A3EDC10A2930DVNICE/update.sh\n'
+        'hmrc[.]covid[.]19-support-grant[.]com\n'
+        'fund4-covid19[.]com\n'
+        'furlough-grant[.]com\n'
         # 'dl[.]haqo[.]net/ins2.exez\n'
         # 'i[.]haqo[.]net/i.png\n'
         # 'ii[.]haqo[.]net/u.png\n'
@@ -126,6 +129,9 @@ class TestTagger(TestCase):
             'de.gengine[.]com.de',
             'de.gsearch[.]com.de',
             'global.bitmex[.]com.de',
+            'hmrc[.]covid[.]19-support-grant[.]com',
+            'fund4-covid19[.]com',
+            'furlough-grant[.]com',
         ],
         "ORDINAL": ['first', 'second'],
         "MALWARE": ['Trojan.MacOS.GMERA.B', 'TROJ_DLOADR.SULQ', 'Win32.Virlock.A', 'Win64.Virlock.A'],
