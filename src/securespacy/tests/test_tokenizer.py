@@ -54,6 +54,7 @@ text = ('However, at the time of writing, we were unable to decrypt this file si
         'hmrc[.]covid[.]19-support-grant[.]com\n'
         'fund4-covid19[.]com\n'
         'furlough-grant[.]com\n'
+        'furlough-grant.notatld\n'
         # 'dl[.]haqo[.]net/ins2.exez\n'
         # 'i[.]haqo[.]net/i.png\n'
         # 'ii[.]haqo[.]net/u.png\n'
