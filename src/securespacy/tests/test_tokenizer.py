@@ -54,6 +54,29 @@ text = ('However, at the time of writing, we were unable to decrypt this file si
         'hmrc[.]covid[.]19-support-grant[.]com\n'
         'fund4-covid19[.]com\n'
         'furlough-grant[.]com\n'
+        'PeNet.Structures.MetaDataTables\n'         # Should be excluded
+"""PUP/Win32.MyWebSearch.R133138
+PUP.WebToolbar.MyWebSearch
+W32.HfsAdware.1166
+PUA.Mindsparki.Gen
+FLSourcing.AMSI.AllPSDownload.src
+OSX_REFOGKEYLOGGER.MSGKD15
+FLSourcing.AMSI.PowershellDownload
+HEUR_STATISTICS
+FLSourcing.AMSI.ScriptExecution
+BKDR_KILLAV.SMA
+Trojan.HTML.PHISH.SMMR
+Trojan.W97M.POWLOAD.SMRV08
+TROJ_GEN.R002C0PEL21
+HEUR_SWFOBF.B
+PUA.Win32.HaoZip.C
+PE_JEEFO.E
+HackTool.Win32.RAdmin
+HEUR_JS.O.ELBP
+PE_SALITY.SM-O
+PE_SALITY.SM
+PE_PATCHED.ASA
+"""
         # 'dl[.]haqo[.]net/ins2.exez\n'
         # 'i[.]haqo[.]net/i.png\n'
         # 'ii[.]haqo[.]net/u.png\n'
@@ -134,7 +157,13 @@ class TestTagger(TestCase):
             'furlough-grant[.]com',
         ],
         "ORDINAL": ['first', 'second'],
-        "MALWARE": ['Trojan.MacOS.GMERA.B', 'TROJ_DLOADR.SULQ', 'Win32.Virlock.A', 'Win64.Virlock.A'],
+        "MALWARE": ['Trojan.MacOS.GMERA.B', 'TROJ_DLOADR.SULQ', 'Win32.Virlock.A', 'Win64.Virlock.A',
+                    'PUP/Win32.MyWebSearch.R133138', 'PUP.WebToolbar.MyWebSearch', 'W32.HfsAdware.1166',
+                    'PUA.Mindsparki.Gen', 'FLSourcing.AMSI.AllPSDownload.src', 'OSX_REFOGKEYLOGGER.MSGKD15', 
+                    'FLSourcing.AMSI.PowershellDownload', 'HEUR_STATISTICS', 'FLSourcing.AMSI.ScriptExecution',
+                    'BKDR_KILLAV.SMA', 'Trojan.HTML.PHISH.SMMR', 'Trojan.W97M.POWLOAD.SMRV08', 'TROJ_GEN.R002C0PEL21', 
+                    'HEUR_SWFOBF.B', 'PUA.Win32.HaoZip.C', 'PE_JEEFO.E', 'HackTool.Win32.RAdmin', 'HEUR_JS.O.ELBP', 
+                    'PE_SALITY.SM', 'PE_SALITY.SM-O', 'PE_PATCHED.ASA', 'TROJ_DLOADR'],
         "IP": [
             '10.2.13.1',
             '192.168.2.14',

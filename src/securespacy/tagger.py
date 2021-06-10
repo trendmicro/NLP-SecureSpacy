@@ -55,7 +55,71 @@ def is_url_without_protocol(token):
     return bool(url_re.match(token.text))
 
 def is_detection(token):
-    return bool(detection_re.match(token.text))
+    commonDetectionNames = [
+        'ADW', 'ADWIND', 'Adware',
+        'ALS',
+        'ANDROIDOS',
+        'AUTOIT',
+        'AUTORUN',
+        'BAT',
+        'BKDR', 'Backdoor',
+        'CRCK',
+        'COINMINER', 'CoinMiner', 'Coinminer',
+        'Cryp',
+        'EXPL',
+        'FLSourcing',          # Which vendor is this?
+        'Fileless',
+        'GEN',
+        'HEUR',
+        'HKTL',
+        'HKTL64',
+        'HO64',
+        'HTML',
+        'HA', 'HB', 'HI', 'HM', 'HS', 'HT', 'HZ',
+        'HackTool',
+        'HackingTools',
+        'INF',
+        'JS',
+        'KYLG',
+        'LNK',
+        'Linux',
+        'MSIL',
+        'MAL', 'Mal', 'Malware',
+        'OBFUS',
+        'OSX',
+        'PAK',
+        'PE',
+        'PHP',
+        'PUA',
+        'PUP',
+        'Ransom',
+        'SMA',
+        'SWF',
+        'TROJ', 'TROJ64', 'TSPY', 'Trojan',
+        'VBS',
+        'Virus',
+        'W2KM', 'X2KM',
+        'W32', 'W64',
+        'W97M', 'X97M',
+        'WCRY',
+        'WEBSHELL',
+        'WORM', 'Worm',
+        'Win32', 'Win64',
+    ]
+    detectionNameInfixes = [
+        'KEYLOG',
+        'RANSOM',
+    ]
+    if not detection_re.match(token.text):
+        return False
+    toks = re.split(r'[_./:]', token.text)
+    for tok in toks:
+        if tok in commonDetectionNames:
+            return True
+        for e in detectionNameInfixes:
+            if tok.find(e) != -1:
+                return True
+    return False
 
 def is_cve(token):
     return bool(cve_re.match(token.text))
