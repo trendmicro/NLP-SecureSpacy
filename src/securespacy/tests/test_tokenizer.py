@@ -54,6 +54,7 @@ text = ('However, at the time of writing, we were unable to decrypt this file si
         'hmrc[.]covid[.]19-support-grant[.]com\n'
         'fund4-covid19[.]com\n'
         'furlough-grant[.]com\n'
+<<<<<<< HEAD
         'PeNet.Structures.MetaDataTables\n'         # Should be excluded
 """PUP/Win32.MyWebSearch.R133138
 PUP.WebToolbar.MyWebSearch
@@ -77,6 +78,9 @@ PE_SALITY.SM-O
 PE_SALITY.SM
 PE_PATCHED.ASA
 """
+=======
+        'furlough-grant.notatld\n'
+>>>>>>> 4870006ea574af8c2ef0f23bf0ed1d4172a44e18
         # 'dl[.]haqo[.]net/ins2.exez\n'
         # 'i[.]haqo[.]net/i.png\n'
         # 'ii[.]haqo[.]net/u.png\n'
