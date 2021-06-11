@@ -1,16 +1,21 @@
 Acrobat and Reader
-Adobe Acrobat Reader DC
 Adobe Acrobat
+Adobe Acrobat Reader DC
+Adobe Acrobat Reader DC
+Adobe Experience Manager
 Android
+Android Studio 3.0
 Antivirus for Mac
 Chakra Scripting Engine
+Cisco Prime Infrastructure
 ColdFusion
+Conpot
 DDI
-Deep Discovery Inspector
 Deep Discovery
+Deep Discovery Inspector
 Deep Discovery™ Email Inspector
-Deep Security and Vulnerability Protection
 Deep Security
+Deep Security and Vulnerability Protection
 DigitalVaccine
 Dropbox
 Elasticsearch
@@ -30,11 +35,12 @@ Hyper-V
 InterScan™ Web Security
 Internet Explorer
 IoT Security for Surveillance Cameras
+Mac OS X
 MacOS
 Maximum Security
 Maximum XGen™ security
-Microsoft Office 365
 Microsoft Office
+Microsoft Office 365
 Microsoft Outlook
 Mobile App Reputation Service
 Mobile Security Personal Edition
@@ -47,19 +53,23 @@ NSIS
 Network Defense Solution
 Network Intrusion Prevention System
 Nullsoft Scriptable Install System
+OfficeScan
 OfficeScan™ with XGen™
 OfficeScan™ with XGen™ endpoint security
-OfficeScan
+Playstation
 SharePoint
 Smart Home Network
 Smart Protection Network
-Smart Protection Suites and Worry-Free™ Business Security
 Smart Protection Suites
+Smart Protection Suites and Worry-Free™ Business Security
 Smart Protection for Endpoints
 Splunk
 TeamViewer
+Threat Encyclopedia
 Tomcat
+Virtual Girlfriend
 Vulnerability Protection
+WhatsApp
 WinSCP
 Windows 10
 Windows 7
@@ -68,7 +78,10 @@ Windows Defender
 Windows NT 4.0
 Windows Server 2008
 Windows Vista
+World of Warcraft
 Worry-Free Business Security
 Worry-Free™ Business Security
+Xbox
 YouTube
+iOS App Store ORG
 iPhone X

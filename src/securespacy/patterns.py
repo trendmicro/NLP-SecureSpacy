@@ -10,6 +10,8 @@ from .tokenizer import (
     TOOLS,
     ORGS,
     PRODUCTS,
+    VULNERABILITIES,
+    REGIONS,
 )
 
 
@@ -173,6 +175,8 @@ def add_entity_ruler_pipeline(nlp):
     matcher.add('CITY', nlp.tokenizer.pipe(CITIES))
     matcher.add('ORG', nlp.tokenizer.pipe(ORGS))
     matcher.add('MALWARE', nlp.tokenizer.pipe(MALWARE_CASED))
+    matcher.add('VULNERABILITY', nlp.tokenizer.pipe(VULNERABILITIES))
+    matcher.add('REGION', nlp.tokenizer.pipe(REGIONS))
 
 # Second PhraseMathcer for case insensitive terms :(
     i_matcher = PhraseMatcher(nlp.vocab, attr='LOWER')

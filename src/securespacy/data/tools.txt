@@ -7,3 +7,24 @@ rdp
 powershell
 bash
 xmrig
+AutoIt
+BinDiff
+Delphi
+Filezilla
+Gatekeeper
+Kotlin
+LaZagne
+Metasploit
+MultiPoolMiner
+Orca MSI Editor
+PPHelper
+PyInstaller
+RADMIN
+Sigrok
+Ssdeep
+Telegram
+Tor
+WinSCP
+Cymulate
+DefPloreX
+DefPloreX-NG

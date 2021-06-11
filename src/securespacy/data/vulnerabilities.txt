@@ -1,0 +1,15 @@
+BlueKeep
+DejaBlue
+EWorkFrenzy
+EternalBlue
+EternalChampion
+EternalRomance
+EternalSynergy
+Heartbleed
+Meltdown
+POODLE
+Poodle
+Shellshock
+Spectre
+Stagefright
+UAF

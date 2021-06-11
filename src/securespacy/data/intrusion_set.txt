@@ -84,7 +84,6 @@ Muhstik
 Spelevo
 Neuron
 Kasper
-Mirai
 Vermin
 HydSeven
 LockerGoga
@@ -136,7 +135,6 @@ Eli
 TeamXRat
 Babar
 Smominru
-Pakistan
 SamSa
 Olympic Destroyer
 WatchBog
@@ -435,3 +433,6 @@ Lizard Squad
 Team Poison
 Armada Collective
 Pawn Storm
+Fancy Bear
+Bluenoroff
+Patchwork

@@ -125,7 +125,7 @@ class TestTagger(TestCase):
             # '132[.]162[.]107[.]97/xmrig-32_1.mlz',
             # '139[.]162[.]107[.]97/h.bat',
         ],
-        "ORG": ['VirusTotal', 'TOR', 'VirusTotal', 'IP', 'IP', 'GrandSoft’s', 'IPv6'],
+        "ORG": ['VirusTotal', 'VirusTotal', 'IP', 'IP', 'IPv6'],
         "DATE": ['January to February 2019', 'June 2019'],
         "DOMAIN":  [
             'gmzera54l5qpa6lm.onion',
@@ -150,6 +150,8 @@ class TestTagger(TestCase):
             'Angler',
             'Rig',
             'StuxNet',
+            'Ascentor Loader',
+            'GrandSoft',
         ],
         "IP": [
             '10.2.13.1',
@@ -163,7 +165,6 @@ class TestTagger(TestCase):
             '2600:1408:5c00:1a9::356e/64',
             '2600:1408:5c00:198::356e'
         ],
-        "WORK_OF_ART": ['Ascentor Loader'],
         "EMAIL": ['joey_costoya@trendmicro.com', 'joey.costoya@trendmicro.com'],
         "HASH": [
             '71cfd7d692a301ac9bff0e1e7605e7c2',
@@ -186,7 +187,10 @@ class TestTagger(TestCase):
             'Saint Petersburg',
             'The Hague',
             'Nukuʻalofa',
-        ]
+        ],
+        "TOOL": [
+            'TOR',
+        ],
     }
 
     def test_entity_extractor(self):
