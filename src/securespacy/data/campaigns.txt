@@ -16,7 +16,6 @@ ShadowGate
 FIN6
 Outlaw
 KOVCOREG
-Lazarus
 Tropic Trooper
 Evil Eye
 MAGECART
@@ -34,9 +33,11 @@ OceanLotus
 PhantomLance
 RevengeHotels
 WildPressure
-MuddyWater
 Operation DRBControl
 Egregor
 NightScout
 Heatstroke
 WatchDog
+DustySky
+Operation Emmental
+Operation Huyao
