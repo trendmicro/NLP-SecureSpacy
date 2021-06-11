@@ -1,6 +1,50 @@
+Adobe Acrobat Reader DC
+Adobe Acrobat
+Android
+ColdFusion
+DDI
+Deep Discovery Inspector
+Deep Discovery
+Deep Security and Vulnerability Protection
+Deep Security
+DigitalVaccine
+DropBox
+Evernote
+Exchange Server
 Facebook Messenger
+Flash Player
 Google Chrome
-Mozilla Firefox
-YouTube
+Google Play Store
+Hosted Email Security
+Hybrid Cloud Security
 Internet Explorer
+IoT Security for Surveillance Cameras
+MacOS
+Microsoft Office 365
+Microsoft Office
+Microsoft Outlook
+Mobile App Reputation Service
+Mobile Security Personal Edition
+Mobile Security for Android
+Mobile Security for Enterprise
+MongoDB
+Mozilla Firefox
+Network Intrusion Prevention System
+OfficeScan™ with XGen™ endpoint security
+OfficeScan
 SharePoint
+Smart Home Network
+Smart Protection Network
+Smart Protection Suites
+TeamViewer
+WinSCP
+Windows 10
+Windows 7
+Windows 8
+Windows Defender
+Windows NT 4.0
+Windows Server 2008
+Windows Vista
+Worry-Free Business Security
+Worry-Free™ Business Security
+YouTube
