@@ -84,16 +84,6 @@ patterns = [
         ]
     },
     {
-        "label": "DOMAIN",
-        "pattern": [
-            {
-                "_": {
-                    "is_domain": True
-                }
-            }
-        ]
-    },
-    {
         "label": "EMAIL",
         "pattern": [
             {"LIKE_EMAIL": True},
@@ -155,6 +145,17 @@ patterns = [
             {
                 "_": {
                     "is_sha512": True
+                }
+            }
+        ]
+    },
+    {
+        "label": "DOMAIN",
+        "pattern": [
+            {
+                "_": {
+                    "is_domain": True,
+                    'is_detection': False,
                 }
             }
         ]
