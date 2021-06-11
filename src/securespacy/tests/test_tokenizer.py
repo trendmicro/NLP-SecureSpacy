@@ -56,28 +56,6 @@ text = ('However, at the time of writing, we were unable to decrypt this file si
         'fund4-covid19[.]com\n'
         'furlough-grant[.]com\n'
         'PeNet.Structures.MetaDataTables\n'         # Should be excluded
-"""PUP/Win32.MyWebSearch.R133138
-PUP.WebToolbar.MyWebSearch
-W32.HfsAdware.1166
-PUA.Mindsparki.Gen
-FLSourcing.AMSI.AllPSDownload.src
-OSX_REFOGKEYLOGGER.MSGKD15
-FLSourcing.AMSI.PowershellDownload
-HEUR_STATISTICS
-FLSourcing.AMSI.ScriptExecution
-BKDR_KILLAV.SMA
-Trojan.HTML.PHISH.SMMR
-Trojan.W97M.POWLOAD.SMRV08
-TROJ_GEN.R002C0PEL21
-HEUR_SWFOBF.B
-PUA.Win32.HaoZip.C
-PE_JEEFO.E
-HackTool.Win32.RAdmin
-HEUR_JS.O.ELBP
-PE_SALITY.SM-O
-PE_SALITY.SM
-PE_PATCHED.ASA
-"""
         'furlough-grant.notatld\n'
         'fb.com paypal.com, not paypal.co.uk \n'
         # 'dl[.]haqo[.]net/ins2.exez\n'
@@ -163,14 +141,16 @@ class TestTagger(TestCase):
             'paypal.co.uk'
         ],
         "ORDINAL": ['first', 'second'],
-        "MALWARE": ['Trojan.MacOS.GMERA.B', 'TROJ_DLOADR.SULQ', 'Win32.Virlock.A', 'Win64.Virlock.A',
-                    'PUP/Win32.MyWebSearch.R133138', 'PUP.WebToolbar.MyWebSearch', 'W32.HfsAdware.1166',
-                    'PUA.Mindsparki.Gen', 'FLSourcing.AMSI.AllPSDownload.src', 'OSX_REFOGKEYLOGGER.MSGKD15', 
-                    'FLSourcing.AMSI.PowershellDownload', 'HEUR_STATISTICS', 'FLSourcing.AMSI.ScriptExecution',
-                    'BKDR_KILLAV.SMA', 'Trojan.HTML.PHISH.SMMR', 'Trojan.W97M.POWLOAD.SMRV08', 'TROJ_GEN.R002C0PEL21', 
-                    'HEUR_SWFOBF.B', 'PUA.Win32.HaoZip.C', 'PE_JEEFO.E', 'HackTool.Win32.RAdmin', 'HEUR_JS.O.ELBP', 
-                    'PE_SALITY.SM', 'PE_SALITY.SM-O', 'PE_PATCHED.ASA', 'TROJ_DLOADR',
-                    'StuxNet', 'Angler', 'Rig', ],
+        "MALWARE": [
+            'Trojan.MacOS.GMERA.B',
+            'TROJ_DLOADR.SULQ',
+            'TROJ_DLOADR',
+            'Win32.Virlock.A',
+            'Win64.Virlock.A',
+            'Angler',
+            'Rig',
+            'StuxNet',
+        ],
         "IP": [
             '10.2.13.1',
             '192.168.2.14',
@@ -233,6 +213,151 @@ class TestTagger(TestCase):
             print()
             self.assertTrue( entity.text in self.expected_results[entity.label_] )
 
+
+    def conditionals(self, text, expected_results):
+
+        doc = self.nlp(text)
+        label_counts = Counter([ent.label_ for ent in doc.ents])
+
+        for key in expected_results:
+            print(f"{key} in extracted entity types")
+            self.assertTrue(key in label_counts)
+
+        for label in label_counts:
+            print(f"expected {len(expected_results[label]):02} {label}: {expected_results[label]}")
+            print(f"got      {len([ent.text for ent in doc.ents if ent.label_ == label]):02} {label}: {[ent.text for ent in doc.ents if ent.label_ == label]}")
+            print()
+            self.assertTrue(len(expected_results[label]) == label_counts[label])
+
+        print("----------\n")
+
+        for entity in doc.ents:
+            print(f"expected: {entity.label_}: {expected_results[entity.label_]}")
+            print(f"got:      {entity.label_}: {entity.text}")
+            print()
+            self.assertTrue( entity.text in expected_results[entity.label_] )
+
+
+    def test_extraction_malware(self):
+        """Tests for extracting malware entities
+        """
+
+        text = """bunch of malware detection names:
+detected as Trojan.MacOS.GMERA.B
+TROJ_DLOADR.SULQ or TROJ_DLOADR
+Win32.Virlock.A and Win64.Virlock.A
+PUP/Win32.MyWebSearch.R133138
+PUP.WebToolbar.MyWebSearch
+W32.HfsAdware.1166
+PUA.Mindsparki.Gen
+FLSourcing.AMSI.AllPSDownload.src
+OSX_REFOGKEYLOGGER.MSGKD15
+FLSourcing.AMSI.PowershellDownload
+HEUR_STATISTICS
+FLSourcing.AMSI.ScriptExecution
+BKDR_KILLAV.SMA
+Trojan.HTML.PHISH.SMMR
+Trojan.W97M.POWLOAD.SMRV08
+TROJ_GEN.R002C0PEL21
+HEUR_SWFOBF.B
+PUA.Win32.HaoZip.C
+PE_JEEFO.E
+HackTool.Win32.RAdmin
+HEUR_JS.O.ELBP
+PE_SALITY.SM
+PE_SALITY.SM-O
+PE_PATCHED.ASA
+StuxNet
+Angler
+Rig
+"""
+        expected_results = {
+            "MALWARE": [
+                'Trojan.MacOS.GMERA.B',
+                'TROJ_DLOADR.SULQ',
+                'TROJ_DLOADR',
+                'Win32.Virlock.A',
+                'Win64.Virlock.A',
+                'PUP/Win32.MyWebSearch.R133138',
+                'PUP.WebToolbar.MyWebSearch',
+                'W32.HfsAdware.1166',
+                'PUA.Mindsparki.Gen',
+                'FLSourcing.AMSI.AllPSDownload.src',
+                'OSX_REFOGKEYLOGGER.MSGKD15',
+                'FLSourcing.AMSI.PowershellDownload',
+                'HEUR_STATISTICS',
+                'FLSourcing.AMSI.ScriptExecution',
+                'BKDR_KILLAV.SMA',
+                'Trojan.HTML.PHISH.SMMR',
+                'Trojan.W97M.POWLOAD.SMRV08',
+                'TROJ_GEN.R002C0PEL21',
+                'HEUR_SWFOBF.B',
+                'PUA.Win32.HaoZip.C',
+                'PE_JEEFO.E',
+                'HackTool.Win32.RAdmin',
+                'HEUR_JS.O.ELBP',
+                'PE_SALITY.SM',
+                'PE_SALITY.SM-O',
+                'PE_PATCHED.ASA',
+                'StuxNet',
+                'Angler',
+                'Rig',
+            ],
+        }
+
+        self.conditionals(text, expected_results)
+
+
+
+    def test_extraction_domains(self):
+        """Tests for extracting domain entities
+        """
+
+        text = """These are domains:
+gmzera54l5qpa6lm.onion
+gmzera54l5qpa6lm[.]onion
+de.gengine[.]com.de
+de.gsearch[.]com.de
+global.bitmex[.]com.de
+hmrc[.]covid[.]19-support-grant[.]com
+fund4-covid19[.]com
+furlough-grant[.]com
+fb.com
+paypal.com
+paypal.co.uk
+"""
+
+        expected_results = {
+            "DOMAIN":  [
+                'gmzera54l5qpa6lm.onion',
+                'gmzera54l5qpa6lm[.]onion',
+                'de.gengine[.]com.de',
+                'de.gsearch[.]com.de',
+                'global.bitmex[.]com.de',
+                'hmrc[.]covid[.]19-support-grant[.]com',
+                'fund4-covid19[.]com',
+                'furlough-grant[.]com',
+                'fb.com',
+                'paypal.com',
+                'paypal.co.uk',
+            ],
+        }
+
+        self.conditionals(text, expected_results)
+
+
+    def test_extraction_negative(self):
+        """Put text here that are not supposed to be extracted
+        """
+
+        text = """The following text should not be recognized as entities:
+'PeNet.Structures.MetaDataTables
+this.domain.does.not.exist
+"""
+
+        expected_results = []
+
+        self.conditionals(text, expected_results)
 
 
 if __name__ == "__main__":
