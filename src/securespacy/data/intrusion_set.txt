@@ -82,7 +82,6 @@ Redaman
 Temper Panda
 Muhstik
 Spelevo
-Iran
 Neuron
 Kasper
 Mirai
@@ -105,7 +104,6 @@ FullofDeep
 Infy
 GhostCringe
 Storm Cloud
-Coinhive
 NanHaiShu
 hagga
 Urpage
@@ -433,3 +431,7 @@ SideWinder
 Lazarus Group
 Agent Tesla
 CryptXXX
+Lizard Squad
+Team Poison
+Armada Collective
+Pawn Storm

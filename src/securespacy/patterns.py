@@ -9,6 +9,7 @@ from .tokenizer import (
     MALWARE_CASED,
     TOOLS,
     ORGS,
+    PRODUCTS,
 )
 
 
@@ -179,6 +180,7 @@ def add_entity_ruler_pipeline(nlp):
     i_matcher.add('MALWARE', nlp.tokenizer.pipe(MALWARE))
     i_matcher.add('TOOL', nlp.tokenizer.pipe(TOOLS))
     i_matcher.add('CAMPAIGN', nlp.tokenizer.pipe(CAMPAIGNS))
+    i_matcher.add('PRODUCT', nlp.tokenizer.pipe(PRODUCTS))
 
     rulers[0].add_patterns(patterns)
     rulers[1].phrase_matcher = matcher

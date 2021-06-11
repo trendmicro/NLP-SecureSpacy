@@ -37,6 +37,9 @@ with open(os.path.join(pwd, "data", "tools.txt"), "r") as fh:
 with open(os.path.join(pwd, "data", "orgs.txt"), "r") as fh:
     ORGS = [l.strip() for l in fh]
 
+with open(os.path.join(pwd, "data", "products.txt"), "r") as fh:
+    PRODUCTS = [l.strip() for l in fh]
+
 def token_match(text):
     if text.lower == "circus spider":
         return True
