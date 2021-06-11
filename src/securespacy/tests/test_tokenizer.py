@@ -25,7 +25,7 @@ text = ('However, at the time of writing, we were unable to decrypt this file si
         'fa7fe0a7271b3b07ed4fdfa7a59298527f57f11511b6699bc80f9ded7f11ad06  corpus/trendBlogDocs.json\n'
         '90f9fe128f01562b5d87565ac669cf8ff4883f07abf6a56ec074cc7a8b0f3411343ce8aef6fe07afb511ddc811ed06997a1a1e7c451303e390aff72753581615  corpus/trendBlogDocs.json\n'
         '71cfd7d692a301ac9bff0e1e7605e7c2  corpus/trendBlogDocs.json\n'
-        'These are cve numbers: CVE-1999-2012 CVE-2004-0003 CVE-2021-26855\n'
+        'These are cve numbers: CVE-1999-2012 CVE-2004-0003 CVE-2021-26855 MS-10-017\n'
         'Meanwhile, CIRCUS SPIDER and Wolf Research are in the house.\n'
         'Additional detections: Win32.Virlock.A and Win64.Virlock.A and not a valid detection Win65.Virlock.A\n'
         'These strings 103[.]5.3.123 63.234[.]34.2 90.234.51[.]5 9[.]9[.]9[.]9 9{.}9{.}9{.}9 are examples of obfuscated ipaddresses.\n'
@@ -171,7 +171,7 @@ class TestTagger(TestCase):
             'fa7fe0a7271b3b07ed4fdfa7a59298527f57f11511b6699bc80f9ded7f11ad06',
             '90f9fe128f01562b5d87565ac669cf8ff4883f07abf6a56ec074cc7a8b0f3411343ce8aef6fe07afb511ddc811ed06997a1a1e7c451303e390aff72753581615'
         ],
-        "CVE": ['CVE-1999-2012', 'CVE-2004-0003', 'CVE-2021-26855'],
+        "CVE": ['CVE-1999-2012', 'CVE-2004-0003', 'CVE-2021-26855', 'MS-10-017'],
         "INTRUSION_SET": ['CIRCUS SPIDER', 'Wolf Research'],
         "COUNTRY": [
             'Taiwan',
