@@ -148,7 +148,7 @@ def is_domain(token):
     text = text.replace('[.]', '.').replace('{.}', '.')
 
     # XXX: I thought regex solves it.
-    if text.find('_'):
+    if text.find('_') != -1:
         return False
 
     # Special cases
