@@ -431,3 +431,5 @@ FIN8
 VICIOUS PANDA
 SideWinder
 Lazarus Group
+Agent Tesla
+CryptXXX
