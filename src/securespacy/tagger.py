@@ -147,6 +147,10 @@ def is_domain(token):
     # if domain is obfuscated with [.]
     text = text.replace('[.]', '.').replace('{.}', '.')
 
+    # XXX: I thought regex solves it.
+    if text.find('_'):
+        return False
+
     # Special cases
     for suffix in ['.sh', '.zip']:
         if text.endswith(suffix):

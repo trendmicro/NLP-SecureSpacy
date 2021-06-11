@@ -28,6 +28,9 @@ with open(os.path.join(pwd, "data", "campaigns.txt"), "r") as fh:
 with open(os.path.join(pwd, "data", "malware.txt"), "r") as fh:
     MALWARE = [l.strip() for l in fh]
 
+with open(os.path.join(pwd, "data", "malware-cased.txt"), "r") as fh:
+    MALWARE_CASED = [l.strip() for l in fh]
+
 with open(os.path.join(pwd, "data", "tools.txt"), "r") as fh:
     TOOLS = [l.strip() for l in fh]
 

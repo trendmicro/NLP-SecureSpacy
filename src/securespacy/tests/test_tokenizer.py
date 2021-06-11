@@ -34,6 +34,7 @@ text = ('However, at the time of writing, we were unable to decrypt this file si
         'Cities in lower case like taipei, manila, san jose should no longer be extracted.\n'
         'Detection names in lower case like tspy_gammarue.a should not be detected, either.\n'
         'Malware deploys newinit.sh in /var/lib/www/ and extracts download.zip to directories\n'
+        'Several exploit kits: Angler EK, Rig EK. StuxNet is an old malware.\n'
         'https://appstockfolio.com/panel/upload.com?asdf=adf#werss\n'
         'hxxp://drivestransfer.com\n'
         'hxxp://drivestransfer[.]com\n'
@@ -164,7 +165,8 @@ class TestTagger(TestCase):
                     'FLSourcing.AMSI.PowershellDownload', 'HEUR_STATISTICS', 'FLSourcing.AMSI.ScriptExecution',
                     'BKDR_KILLAV.SMA', 'Trojan.HTML.PHISH.SMMR', 'Trojan.W97M.POWLOAD.SMRV08', 'TROJ_GEN.R002C0PEL21', 
                     'HEUR_SWFOBF.B', 'PUA.Win32.HaoZip.C', 'PE_JEEFO.E', 'HackTool.Win32.RAdmin', 'HEUR_JS.O.ELBP', 
-                    'PE_SALITY.SM', 'PE_SALITY.SM-O', 'PE_PATCHED.ASA', 'TROJ_DLOADR'],
+                    'PE_SALITY.SM', 'PE_SALITY.SM-O', 'PE_PATCHED.ASA', 'TROJ_DLOADR',
+                    'StuxNet', 'Angler', 'Rig', ],
         "IP": [
             '10.2.13.1',
             '192.168.2.14',
