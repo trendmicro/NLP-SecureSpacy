@@ -79,6 +79,7 @@ PE_SALITY.SM
 PE_PATCHED.ASA
 """
         'furlough-grant.notatld\n'
+        'fb.com paypal.com, not paypal.co.uk \n'
         # 'dl[.]haqo[.]net/ins2.exez\n'
         # 'i[.]haqo[.]net/i.png\n'
         # 'ii[.]haqo[.]net/u.png\n'
@@ -157,6 +158,9 @@ class TestTagger(TestCase):
             'hmrc[.]covid[.]19-support-grant[.]com',
             'fund4-covid19[.]com',
             'furlough-grant[.]com',
+            'fb.com',
+            'paypal.com',
+            'paypal.co.uk'
         ],
         "ORDINAL": ['first', 'second'],
         "MALWARE": ['Trojan.MacOS.GMERA.B', 'TROJ_DLOADR.SULQ', 'Win32.Virlock.A', 'Win64.Virlock.A',
@@ -201,7 +205,7 @@ class TestTagger(TestCase):
             'Manila',
             'Saint Petersburg',
             'The Hague',
-            'Nukuʻalofa'
+            'Nukuʻalofa',
         ]
     }
 
@@ -210,6 +214,11 @@ class TestTagger(TestCase):
         doc = self.nlp(text)
 
         label_counts = Counter([ent.label_ for ent in doc.ents])
+
+        for key in self.expected_results:
+            print(f"{key} in extracted entity types")
+            self.assertTrue(key in label_counts)
+
         for label in label_counts:
             print(f"expected {len(self.expected_results[label]):02} {label}: {self.expected_results[label]}")
             print(f"got      {len([ent.text for ent in doc.ents if ent.label_ == label]):02} {label}: {[ent.text for ent in doc.ents if ent.label_ == label]}")
@@ -223,6 +232,7 @@ class TestTagger(TestCase):
             print(f"got:      {entity.label_}: {entity.text}")
             print()
             self.assertTrue( entity.text in self.expected_results[entity.label_] )
+
 
 
 if __name__ == "__main__":
