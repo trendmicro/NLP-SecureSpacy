@@ -35,6 +35,7 @@ text = ('However, at the time of writing, we were unable to decrypt this file si
         'Detection names in lower case like tspy_gammarue.a should not be detected, either.\n'
         'Malware deploys newinit.sh in /var/lib/www/ and extracts download.zip to directories\n'
         'Several exploit kits: Angler EK, Rig EK. StuxNet is an old malware.\n'
+        'Trend Micro Deep Discovery Inspector\n'
         'https://appstockfolio.com/panel/upload.com?asdf=adf#werss\n'
         'hxxp://drivestransfer.com\n'
         'hxxp://drivestransfer[.]com\n'
@@ -125,7 +126,7 @@ class TestTagger(TestCase):
             # '132[.]162[.]107[.]97/xmrig-32_1.mlz',
             # '139[.]162[.]107[.]97/h.bat',
         ],
-        "ORG": ['VirusTotal', 'VirusTotal', 'IP', 'IP', 'IPv6'],
+        "ORG": ['VirusTotal', 'VirusTotal', 'IP', 'IP', 'IPv6', 'Trend Micro'],
         "DATE": ['January to February 2019', 'June 2019'],
         "DOMAIN":  [
             'gmzera54l5qpa6lm.onion',
@@ -190,6 +191,9 @@ class TestTagger(TestCase):
         ],
         "TOOL": [
             'TOR',
+        ],
+        'PRODUCT': [
+            'Deep Discovery Inspector',
         ],
     }
 
