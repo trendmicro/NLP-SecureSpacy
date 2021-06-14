@@ -166,7 +166,7 @@ patterns = [
 def add_entity_ruler_pipeline(nlp):
     rulers = []
     for pipe in ['entity_ruler_regex', 'entity_ruler_case_sensitive', 'entity_ruler_case_insensitive']:
-        if pipe in nlp.pipe_names:
+        if pipe in nlp.component_names:
             nlp.remove_pipe(pipe)
         rulers.append(nlp.add_pipe("entity_ruler", name=pipe, config=config))
 
