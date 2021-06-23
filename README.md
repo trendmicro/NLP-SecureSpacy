@@ -56,9 +56,17 @@ COUNTRY         Philippines
 securespacy can be used with Flair. The API is slightly different.
 
 ```python
+from flair.models import SequenceTagger
+from securespacy.flair import SecureSpacyFlairWrapper
+
+tagger = SequenceTagger.load('ner')
 wrapper = SecureSpacyFlairWrapper()
 text = 'We were able to find a second variant (detected as Trojan.MacOS.GMERA.B) that was uploaded to VirusTotal.'
-sentence = self.wrapper.flair_sentence(text)
+sentence = wrapper.tokenizer(text)
+model.predict(sentence)
+sent = wrapper.phrase_matcher(sent)
+for ent in sent.get_spans('ner'):
+    print(ent)
 ```
 
 The type of sentence is `flair.data.sentence`.
