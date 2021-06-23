@@ -77,7 +77,7 @@ class SecureSpacyFlairWrapper():
                         else:
                             sent[i].add_tag('ner', f'B-{label}')
                             for j in range(1, len(xs) - 1):
-                                sentence[i+j].add_tag('ner', f'I-{label}')
+                                sent[i+j].add_tag('ner', f'I-{label}')
                             sent[i+len(xs)-1].add_tag('ner', f'E-{label}')
                             i += len(xs)
                 else:
