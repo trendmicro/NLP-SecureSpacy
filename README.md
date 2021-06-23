@@ -57,15 +57,16 @@ securespacy can be used with Flair. The API is slightly different.
 
 ```python
 from flair.models import SequenceTagger
+from flair.data import Sentence
 from securespacy.flair import SecureSpacyFlairWrapper
 
 tagger = SequenceTagger.load('ner')
 wrapper = SecureSpacyFlairWrapper()
+sentence = Sentence(text, use_tokenizer=wrapper.tokenizer)
 text = 'We were able to find a second variant (detected as Trojan.MacOS.GMERA.B) that was uploaded to VirusTotal.'
-sentence = wrapper.tokenizer(text)
 model.predict(sentence)
-sent = wrapper.phrase_matcher(sent)
-for ent in sent.get_spans('ner'):
+wrapper.phrase_matcher(sentence)
+for ent in sentence.get_spans('ner'):
     print(ent)
 ```
 

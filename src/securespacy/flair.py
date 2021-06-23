@@ -52,9 +52,19 @@ class SecureSpacyFlairWrapper():
         self.model.tokenizer = custom_tokenizer(self.model)
 
     def tokenizer(self, text):
-        t = ' '.join(text.split())
-        doc = self.model(t)
-        return Sentence([x.text for x in doc])
+        from flair.data import Token
+        previous_token = None
+        tokens = []
+        doc = self.model(text)
+        for word in doc:
+            if len(word.text.strip()) == 0:
+                continue
+            token = Token(text=word.text, start_position=word.idx, whitespace_after=True)
+            tokens.append(token)
+            if previous_token is not None and token.start_pos == previous_token.start_pos + len(previous_token.text):
+                previous_token.whitespace_after = False
+            previous_token = token
+        return tokens
     
     def phrase_matcher_internal(self, sent, dictionary, label, cased):
         if cased:
@@ -103,8 +113,3 @@ class SecureSpacyFlairWrapper():
         for label, dictionary in self.PHRASE_MATCHER_UNCASED.items():
             sentence = self.phrase_matcher_internal(sentence, dictionary, label, False)
         return sentence
-    
-    def flair_sentence(self, text):
-        s1 = self.tokenizer(text)
-        s2 = self.phrase_matcher(s1)
-        return s2
