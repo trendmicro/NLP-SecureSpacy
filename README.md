@@ -51,5 +51,17 @@ CITY            Manila
 COUNTRY         Philippines
 ```
 
+## Flair Wrapper
+
+securespacy can be used with Flair. The API is slightly different.
+
+```python
+wrapper = SecureSpacyFlairWrapper()
+text = 'We were able to find a second variant (detected as Trojan.MacOS.GMERA.B) that was uploaded to VirusTotal.'
+sentence = self.wrapper.flair_sentence(text)
+```
+
+The type of sentence is `flair.data.sentence`.
+
 ## References
 - https://spacy.io/usage/rule-based-matching#entityruler
