@@ -27,5 +27,12 @@ class TestFlairWrapper(unittest.TestCase):
         self.assertEqual(sentence[121].get_tag('ner').value, 'S-MALWARE')
         self.assertEqual(sentence[123].get_tag('ner').value, 'S-MALWARE')
 
+    def test_three_labels(self):
+        text = 'This is dubbed as Operation Poison Needle.'
+        sentence = self.wrapper.flair_sentence(text)
+        self.assertEqual(sentence[4].get_tag('ner').value, 'B-CAMPAIGN')
+        self.assertEqual(sentence[5].get_tag('ner').value, 'I-CAMPAIGN')
+        self.assertEqual(sentence[6].get_tag('ner').value, 'E-CAMPAIGN')
+
 if __name__ == "__main__":
     unittest.main()
