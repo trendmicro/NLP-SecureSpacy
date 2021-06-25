@@ -1,3 +1,4 @@
+Adobe Acrobat and Reader
 Acrobat and Reader
 Adobe Acrobat
 Adobe Acrobat Reader DC
@@ -11,11 +12,21 @@ Cisco Prime Infrastructure
 ColdFusion
 Conpot
 DDI
-Deep Discovery
+Trend Micro™ Deep Discovery Inspector
+Trend Micro™ Deep Discovery™ Email Inspector
+Trend Micro™ Deep Discovery
+Trend Micro™ Deep Security and Vulnerability Protection
+Trend Micro™ Deep Security
+Trend Micro Deep Discovery Inspector
+Trend Micro Deep Discovery™ Email Inspector
+Trend Micro Deep Discovery
+Trend Micro Deep Security and Vulnerability Protection
+Trend Micro Deep Security
 Deep Discovery Inspector
 Deep Discovery™ Email Inspector
-Deep Security
+Deep Discovery
 Deep Security and Vulnerability Protection
+Deep Security
 DigitalVaccine
 Dropbox
 Elasticsearch
@@ -23,14 +34,21 @@ Email Reputation Services
 Evernote
 Exchange Server
 Facebook Messenger
+Adobe Flash Player
 Flash Player
-Google Chrome
 Google Play Store
+Google Play
+Google Chrome
+Trend Micro™ Home Network Security
+Trend Micro™ Home Security for Mac
 Home Network Security
 Home Security for Mac
 Hosted Email Security
+Trend Micro™ HouseCall™ for Home Networks
 HouseCall™ for Home Networks
+Trend Micro™ Hybrid Cloud Security
 Hybrid Cloud Security
+Microsoft Hyper-V
 Hyper-V
 InterScan™ Web Security
 Internet Explorer
@@ -39,9 +57,15 @@ Mac OS X
 MacOS
 Maximum Security
 Maximum XGen™ security
-Microsoft Office
+Microsoft Exchange Server
 Microsoft Office 365
+Microsoft Office
 Microsoft Outlook
+Trend Micro Mobile App Reputation Service
+Trend Micro Mobile Security Personal Edition
+Trend Micro Mobile Security Solutions
+Trend Micro Mobile Security for Android
+Trend Micro Mobile Security for Enterprise
 Mobile App Reputation Service
 Mobile Security Personal Edition
 Mobile Security Solutions
@@ -49,16 +73,23 @@ Mobile Security for Android
 Mobile Security for Enterprise
 MongoDB
 Mozilla Firefox
+Firefox
 NSIS
 Network Defense Solution
 Network Intrusion Prevention System
 Nullsoft Scriptable Install System
-OfficeScan
-OfficeScan™ with XGen™
+Trend Micro™ OfficeScan™ with XGen™ endpoint security
+Trend Micro™ OfficeScan™ with XGen™
+Trend Micro OfficeScan
 OfficeScan™ with XGen™ endpoint security
+OfficeScan™ with XGen™
+OfficeScan
+Sony Playstation
 Playstation
 SharePoint
+Trend Micro Smart Home Network
 Smart Home Network
+Trend Micro Smart Protection Network
 Smart Protection Network
 Smart Protection Suites
 Smart Protection Suites and Worry-Free™ Business Security
@@ -79,9 +110,12 @@ Windows NT 4.0
 Windows Server 2008
 Windows Vista
 World of Warcraft
+Trend Micro Worry-Free Business Security
 Worry-Free Business Security
+Trend Micro™ Worry-Free™ Business Security
 Worry-Free™ Business Security
 Xbox
 YouTube
-iOS App Store ORG
+iOS App Store
+Apple iPhone X
 iPhone X
