@@ -42,3 +42,5 @@ DustySky
 Operation Emmental
 Operation Huyao
 EITest
+Arid Viper
+Advtravel

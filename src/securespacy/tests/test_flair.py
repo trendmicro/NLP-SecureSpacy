@@ -47,5 +47,12 @@ class TestFlairWrapper(unittest.TestCase):
         self.assertEqual(sentence.get_spans('ner')[0].start_pos, 18)
         self.assertEqual(sentence.get_spans('ner')[0].end_pos, 41)
 
+    def test_corner_cases(self):
+        text = 'St. Petersburg is a big city.'
+        sentence = Sentence(text, use_tokenizer=self.wrapper.tokenizer)
+        self.wrapper.phrase_matcher(sentence)
+        self.assertEqual(sentence.get_spans('ner')[0].start_pos, 0)
+        self.assertEqual(sentence.get_spans('ner')[0].end_pos, 14)
+
 if __name__ == "__main__":
     unittest.main()

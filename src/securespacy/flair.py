@@ -45,6 +45,7 @@ class SecureSpacyFlairWrapper():
         'CAMPAIGN': CAMPAIGNS,
         'PRODUCT': PRODUCTS,
     }
+    tokenized_text = {}
     
     def __init__(self, spacy_model='en_core_web_sm'):
         if self.model is None:
@@ -68,11 +69,15 @@ class SecureSpacyFlairWrapper():
     
     def phrase_matcher_internal(self, sent, dictionary, label, cased):
         if cased:
-            cmp = lambda x,y: x.text == y
+            cmp = lambda x,y: x.text == y.text
         else:
-            cmp = lambda x,y: x.text.casefold() == y.casefold()
+            cmp = lambda x,y: x.text.casefold() == y.text.casefold()
+        p = False
         for x in dictionary:
-            xs = x.strip().split()
+            # accelerator
+            if x not in self.tokenized_text:
+                self.tokenized_text[x] = self.tokenizer(x)
+            xs = self.tokenized_text[x]
             i = 0
             while i < len(sent):
                 if sent[i].get_tag('ner').value != '':          # Prevent overlapping labels
