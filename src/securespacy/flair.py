@@ -75,6 +75,9 @@ class SecureSpacyFlairWrapper():
             xs = x.strip().split()
             i = 0
             while i < len(sent):
+                if sent[i].get_tag('ner').value != '':          # Prevent overlapping labels
+                    i += 1
+                    continue
                 if cmp(sent[i], xs[0]):
                     if len(xs) == 1:
                         sent[i].add_tag('ner', f'S-{label}')
