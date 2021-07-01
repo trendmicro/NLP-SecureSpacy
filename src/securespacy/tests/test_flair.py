@@ -47,6 +47,14 @@ class TestFlairWrapper(unittest.TestCase):
         self.assertEqual(sentence.get_spans('ner')[0].start_pos, 18)
         self.assertEqual(sentence.get_spans('ner')[0].end_pos, 41)
 
+    def test_emails(self):
+        text = 'Test email address: abcd.efgh@gmail.com  myname+tag@gmail.com  ccc@ccc.de etc.'
+        sentence = Sentence(text, use_tokenizer=self.wrapper.tokenizer)
+        self.wrapper.phrase_matcher(sentence)
+        self.assertEqual(sentence[4].get_tag('ner').value, 'S-EMAIL')
+        self.assertEqual(sentence[5].get_tag('ner').value, 'S-EMAIL')
+        self.assertEqual(sentence[6].get_tag('ner').value, 'S-EMAIL')
+
     def test_corner_cases(self):
         text = 'St. Petersburg is a big city.'
         sentence = Sentence(text, use_tokenizer=self.wrapper.tokenizer)

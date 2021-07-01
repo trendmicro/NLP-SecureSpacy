@@ -1,3 +1,4 @@
+import re
 import spacy
 from flair.data import Sentence
 from .tagger import (
@@ -27,6 +28,12 @@ from .tokenizer import (
     REGIONS,
 )
 
+
+# cf.: https://stackoverflow.com/questions/201323/how-to-validate-an-email-address-using-a-regular-expression
+EMAIL_REGEX = re.compile(r"""(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9]))\.){3}(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9])|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])""", re.I | re.UNICODE)
+
+def is_email(tok):
+    return EMAIL_REGEX.match(tok.text)
 
 class SecureSpacyFlairWrapper():
     model = None
@@ -116,6 +123,8 @@ class SecureSpacyFlairWrapper():
                 tok.add_tag('ner', 'S-HASH')
             elif is_domain(tok):  # implied NOT is_detection()
                 tok.add_tag('ner', 'S-DOMAIN')
+            elif is_email(tok):
+                tok.add_tag('ner', 'S-EMAIL')
         for label, dictionary in self.PHRASE_MATCHER_CASED.items():
             sentence = self.phrase_matcher_internal(sentence, dictionary, label, True)
         for label, dictionary in self.PHRASE_MATCHER_UNCASED.items():
