@@ -75,6 +75,7 @@ class SecureSpacyFlairWrapper():
         return tokens
     
     def phrase_matcher_internal(self, sent, dictionary, label, cased):
+        OVERLAP_LABELS = ['', 'O', 'S-LOC', 'B-LOC', 'I-LOC', 'E-LOC']
         if cased:
             cmp = lambda x,y: x.text == y.text
         else:
@@ -87,7 +88,7 @@ class SecureSpacyFlairWrapper():
             xs = self.tokenized_text[x]
             i = 0
             while i < len(sent):
-                if sent[i].get_tag('ner').value != '':          # Prevent overlapping labels
+                if sent[i].get_tag('ner').value not in OVERLAP_LABELS:
                     i += 1
                     continue
                 if cmp(sent[i], xs[0]):

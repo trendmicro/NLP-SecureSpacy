@@ -37,6 +37,19 @@ class TestFlairWrapper(unittest.TestCase):
         self.assertEqual(sentence[123].start_pos, 734)
         self.assertEqual(sentence[123].end_pos, 745)
 
+    def test_phrase_matcher_2(self):
+        from flair.models import SequenceTagger
+        text = 'Although the identities and motivations of the actors behind the campaign have yet to be identified, we have found that the command-and-control (C&C) servers used in this campaign were located in four countries: Taiwan (43% of the servers), USA (36%), Hong Kong (14%) and the UAE (7%).'
+        sentence = Sentence(text, use_tokenizer=self.wrapper.tokenizer)
+        model = SequenceTagger.load('ner')
+        model.predict(sentence)
+        self.wrapper.phrase_matcher(sentence)
+        self.assertEqual(sentence[37].get_tag('ner').value, 'S-COUNTRY')
+        self.assertEqual(sentence[46].get_tag('ner').value, 'S-COUNTRY')
+        self.assertEqual(sentence[52].get_tag('ner').value, 'B-CITY')
+        self.assertEqual(sentence[53].get_tag('ner').value, 'E-CITY')
+        self.assertEqual(sentence[60].get_tag('ner').value, 'S-COUNTRY')
+
     def test_three_labels(self):
         text = 'This is dubbed as Operation Poison Needle.'
         sentence = Sentence(text, use_tokenizer=self.wrapper.tokenizer)
