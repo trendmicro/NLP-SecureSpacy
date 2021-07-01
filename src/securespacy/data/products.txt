@@ -12,18 +12,18 @@ Cisco Prime Infrastructure
 ColdFusion
 Conpot
 DDI
-Trend Micro™ Deep Discovery Inspector
-Trend Micro™ Deep Discovery™ Email Inspector
-Trend Micro™ Deep Discovery
-Trend Micro™ Deep Security and Vulnerability Protection
-Trend Micro™ Deep Security
+Trend Micro ™ Deep Discovery Inspector
+Trend Micro ™ Deep Discovery ™ Email Inspector
+Trend Micro ™ Deep Discovery
+Trend Micro ™ Deep Security and Vulnerability Protection
+Trend Micro ™ Deep Security
 Trend Micro Deep Discovery Inspector
-Trend Micro Deep Discovery™ Email Inspector
+Trend Micro Deep Discovery ™ Email Inspector
 Trend Micro Deep Discovery
 Trend Micro Deep Security and Vulnerability Protection
 Trend Micro Deep Security
 Deep Discovery Inspector
-Deep Discovery™ Email Inspector
+Deep Discovery ™ Email Inspector
 Deep Discovery
 Deep Security and Vulnerability Protection
 Deep Security
@@ -39,24 +39,24 @@ Flash Player
 Google Play Store
 Google Play
 Google Chrome
-Trend Micro™ Home Network Security
-Trend Micro™ Home Security for Mac
+Trend Micro ™ Home Network Security
+Trend Micro ™ Home Security for Mac
 Home Network Security
 Home Security for Mac
 Hosted Email Security
-Trend Micro™ HouseCall™ for Home Networks
-HouseCall™ for Home Networks
-Trend Micro™ Hybrid Cloud Security
+Trend Micro ™ HouseCall ™ for Home Networks
+HouseCall ™ for Home Networks
+Trend Micro ™ Hybrid Cloud Security
 Hybrid Cloud Security
 Microsoft Hyper-V
 Hyper-V
-InterScan™ Web Security
+InterScan ™ Web Security
 Internet Explorer
 IoT Security for Surveillance Cameras
 Mac OS X
 MacOS
 Maximum Security
-Maximum XGen™ security
+Maximum XGen ™ security
 Microsoft Exchange Server
 Microsoft Office 365
 Microsoft Office
@@ -78,11 +78,11 @@ NSIS
 Network Defense Solution
 Network Intrusion Prevention System
 Nullsoft Scriptable Install System
-Trend Micro™ OfficeScan™ with XGen™ endpoint security
-Trend Micro™ OfficeScan™ with XGen™
+Trend Micro ™ OfficeScan ™ with XGen ™ endpoint security
+Trend Micro ™ OfficeScan ™ with XGen ™
 Trend Micro OfficeScan
-OfficeScan™ with XGen™ endpoint security
-OfficeScan™ with XGen™
+OfficeScan ™ with XGen ™ endpoint security
+OfficeScan ™ with XGen ™
 OfficeScan
 Sony Playstation
 Playstation
@@ -92,7 +92,7 @@ Smart Home Network
 Trend Micro Smart Protection Network
 Smart Protection Network
 Smart Protection Suites
-Smart Protection Suites and Worry-Free™ Business Security
+Smart Protection Suites and Worry-Free ™ Business Security
 Smart Protection for Endpoints
 Splunk
 TeamViewer
@@ -112,8 +112,8 @@ Windows Vista
 World of Warcraft
 Trend Micro Worry-Free Business Security
 Worry-Free Business Security
-Trend Micro™ Worry-Free™ Business Security
-Worry-Free™ Business Security
+Trend Micro ™ Worry-Free ™ Business Security
+Worry-Free ™ Business Security
 Xbox
 YouTube
 iOS App Store

@@ -37,21 +37,19 @@ def is_email(tok):
 
 class SecureSpacyFlairWrapper():
     model = None
-    PHRASE_MATCHER_CASED = {
-        'COUNTRY': COUNTRIES,
-        'CITY': CITIES,
-        'ORG': ORGS,
-        'MALWARE': MALWARE_CASED,
-        'VULNERABILITY': VULNERABILITIES,
-        'REGION': REGIONS,
-    }
-    PHRASE_MATCHER_UNCASED = {
-        'INTRUSION_SET': INTRUSION_SETS,
-        'MALWARE': MALWARE,
-        'TOOL': TOOLS,
-        'CAMPAIGN': CAMPAIGNS,
-        'PRODUCT': PRODUCTS,
-    }
+    PHRASE_MATCHER_TUPLE = [
+        ('INTRUSION_SET', INTRUSION_SETS, False),
+        ('CAMPAIGN', CAMPAIGNS, False),
+        ('VULNERABILITY', VULNERABILITIES, True),
+        ('MALWARE', MALWARE_CASED, True),
+        ('MALWARE', MALWARE, False),
+        ('TOOL', TOOLS, False),
+        ('COUNTRY', COUNTRIES, True),
+        ('REGION', REGIONS, True),
+        ('CITY', CITIES, True),
+        ('PRODUCT', PRODUCTS, False),
+        ('ORG', ORGS, True),
+    ]
     tokenized_text = {}
     
     def __init__(self, spacy_model='en_core_web_sm'):
@@ -75,7 +73,9 @@ class SecureSpacyFlairWrapper():
         return tokens
     
     def phrase_matcher_internal(self, sent, dictionary, label, cased):
-        OVERLAP_LABELS = ['', 'O', 'S-LOC', 'B-LOC', 'I-LOC', 'E-LOC']
+        DONT_REPLACE_LABELS = [e[0] for e in self.PHRASE_MATCHER_TUPLE]
+        if label == 'PRODUCT':
+            DONT_REPLACE_LABELS.remove('ORG')
         if cased:
             cmp = lambda x,y: x.text == y.text
         else:
@@ -88,7 +88,7 @@ class SecureSpacyFlairWrapper():
             xs = self.tokenized_text[x]
             i = 0
             while i < len(sent):
-                if sent[i].get_tag('ner').value not in OVERLAP_LABELS:
+                if str(sent[i].get_tag('ner').value).split('-')[-1] in DONT_REPLACE_LABELS:
                     i += 1
                     continue
                 if cmp(sent[i], xs[0]):
@@ -126,8 +126,6 @@ class SecureSpacyFlairWrapper():
                 tok.add_tag('ner', 'S-DOMAIN')
             elif is_email(tok):
                 tok.add_tag('ner', 'S-EMAIL')
-        for label, dictionary in self.PHRASE_MATCHER_CASED.items():
-            sentence = self.phrase_matcher_internal(sentence, dictionary, label, True)
-        for label, dictionary in self.PHRASE_MATCHER_UNCASED.items():
-            sentence = self.phrase_matcher_internal(sentence, dictionary, label, False)
+        for label, dictionary, cased in self.PHRASE_MATCHER_TUPLE:
+            sentence = self.phrase_matcher_internal(sentence, dictionary, label, cased)
         return sentence
