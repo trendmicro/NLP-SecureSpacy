@@ -76,6 +76,7 @@ class SecureSpacyFlairWrapper():
         DONT_REPLACE_LABELS = [e[0] for e in self.PHRASE_MATCHER_TUPLE]
         if label == 'PRODUCT':
             DONT_REPLACE_LABELS.remove('ORG')
+            DONT_REPLACE_LABELS.remove('TOOL')
         if cased:
             cmp = lambda x,y: x.text == y.text
         else:
