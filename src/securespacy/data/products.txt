@@ -74,7 +74,6 @@ Mobile Security for Enterprise
 MongoDB
 Mozilla Firefox
 Firefox
-NSIS
 Network Defense Solution
 Network Intrusion Prevention System
 Nullsoft Scriptable Install System
@@ -126,3 +125,4 @@ VB#
 C#
 .Net
 Visual Basic .NET
+MobileSafari

@@ -28,3 +28,4 @@ WinSCP
 Cymulate
 DefPloreX
 DefPloreX-NG
+NSIS
