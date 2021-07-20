@@ -38,6 +38,7 @@ def is_email(tok):
 class SecureSpacyFlairWrapper():
     model = None
     PHRASE_MATCHER_TUPLE = [
+        # label,     list,        case sensitive?
         ('INTRUSION_SET', INTRUSION_SETS, False),
         ('CAMPAIGN', CAMPAIGNS, False),
         ('VULNERABILITY', VULNERABILITIES, True),
