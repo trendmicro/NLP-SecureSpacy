@@ -38,8 +38,7 @@ Alternatively, you can download and install from the latest binary release here:
 >>>
 >>> nlp = spacy.load("en_core_web_sm")
 >>> nlp.tokenizer = custom_tokenizer(nlp)
->>> self.nlp.tokenizer = custom_tokenizer(self.nlp)
->>> add_entity_ruler_pipeline(self.nlp)
+>>> add_entity_ruler_pipeline(nlp)
 >>> doc = nlp(text)
 >>>
 >>> for ent in doc.ents:
@@ -61,9 +60,9 @@ from flair.data import Sentence
 from securespacy.flair import SecureSpacyFlairWrapper
 
 tagger = SequenceTagger.load('ner')
+text = 'We were able to find a second variant (detected as Trojan.MacOS.GMERA.B) that was uploaded to VirusTotal.'
 wrapper = SecureSpacyFlairWrapper()
 sentence = Sentence(text, use_tokenizer=wrapper.tokenizer)
-text = 'We were able to find a second variant (detected as Trojan.MacOS.GMERA.B) that was uploaded to VirusTotal.'
 model.predict(sentence)
 wrapper.phrase_matcher(sentence)
 for ent in sentence.get_spans('ner'):
