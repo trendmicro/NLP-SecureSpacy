@@ -74,6 +74,14 @@ class TestFlairWrapper(unittest.TestCase):
         self.wrapper.phrase_matcher(sentence)
         self.assertEqual(sentence.get_spans('ner')[0].start_pos, 0)
         self.assertEqual(sentence.get_spans('ner')[0].end_pos, 14)
+        text = 'It is a script designed to run in RouterOS.'
+        sentence = Sentence(text, use_tokenizer=self.wrapper.tokenizer)
+        self.wrapper.phrase_matcher(sentence)
+        self.assertEqual(sentence[8].get_tag('ner').value, 'S-PRODUCT')
+        text = 'Trend Micro™ Mobile Security to block threats that may leverage Dirty COW from app stores before they can be installed.'
+        sentence = Sentence(text, use_tokenizer=self.wrapper.tokenizer)
+        self.wrapper.phrase_matcher(sentence)
+        self.assertEqual(sentence.get_spans('ner')[1].labels[0].value, 'VULNERABILITY')
 
 if __name__ == "__main__":
     unittest.main()
