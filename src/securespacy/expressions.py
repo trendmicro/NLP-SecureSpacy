@@ -104,7 +104,8 @@ url_expr = (
     r"(?::\d{2,5})?"
     # resource path (optional)
     r"(?:[/?#]\S*)?"
-    r"$"
+    # look behind and do not patch the puncation marks
+    r"(?<![,.;:])$"
 )
 
 
@@ -113,13 +114,14 @@ url_expr = (
 #
 detection_expr = r"""
 (?:
-    ^
+    ^(?:
     (?:(?:PUP|W32)/)?
-    (?:(?:W|Win)(?:32|64)[\._])?
+    (?:(?:W|Win)(?:32|64)[._])?
     (?:[A-Za-z0-9]+)
-    (?:[\._][A-Za-z0-9]+)
-    (?:[\._][A-Za-z0-9]+)?
-    (?:[\._][A-Za-z0-9-]+)?$
+    (?:[._][A-Za-z0-9]+)
+    (?:[._][A-Za-z0-9]+)?
+    (?:[._][A-Za-z0-9-]+)?
+    )$
 )
 """
 
