@@ -126,7 +126,7 @@ class TestTagger(TestCase):
             # '132[.]162[.]107[.]97/xmrig-32_1.mlz',
             # '139[.]162[.]107[.]97/h.bat',
         ],
-        "ORG": ['VirusTotal', 'VirusTotal', 'IP', 'IP', 'IPv6'],
+        "ORG": ['VirusTotal', 'VirusTotal', 'IP', 'IP', 'IPv6', 'Trend Micro'],
         "DATE": ['January to February 2019', 'June 2019'],
         "DOMAIN":  [
             'gmzera54l5qpa6lm.onion',
@@ -193,7 +193,7 @@ class TestTagger(TestCase):
             'TOR',
         ],
         'PRODUCT': [
-            'Trend Micro Deep Discovery Inspector',
+            'Deep Discovery Inspector',
         ],
     }
 

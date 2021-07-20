@@ -82,6 +82,27 @@ class TestFlairWrapper(unittest.TestCase):
         sentence = Sentence(text, use_tokenizer=self.wrapper.tokenizer)
         self.wrapper.phrase_matcher(sentence)
         self.assertEqual(sentence.get_spans('ner')[1].labels[0].value, 'VULNERABILITY')
+        text = 'Arid Viper was advanced; Advtravel was less so.'
+        sentence = Sentence(text, use_tokenizer=self.wrapper.tokenizer)
+        self.wrapper.phrase_matcher(sentence)
+        self.assertEqual(sentence.get_spans('ner')[0].labels[0].value, 'CAMPAIGN')
+        self.assertEqual(sentence.get_spans('ner')[1].labels[0].value, 'CAMPAIGN')
+        text = 'Uche and Okiki made use of the information they captured in looking for more opportunities to steal from their victims.'
+        self.wrapper.phrase_matcher(sentence)
+        self.assertEqual(sentence.get_spans('ner')[0].labels[0].value, 'CAMPAIGN')
+        self.assertEqual(sentence.get_spans('ner')[1].labels[0].value, 'CAMPAIGN')
+
+    def test_org_product(self):
+        text = 'Trend Micro endpoint solutions such as Trend Micro™ Security, Trend Micro™ Smart Protection Suites, and Trend Micro Worry-Free™ Business Security can protect users systems from SAMSAM crypto-ransomware by detecting the malicious files.'
+        sentence = Sentence(text, use_tokenizer=self.wrapper.tokenizer)
+        self.wrapper.phrase_matcher(sentence)
+        self.assertEqual(sentence.get_spans('ner')[0].labels[0].value, 'ORG')
+        self.assertEqual(sentence.get_spans('ner')[1].labels[0].value, 'ORG')
+        self.assertEqual(sentence.get_spans('ner')[2].labels[0].value, 'ORG')
+        self.assertEqual(sentence.get_spans('ner')[3].labels[0].value, 'PRODUCT')
+        self.assertEqual(sentence.get_spans('ner')[4].labels[0].value, 'ORG')
+        self.assertEqual(sentence.get_spans('ner')[5].labels[0].value, 'PRODUCT')
+
 
 if __name__ == "__main__":
     unittest.main()
