@@ -72,7 +72,7 @@ def custom_tokenizer(nlp):
     infixes_re  = spacy.util.compile_infix_regex(default_infixes)
 
     return Tokenizer(nlp.vocab,
-                     # rules=special_cases,
+                     rules=nlp.tokenizer.rules,
                      prefix_search=prefixes_re.search,
                      suffix_search=suffixes_re.search,
                      infix_finditer=infixes_re.finditer,
