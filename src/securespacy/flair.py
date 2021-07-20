@@ -63,7 +63,6 @@ class SecureSpacyFlairWrapper():
         previous_token = None
         tokens = []
         doc = self.model(text)
-        print('spacy:', [tok for tok in doc])
         for word in doc:
             if len(word.text.strip()) == 0:
                 continue
