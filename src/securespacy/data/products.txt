@@ -1,54 +1,40 @@
-Adobe Acrobat and Reader
+.Net
+Acrobat
+Acrobat Reader DC
 Acrobat and Reader
-Adobe Acrobat
-Adobe Acrobat Reader DC
-Adobe Acrobat Reader DC
-Adobe Experience Manager
+Ammyy
 Android
 Android Studio 3.0
 Antivirus for Mac
+C#
 Chakra Scripting Engine
+Chrome
 Cisco Prime Infrastructure
 ColdFusion
 Conpot
 DDI
-Trend Micro ™ Deep Discovery Inspector
-Trend Micro ™ Deep Discovery ™ Email Inspector
-Trend Micro ™ Deep Discovery
-Trend Micro ™ Deep Security and Vulnerability Protection
-Trend Micro ™ Deep Security
-Trend Micro Deep Discovery Inspector
-Trend Micro Deep Discovery ™ Email Inspector
-Trend Micro Deep Discovery
-Trend Micro Deep Security and Vulnerability Protection
-Trend Micro Deep Security
+Deep Discovery
 Deep Discovery Inspector
 Deep Discovery ™ Email Inspector
-Deep Discovery
-Deep Security and Vulnerability Protection
 Deep Security
+Deep Security and Vulnerability Protection
 DigitalVaccine
+Discovery Inspector
+Discovery ™ Email Inspector
 Dropbox
 Elasticsearch
 Email Reputation Services
 Evernote
 Exchange Server
+Experience Manager
 Facebook Messenger
-Adobe Flash Player
+Firefox
 Flash Player
-Google Play Store
-Google Play
-Google Chrome
-Trend Micro ™ Home Network Security
-Trend Micro ™ Home Security for Mac
 Home Network Security
 Home Security for Mac
 Hosted Email Security
-Trend Micro ™ HouseCall ™ for Home Networks
 HouseCall ™ for Home Networks
-Trend Micro ™ Hybrid Cloud Security
 Hybrid Cloud Security
-Microsoft Hyper-V
 Hyper-V
 InterScan ™ Web Security
 Internet Explorer
@@ -57,38 +43,27 @@ Mac OS X
 MacOS
 Maximum Security
 Maximum XGen ™ security
-Microsoft Exchange Server
-Microsoft Office 365
-Microsoft Office
-Microsoft Outlook
-Trend Micro Mobile App Reputation Service
-Trend Micro Mobile Security Personal Edition
-Trend Micro Mobile Security Solutions
-Trend Micro Mobile Security for Android
-Trend Micro Mobile Security for Enterprise
+Microsoft Hyper-V
 Mobile App Reputation Service
 Mobile Security Personal Edition
 Mobile Security Solutions
 Mobile Security for Android
 Mobile Security for Enterprise
+MobileSafari
 MongoDB
-Mozilla Firefox
-Firefox
 Network Defense Solution
 Network Intrusion Prevention System
 Nullsoft Scriptable Install System
-Trend Micro ™ OfficeScan ™ with XGen ™ endpoint security
-Trend Micro ™ OfficeScan ™ with XGen ™
-Trend Micro OfficeScan
-OfficeScan ™ with XGen ™ endpoint security
-OfficeScan ™ with XGen ™
+Office 365
 OfficeScan
-Sony Playstation
+OfficeScan ™ with XGen ™
+OfficeScan ™ with XGen ™ endpoint security
+Outlook
+Play Store
 Playstation
+RouterOS
 SharePoint
-Trend Micro Smart Home Network
 Smart Home Network
-Trend Micro Smart Protection Network
 Smart Protection Network
 Smart Protection Suites
 Smart Protection Suites and Worry-Free ™ Business Security
@@ -97,8 +72,11 @@ Splunk
 TeamViewer
 Threat Encyclopedia
 Tomcat
+VB#
 Virtual Girlfriend
+Visual Basic .NET
 Vulnerability Protection
+WeChat
 WhatsApp
 WinSCP
 Windows 10
@@ -109,20 +87,9 @@ Windows NT 4.0
 Windows Server 2008
 Windows Vista
 World of Warcraft
-Trend Micro Worry-Free Business Security
 Worry-Free Business Security
-Trend Micro ™ Worry-Free ™ Business Security
 Worry-Free ™ Business Security
 Xbox
 YouTube
 iOS App Store
-Apple iPhone X
 iPhone X
-RouterOS
-WeChat
-Ammyy
-VB#
-C#
-.Net
-Visual Basic .NET
-MobileSafari

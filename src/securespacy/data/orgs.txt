@@ -1,30 +1,34 @@
-Trend Micro
-Norse
-Kaspersky
-Symantec
-Palo Alto Networks
-CrowdStrike
-Crowd Strike
-RedTorch
-IBM
-Apple
-Facebook
-Google
+90sec
+Adobe
+Alibaba
 Amazon
+Apache
+Apple
+Ashley Madison
+Crowd Strike
+CrowdStrike
+Facebook
+GNTL
+Google
+Hacking Team
+IBM
+IEEE
+Inmarsat
+Kaspersky
+Let’s Encrypt
+Mozilla
+Norse
 Nortel
+Oracle
+Palo Alto Networks
+Qihoo
+RedTorch
+Sony
+Suning
+Symantec
+Tencent
+Trend Micro
 Unit 42
+Zero Day Initiative
 f2pool
 nanopool
-GNTL
-Apache
-90sec
-Oracle
-Alibaba
-Tencent
-Qihoo
-Inmarsat
-Let’s Encrypt
-Zero Day Initiative
-Hacking Team
-IEEE
-Suning

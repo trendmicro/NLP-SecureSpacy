@@ -16,3 +16,5 @@ UAF
 Dirty COW
 Heartbleed
 Wormhole
+FREAK
+Logjam
