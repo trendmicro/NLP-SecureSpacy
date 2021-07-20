@@ -44,11 +44,11 @@ class TestFlairWrapper(unittest.TestCase):
         model = SequenceTagger.load('ner')
         model.predict(sentence)
         self.wrapper.phrase_matcher(sentence)
-        self.assertEqual(sentence[37].get_tag('ner').value, 'S-COUNTRY')
-        self.assertEqual(sentence[46].get_tag('ner').value, 'S-COUNTRY')
-        self.assertEqual(sentence[52].get_tag('ner').value, 'B-CITY')
-        self.assertEqual(sentence[53].get_tag('ner').value, 'E-CITY')
-        self.assertEqual(sentence[60].get_tag('ner').value, 'S-COUNTRY')
+        self.assertEqual(sentence[41].get_tag('ner').value, 'S-COUNTRY')
+        self.assertEqual(sentence[50].get_tag('ner').value, 'S-COUNTRY')
+        self.assertEqual(sentence[56].get_tag('ner').value, 'B-CITY')
+        self.assertEqual(sentence[57].get_tag('ner').value, 'E-CITY')
+        self.assertEqual(sentence[64].get_tag('ner').value, 'S-COUNTRY')
 
     def test_three_labels(self):
         text = 'This is dubbed as Operation Poison Needle.'

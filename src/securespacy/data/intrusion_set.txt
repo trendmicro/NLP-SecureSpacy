@@ -442,3 +442,4 @@ Lazarus
 Sofacy
 Sednit
 STRONTIUM
+C Major
