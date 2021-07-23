@@ -32,3 +32,5 @@ Unit 42
 Zero Day Initiative
 f2pool
 nanopool
+DCCC
+Democratic Congressional Campaign Committee
