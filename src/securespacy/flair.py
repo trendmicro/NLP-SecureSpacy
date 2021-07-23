@@ -74,10 +74,7 @@ class SecureSpacyFlairWrapper():
         return tokens
     
     def phrase_matcher_internal(self, sent, dictionary, label, cased):
-        DONT_REPLACE_LABELS = [e[0] for e in self.PHRASE_MATCHER_TUPLE]
-        if label == 'PRODUCT':
-            DONT_REPLACE_LABELS.remove('ORG')
-            DONT_REPLACE_LABELS.remove('TOOL')
+        REPLACEABLE = ['O', '', 'LOC']
         if cased:
             cmp = lambda x,y: x.text == y.text
         else:
@@ -87,29 +84,32 @@ class SecureSpacyFlairWrapper():
             # accelerator
             if x not in self.tokenized_text:
                 self.tokenized_text[x] = self.tokenizer(x)
-            xs = self.tokenized_text[x]
+            dict_tok = self.tokenized_text[x]
             i = 0
             while i < len(sent):
-                if str(sent[i].get_tag('ner').value).split('-')[-1] in DONT_REPLACE_LABELS:
+                if not sent[i].get_tag('ner').value.split('-')[-1] in REPLACEABLE:   # do not change when it is labeled by ML model
                     i += 1
                     continue
-                if cmp(sent[i], xs[0]):
-                    if len(xs) == 1:
-                        sent[i].add_tag('ner', f'S-{label}')
-                        i += 1
-                    else:
-                        for j in range(1, len(xs)):
-                            if len(sent) <= i+j or not cmp(sent[i+j], xs[j]):
-                                i += 1
-                                break
-                        else:
-                            sent[i].add_tag('ner', f'B-{label}')
-                            for j in range(1, len(xs) - 1):
-                                sent[i+j].add_tag('ner', f'I-{label}')
-                            sent[i+len(xs)-1].add_tag('ner', f'E-{label}')
-                            i += len(xs)
-                else:
+                if not cmp(sent[i], dict_tok[0]):           # Can be more beautiful, but let's compromise for speed
                     i += 1
+                    continue
+                if len(dict_tok) == 1:
+                    sent[i].add_tag('ner', f'S-{label}')
+                    i += 1
+                    continue
+                if i + len(dict_tok) > len(sent):
+                    i += 1
+                    continue
+                for j in range(1, len(dict_tok)):
+                    if not cmp(sent[i+j], dict_tok[j]):
+                        i += 1
+                        break
+                else:
+                    sent[i].add_tag('ner', f'B-{label}')
+                    for j in range(1, len(dict_tok) - 1):
+                        sent[i+j].add_tag('ner', f'I-{label}')
+                    sent[i+len(dict_tok)-1].add_tag('ner', f'E-{label}')
+                    i += len(dict_tok)
         return sent
     
     def phrase_matcher(self, sentence):
