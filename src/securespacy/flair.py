@@ -1,7 +1,9 @@
+import os
 import re
+import pickle
 import spacy
 from flair.data import Sentence
-from .tagger import (
+from securespacy.tagger import (
     is_ipv4,
     is_ipv6,
     is_url,
@@ -13,20 +15,7 @@ from .tagger import (
     is_sha512,
     is_domain,
 )
-from .tokenizer import (
-    custom_tokenizer,
-    INTRUSION_SETS,
-    COUNTRIES,
-    CITIES,
-    CAMPAIGNS,
-    MALWARE,
-    MALWARE_CASED,
-    TOOLS,
-    ORGS,
-    PRODUCTS,
-    VULNERABILITIES,
-    REGIONS,
-)
+from securespacy.tokenizer import custom_tokenizer
 
 
 # cf.: https://stackoverflow.com/questions/201323/how-to-validate-an-email-address-using-a-regular-expression
@@ -37,26 +26,57 @@ def is_email(tok):
 
 class SecureSpacyFlairWrapper():
     model = None
-    PHRASE_MATCHER_TUPLE = [
-        # label,     list,        case sensitive?
-        ('INTRUSION_SET', INTRUSION_SETS, False),
-        ('CAMPAIGN', CAMPAIGNS, False),
-        ('VULNERABILITY', VULNERABILITIES, True),
-        ('MALWARE', MALWARE_CASED, True),
-        ('MALWARE', MALWARE, False),
-        ('TOOL', TOOLS, False),
-        ('COUNTRY', COUNTRIES, True),
-        ('REGION', REGIONS, True),
-        ('CITY', CITIES, True),
-        ('PRODUCT', PRODUCTS, False),
-        ('ORG', ORGS, True),
-    ]
-    tokenized_text = {}
+    tokenized_matcher_tuple = []
+    tokenized_matcher_pickle = os.path.expanduser('~/.tokenized_matcher.pickle')
     
-    def __init__(self, spacy_model='en_core_web_sm'):
+    def __init__(self, spacy_model='en_core_web_sm', force_regenerate=False):
         if self.model is None:
             self.model = spacy.load(spacy_model)
         self.model.tokenizer = custom_tokenizer(self.model)
+        if not os.path.exists(self.tokenized_matcher_pickle) or force_regenerate:
+            self.generate_tokenized_dictionary()
+            self.save_tokenized_dictionary()
+        else:
+            self.load_tokenized_dictionary()
+
+    def load_tokenized_dictionary(self, fn=None):
+        if fn is None:
+            fn = self.tokenized_matcher_pickle
+        print(f'Load tokenized dictionary from {fn}')
+        with open(fn, 'rb') as f:
+            self.tokenized_matcher_tuple = pickle.load(f)
+
+    def save_tokenized_dictionary(self, fn=None):
+        if fn is None:
+            fn = self.tokenized_matcher_pickle
+        print(f'Save tokenized dictionary to {fn}')
+        with open(fn, 'wb') as f:
+            pickle.dump(self.tokenized_matcher_tuple, f)
+
+    def generate_tokenized_dictionary(self):
+        from securespacy.tokenizer import (
+            INTRUSION_SETS, COUNTRIES, CITIES, CAMPAIGNS, MALWARE,
+            MALWARE_CASED, TOOLS, ORGS, PRODUCTS, VULNERABILITIES,
+            REGIONS,)
+        PHRASE_MATCHER_TUPLE = [
+            # label,     list,        case sensitive?
+            ('INTRUSION_SET', INTRUSION_SETS, False),
+            ('CAMPAIGN', CAMPAIGNS, False),
+            ('VULNERABILITY', VULNERABILITIES, True),
+            ('MALWARE', MALWARE_CASED, True),
+            ('MALWARE', MALWARE, False),
+            ('TOOL', TOOLS, False),
+            ('COUNTRY', COUNTRIES, True),
+            ('REGION', REGIONS, True),
+            ('CITY', CITIES, True),
+            ('PRODUCT', PRODUCTS, False),
+            ('ORG', ORGS, True),
+        ]
+        for label, dictionary, case in PHRASE_MATCHER_TUPLE:
+            tokenized_items = []
+            for item in dictionary:
+                tokenized_items.append(self.tokenizer(item))
+            self.tokenized_matcher_tuple.append((label, tokenized_items, case))
 
     def tokenizer(self, text):
         from flair.data import Token
@@ -73,43 +93,43 @@ class SecureSpacyFlairWrapper():
             previous_token = token
         return tokens
     
-    def phrase_matcher_internal(self, sent, dictionary, label, cased):
+    def phrase_matcher_internal(self, sent, dictionary, label, cased, ner_toks):
         REPLACEABLE = ['O', '', 'LOC']
         if cased:
             cmp = lambda x,y: x.text == y.text
         else:
             cmp = lambda x,y: x.text.casefold() == y.text.casefold()
         p = False
-        for x in dictionary:
+        for dict_tok in dictionary:
             # accelerator
-            if x not in self.tokenized_text:
-                self.tokenized_text[x] = self.tokenizer(x)
-            dict_tok = self.tokenized_text[x]
+            len_dict_tok = len(dict_tok)
+            len_sent = len(sent)
+            # main loop
             i = 0
-            while i < len(sent):
-                if not sent[i].get_tag('ner').value.split('-')[-1] in REPLACEABLE:   # do not change when it is labeled by ML model
+            while i < len_sent:
+                if not ner_toks[i] in REPLACEABLE:          # do not change when it is labeled by ML model
                     i += 1
                     continue
                 if not cmp(sent[i], dict_tok[0]):           # Can be more beautiful, but let's compromise for speed
                     i += 1
                     continue
-                if len(dict_tok) == 1:
+                if len_dict_tok == 1:
                     sent[i].add_tag('ner', f'S-{label}')
                     i += 1
                     continue
-                if i + len(dict_tok) > len(sent):
+                if i + len_dict_tok > len_sent:
                     i += 1
                     continue
-                for j in range(1, len(dict_tok)):
+                for j in range(1, len_dict_tok):
                     if not cmp(sent[i+j], dict_tok[j]):
                         i += 1
                         break
                 else:
                     sent[i].add_tag('ner', f'B-{label}')
-                    for j in range(1, len(dict_tok) - 1):
+                    for j in range(1, len_dict_tok - 1):
                         sent[i+j].add_tag('ner', f'I-{label}')
-                    sent[i+len(dict_tok)-1].add_tag('ner', f'E-{label}')
-                    i += len(dict_tok)
+                    sent[i+len_dict_tok-1].add_tag('ner', f'E-{label}')
+                    i += len_dict_tok
         return sent
     
     def phrase_matcher(self, sentence):
@@ -128,6 +148,16 @@ class SecureSpacyFlairWrapper():
                 tok.add_tag('ner', 'S-DOMAIN')
             elif is_email(tok):
                 tok.add_tag('ner', 'S-EMAIL')
-        for label, dictionary, cased in self.PHRASE_MATCHER_TUPLE:
-            sentence = self.phrase_matcher_internal(sentence, dictionary, label, cased)
+        ner_cache = self.build_ner_cache(sentence)
+        for label, dictionary, cased in self.tokenized_matcher_tuple:
+            sentence = self.phrase_matcher_internal(sentence, dictionary, label, cased, ner_cache)
         return sentence
+
+    def build_ner_cache(self, sent):
+        ner_toks = []
+        for tok in sent:
+            ner_toks.append(tok.get_tag('ner').value.split('-')[-1])
+        return ner_toks
+
+if __name__ == '__main__':
+    pass

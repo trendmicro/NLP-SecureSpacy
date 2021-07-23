@@ -13,7 +13,7 @@ class TestFlairWrapper(unittest.TestCase):
     '''
 
     def setUp(self):
-        self.wrapper = SecureSpacyFlairWrapper()
+        self.wrapper = SecureSpacyFlairWrapper(force_regenerate=True)
 
     def test_tokenizer(self):
         sentence = Sentence(self.text, use_tokenizer=self.wrapper.tokenizer)

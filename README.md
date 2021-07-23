@@ -54,6 +54,9 @@ COUNTRY         Philippines
 
 securespacy can be used with Flair. The API is slightly different.
 
+**N.B.** In order to accelerate `phrase_matcher()`, a dictionary will be written in `~/.tokenized_matcher.pickle`.
+Delete the file to regenerate it when dictionary files are updated (usually when you update SecureSpacy.)
+
 ```python
 from flair.models import SequenceTagger
 from flair.data import Sentence

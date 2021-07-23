@@ -1,9 +1,19 @@
 import setuptools
+from setuptools.command.install import install
 
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 exec(open('src/securespacy/version.py').read())
+
+class PostInstallCommand(install):
+    """Post-installation for installation mode."""
+    def run(self):
+        import os
+        install.run(self)
+        pickle_fn = os.path.expanduser('~/.tokenized_matcher.pickle')
+        print(f'Deleting cache file {pickle_fn}. It will be regenerated.')
+        os.unlink(pickle_fn)
 
 setuptools.setup(
     name="securespacy",
@@ -30,4 +40,7 @@ setuptools.setup(
     python_requires=">=3.6",
     install_requires=["spacy>=3.0.5", "publicsuffix2>=2.20191221"],
     include_package_data=True,
+    cmdclass={
+        'install': PostInstallCommand,
+    },
 )
