@@ -1,12 +1,12 @@
 libprocesshider
-upx
-team viewer
-teamviwer
-vnc
-rdp
-powershell
-bash
-xmrig
+UPX
+Team Viewer
+TeamViwer
+VNC
+RDP
+PowerShell
+BASH
+XMRig
 AutoIt
 BinDiff
 Delphi
