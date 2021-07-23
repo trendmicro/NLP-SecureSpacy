@@ -65,7 +65,6 @@ Sun Team
 Ghostminer
 PoisonIvyMongol
 FBot
-Waterbear
 PKPLUG
 Bisonal
 ZeroT
@@ -436,7 +435,6 @@ Armada Collective
 Pawn Storm
 Fancy Bear
 Bluenoroff
-Patchwork
 AdGholas
 Lazarus
 Sofacy

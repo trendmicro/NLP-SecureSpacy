@@ -1,42 +1,29 @@
 ProLock
-APT41
 Lemon Duck
-Water Nue
 CICADA
-TA505
-Bouncing Golf
 KurdishCoder
 Operation Poison Needle
+Operation Pawn Storm
 Mirrorthief
 Magecart Group 11
 ReactGet
 Soula
 Operation Overtrap
 ShadowGate
-FIN6
-Outlaw
 KOVCOREG
-Tropic Trooper
 Evil Eye
 MAGECART
-Fox Kitten
-Shamoon
 ShadowHammer
 UNC2452
-Earth Wendigo
-Earth Kitsune
 Aggah
 AppleJeus
 MSI overload
 Spalax
 OceanLotus
 PhantomLance
-RevengeHotels
-WildPressure
 Operation DRBControl
 Egregor
 NightScout
-Heatstroke
 WatchDog
 DustySky
 Operation Emmental
@@ -44,5 +31,5 @@ Operation Huyao
 EITest
 Arid Viper
 Advtravel
-Uche
-Okiki
+Shrouded Crossbow
+WaterBear
