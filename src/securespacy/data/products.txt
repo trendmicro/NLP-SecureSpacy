@@ -22,6 +22,7 @@ DigitalVaccine
 Discovery Inspector
 Discovery ™ Email Inspector
 Dropbox
+Edge
 Elasticsearch
 Email Reputation Services
 Evernote
