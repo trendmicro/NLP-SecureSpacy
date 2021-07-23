@@ -12,8 +12,9 @@ class PostInstallCommand(install):
         import os
         install.run(self)
         pickle_fn = os.path.expanduser('~/.tokenized_matcher.pickle')
-        print(f'Deleting cache file {pickle_fn}. It will be regenerated.')
-        os.unlink(pickle_fn)
+        if os.path.exists(pickle_fn):
+            print(f'Deleting cache file {pickle_fn}. It will be regenerated.')
+            os.unlink(pickle_fn)
 
 setuptools.setup(
     name="securespacy",
