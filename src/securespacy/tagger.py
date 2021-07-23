@@ -10,6 +10,7 @@ from .expressions import (
     ipv6_expr,
     url_expr,
     detection_expr,
+    domain_expr,
     cve_expr,
     md5_expr,
     sha1_expr,
@@ -20,6 +21,7 @@ from .expressions import (
 ipv4_re = re.compile(ipv4_expr, re.VERBOSE | re.I | re.UNICODE)
 ipv6_re = re.compile(ipv6_expr, re.VERBOSE | re.I | re.UNICODE)
 url_re = re.compile(url_expr, re.VERBOSE | re.I | re.UNICODE)
+domain_re = re.compile(domain_expr, re.VERBOSE | re.I | re.UNICODE)
 detection_re = re.compile(detection_expr, re.VERBOSE | re.UNICODE)
 cve_re = re.compile(cve_expr, re.VERBOSE | re.I | re.UNICODE)
 
@@ -156,6 +158,10 @@ def is_domain(token):
         if text.endswith(suffix):
             return False
     
+    # Match domain
+    if not domain_re.match(text):
+        return False
+
     sld = psl.get_sld(text, strict=True)
 
     if bool(sld):
