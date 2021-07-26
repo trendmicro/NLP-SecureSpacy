@@ -107,8 +107,9 @@ class TestFlairWrapper(unittest.TestCase):
         text = 'Trend Micro™ HouseCall™ for Home Networks and Deep Discovery™ Email Inspector and Vulnerability Protection employ Deep Packet Inspection (DPI) technology to inspect networking packets.'
         sentence = Sentence(text, use_tokenizer=self.wrapper.tokenizer)
         self.wrapper.phrase_matcher(sentence)
-        self.assertEqual(sentence.get_spans('ner')[3].text, 'Discovery ™ Email Inspector')
-        self.assertEqual(sentence.get_spans('ner')[4].text, 'Vulnerability Protection')
+        self.assertEqual(sentence.get_spans('ner')[1].text, 'HouseCall ™ for Home Networks')
+        self.assertEqual(sentence.get_spans('ner')[2].text, 'Deep Discovery ™ Email Inspector')
+        self.assertEqual(sentence.get_spans('ner')[3].text, 'Vulnerability Protection')
         text = 'Trend Micro™ OfficeScan™ with XGen™ endpoint security provides enterprise protection with Smart Protection Suites with XGen™ endpoint security.'
         sentence = Sentence(text, use_tokenizer=self.wrapper.tokenizer)
         self.wrapper.phrase_matcher(sentence)
