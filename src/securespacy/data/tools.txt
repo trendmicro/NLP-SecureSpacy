@@ -24,7 +24,6 @@ Sigrok
 Ssdeep
 Telegram
 Tor
-WinSCP
 Cymulate
 DefPloreX
 DefPloreX-NG

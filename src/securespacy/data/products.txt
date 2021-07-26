@@ -17,6 +17,7 @@ DDI
 Deep Discovery
 Deep Discovery Inspector
 Deep Discovery ™ Email Inspector
+Deep Packet Inspection
 Deep Security
 Deep Security and Vulnerability Protection
 DigitalVaccine
