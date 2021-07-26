@@ -10,7 +10,6 @@ CrowdStrike
 Facebook
 GNTL
 Google
-Hacking Team
 IBM
 IEEE
 Inmarsat

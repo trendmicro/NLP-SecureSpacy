@@ -239,6 +239,7 @@ Nomadic Octopus
 Brushaloader
 Equation
 HackingTeam
+Hacking Team
 Ploutus
 Iron Group
 SeaTurtle

@@ -18,3 +18,4 @@ Heartbleed
 Wormhole
 FREAK
 Logjam
+Badlock

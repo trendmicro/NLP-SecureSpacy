@@ -3,6 +3,7 @@ Acrobat
 Acrobat Reader DC
 Acrobat and Reader
 Ammyy
+Ammyy Admin
 Android
 Android Studio 3.0
 Antivirus for Mac
@@ -69,6 +70,7 @@ Smart Protection Network
 Smart Protection Suites
 Smart Protection Suites and Worry-Free ™ Business Security
 Smart Protection for Endpoints
+SPN
 Splunk
 TeamViewer
 Threat Encyclopedia
