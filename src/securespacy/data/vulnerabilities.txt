@@ -19,3 +19,16 @@ Wormhole
 FREAK
 Logjam
 Badlock
+EternalBlue
+EternalChampion
+EternalSynergy
+EsteemAudit
+EchoWrecker
+ExplodingCan
+EpicHero
+EWorkFrenzy
+DoublePulsar
+PeddleCheap
+ExpandingPulley
+KillSuit
+DanderSpritz
