@@ -7,6 +7,8 @@ Apple
 Ashley Madison
 Crowd Strike
 CrowdStrike
+DCCC
+Democratic Congressional Campaign Committee
 Facebook
 GNTL
 Google
@@ -27,9 +29,9 @@ Suning
 Symantec
 Tencent
 Trend Micro
+Trend Micro Research
+Trend MicroTM
 Unit 42
 Zero Day Initiative
 f2pool
 nanopool
-DCCC
-Democratic Congressional Campaign Committee

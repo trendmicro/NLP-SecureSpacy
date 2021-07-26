@@ -103,6 +103,20 @@ class TestFlairWrapper(unittest.TestCase):
         self.assertEqual(sentence.get_spans('ner')[4].labels[0].value, 'ORG')
         self.assertEqual(sentence.get_spans('ner')[5].labels[0].value, 'PRODUCT')
 
+    def test_longest_match(self):
+        text = 'Trend Micro™ HouseCall™ for Home Networks and Deep Discovery™ Email Inspector and Vulnerability Protection employ Deep Packet Inspection (DPI) technology to inspect networking packets.'
+        sentence = Sentence(text, use_tokenizer=self.wrapper.tokenizer)
+        self.wrapper.phrase_matcher(sentence)
+        self.assertEqual(sentence.get_spans('ner')[3].text, 'Discovery ™ Email Inspector')
+        self.assertEqual(sentence.get_spans('ner')[4].text, 'Vulnerability Protection')
+        text = 'Trend Micro™ OfficeScan™ with XGen™ endpoint security provides enterprise protection with Smart Protection Suites with XGen™ endpoint security.'
+        sentence = Sentence(text, use_tokenizer=self.wrapper.tokenizer)
+        self.wrapper.phrase_matcher(sentence)
+        self.assertEqual(sentence.get_spans('ner')[1].text, 'OfficeScan ™ with XGen ™ endpoint security')
+        self.assertEqual(sentence.get_spans('ner')[3].text, 'XGen ™ endpoint security')
+        self.assertEqual(sentence.get_spans('ner')[3].start_pos, 119)
+        self.assertEqual(sentence.get_spans('ner')[3].end_pos, 142)
+
 
 if __name__ == "__main__":
     unittest.main()

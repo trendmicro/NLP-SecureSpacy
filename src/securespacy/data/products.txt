@@ -15,14 +15,14 @@ ColdFusion
 Conpot
 DDI
 Deep Discovery
+Deep Discovery Email Inspector
 Deep Discovery Inspector
-Deep Discovery ™ Email Inspector
+Deep DiscoveryTM Email Inspector
+Deep Discovery™ Email Inspector
+Deep Discovery™ Inspector
 Deep Packet Inspection
 Deep Security
-Deep Security and Vulnerability Protection
 DigitalVaccine
-Discovery Inspector
-Discovery ™ Email Inspector
 Dropbox
 Edge
 Elasticsearch
@@ -36,20 +36,24 @@ Flash Player
 Home Network Security
 Home Security for Mac
 Hosted Email Security
-HouseCall ™ for Home Networks
+HouseCall™ for Home Networks
 Hybrid Cloud Security
 Hyper-V
-InterScan ™ Web Security
+InterScan™ Web Security
 Internet Explorer
+Interscan Web Security
+InterscanTM Web Security
+Interscan™ Web Security
 IoT Security for Surveillance Cameras
 Mac OS X
 MacOS
 Maximum Security
-Maximum XGen ™ security
+Maximum XGen
+Maximum XGen™ endpoint security
+Maximum XGen™ security
 Microsoft Hyper-V
 Mobile App Reputation Service
 Mobile Security Personal Edition
-Mobile Security Solutions
 Mobile Security for Android
 Mobile Security for Enterprise
 MobileSafari
@@ -59,19 +63,19 @@ Network Intrusion Prevention System
 Nullsoft Scriptable Install System
 Office 365
 OfficeScan
-OfficeScan ™ with XGen ™
-OfficeScan ™ with XGen ™ endpoint security
+OfficeScan™ with XGen
+OfficeScan™ with XGen endpoint security
+OfficeScan™ with XGen™ endpoint security
 Outlook
 Play Store
 Playstation
 RouterOS
+SPN
 SharePoint
 Smart Home Network
 Smart Protection Network
 Smart Protection Suites
-Smart Protection Suites and Worry-Free ™ Business Security
 Smart Protection for Endpoints
-SPN
 Splunk
 TeamViewer
 Threat Encyclopedia
@@ -92,7 +96,9 @@ Windows Server 2008
 Windows Vista
 World of Warcraft
 Worry-Free Business Security
-Worry-Free ™ Business Security
+Worry-Free™ Business Security
+XGen™ endpoint security
+XGen™ security
 Xbox
 YouTube
 iOS App Store

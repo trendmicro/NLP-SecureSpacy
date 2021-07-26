@@ -76,7 +76,8 @@ class SecureSpacyFlairWrapper():
             tokenized_items = []
             for item in dictionary:
                 tokenized_items.append(self.tokenizer(item))
-            self.tokenized_matcher_tuple.append((label, tokenized_items, case))
+            ti = sorted(tokenized_items, key=lambda x: -len(x))     # Longest match first
+            self.tokenized_matcher_tuple.append((label, ti, case))
 
     def tokenizer(self, text):
         from flair.data import Token
@@ -126,10 +127,13 @@ class SecureSpacyFlairWrapper():
                         break
                 else:
                     sent[i].add_tag('ner', f'B-{label}')
+                    ner_toks[i] = f'B-{label}'
                     for j in range(1, len_dict_tok - 1):
                         sent[i+j].add_tag('ner', f'I-{label}')
+                        ner_toks[i+j] = f'I-{label}'
                     sent[i+len_dict_tok-1].add_tag('ner', f'E-{label}')
-                    i += len_dict_tok
+                    ner_toks[i+len_dict_tok-1] = f'E-{label}'
+                    i += len_dict_tok                       # Matcher longer entitiies first
         return sent
     
     def phrase_matcher(self, sentence):
