@@ -28,3 +28,4 @@ Cymulate
 DefPloreX
 DefPloreX-NG
 NSIS
+PsExec

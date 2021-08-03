@@ -1,30 +1,55 @@
 90sec
+Acumen Fund
 Adobe
 Alibaba
 Amazon
+Amnesty International
 Apache
 Apple
 Ashley Madison
+Ashoka
+BRAC
+Bill & Melinda Gates Foundation
+CARE international
+CERES Coalition
+Citizen Lab
+Clinton Health Access Initiative
 Crowd Strike
 CrowdStrike
+Cure Violence
 DCCC
+Danish Refugee Council
 Democratic Congressional Campaign Committee
+Doctors Without Borders
 Facebook
 GNTL
+Give India
 Google
+Greenpeace
 IBM
 IEEE
 Inmarsat
+International Rescue Committee
+JA Worldwide
 Kaspersky
 Let’s Encrypt
+MSF
+Medecins Sans Frontières
+Mercy Corps
 Mozilla
 Norse
 Nortel
+Novo Nordisk Foundation
+Open Society Foundations
 Oracle
+Oxfam
 Palo Alto Networks
+Partners in Health
 Qihoo
+Red Cross
 RedTorch
 Sony
+Stichting INGKA Foundation
 Suning
 Symantec
 Tencent
@@ -32,6 +57,7 @@ Trend Micro
 Trend Micro Research
 Trend MicroTM
 Unit 42
+Wellcome Trust
 Zero Day Initiative
 f2pool
 nanopool
