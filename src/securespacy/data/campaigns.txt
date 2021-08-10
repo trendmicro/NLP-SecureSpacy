@@ -5,7 +5,6 @@ KurdishCoder
 Operation Poison Needle
 Operation Pawn Storm
 Mirrorthief
-Magecart Group 11
 ReactGet
 Soula
 Operation Overtrap
