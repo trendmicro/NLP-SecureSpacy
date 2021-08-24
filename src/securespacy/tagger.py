@@ -18,8 +18,8 @@ from .expressions import (
     sha512_expr,
 )
 
-ipv4_re = re.compile(ipv4_expr, re.VERBOSE | re.I | re.UNICODE)
-ipv6_re = re.compile(ipv6_expr, re.VERBOSE | re.I | re.UNICODE)
+ipv4_re = re.compile("^" + ipv4_expr + "$", re.VERBOSE | re.I | re.UNICODE)
+ipv6_re = re.compile("^" + ipv6_expr + "$", re.VERBOSE | re.I | re.UNICODE)
 url_re = re.compile(url_expr, re.VERBOSE | re.I | re.UNICODE)
 domain_re = re.compile(domain_expr, re.VERBOSE | re.I | re.UNICODE)
 detection_re = re.compile(detection_expr, re.VERBOSE | re.UNICODE)
