@@ -59,6 +59,7 @@ text = ('However, at the time of writing, we were unable to decrypt this file si
         'PeNet.Structures.MetaDataTables\n'         # Should be excluded
         'furlough-grant.notatld\n'
         'fb.com paypal.com, not paypal.co.uk \n'
+        '8.3.0.0767\n'
         # 'dl[.]haqo[.]net/ins2.exez\n'
         # 'i[.]haqo[.]net/i.png\n'
         # 'ii[.]haqo[.]net/u.png\n'
