@@ -160,6 +160,16 @@ patterns = [
             }
         ]
     },
+    {
+        "label": "MITRE",
+        "pattern": [
+            {
+                "_": {
+                    "is_mitre": True,
+                }
+            }
+        ]
+    },
 ]
 
 
@@ -187,7 +197,10 @@ def add_entity_ruler_pipeline(nlp):
     i_matcher.add('CAMPAIGN', nlp.tokenizer.pipe(CAMPAIGNS))
     i_matcher.add('PRODUCT', nlp.tokenizer.pipe(PRODUCTS))
 
+    dummy_patterns = [{"label": "DUMMY", "pattern": "__dummy pattern to surpress warnings__"}]
     rulers[0].add_patterns(patterns)
     rulers[1].phrase_matcher = matcher
+    rulers[1].add_patterns(dummy_patterns)
     rulers[2].phrase_matcher = i_matcher
+    rulers[2].add_patterns(dummy_patterns)
     return nlp
