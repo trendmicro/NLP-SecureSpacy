@@ -14,6 +14,7 @@ from securespacy.tagger import (
     is_sha256,
     is_sha512,
     is_domain,
+    is_mitre,
 )
 from securespacy.tokenizer import custom_tokenizer
 
@@ -152,6 +153,8 @@ class SecureSpacyFlairWrapper():
                 tok.add_tag('ner', 'S-DOMAIN')
             elif is_email(tok):
                 tok.add_tag('ner', 'S-EMAIL')
+            elif is_mitre(tok):
+                tok.add_tag('ner', 'S-MITRE')
         ner_cache = self.build_ner_cache(sentence)
         for label, dictionary, cased in self.tokenized_matcher_tuple:
             sentence = self.phrase_matcher_internal(sentence, dictionary, label, cased, ner_cache)

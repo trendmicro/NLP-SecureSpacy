@@ -16,6 +16,7 @@ from .expressions import (
     sha1_expr,
     sha256_expr,
     sha512_expr,
+    mitre_expr,
 )
 
 ipv4_re = re.compile("^" + ipv4_expr + "$", re.VERBOSE | re.I | re.UNICODE)
@@ -30,12 +31,16 @@ sha1_re = re.compile(sha1_expr, re.VERBOSE | re.I | re.UNICODE)
 sha256_re = re.compile(sha256_expr, re.VERBOSE | re.I | re.UNICODE)
 sha512_re = re.compile(sha512_expr, re.VERBOSE | re.I | re.UNICODE)
 
+mitre_re = re.compile(mitre_expr, re.VERBOSE | re.UNICODE)
 
 def is_ipv4(token):
     return bool(ipv4_re.match(token.text))
 
 def is_ipv6(token):
     return bool(ipv6_re.match(token.text))
+
+def is_mitre(token):
+    return bool(mitre_re.match(token.text))
 
 def is_url(token):
     return bool(url_re.match(token.text))
@@ -191,3 +196,4 @@ Token.set_extension("is_md5", getter=is_md5, force=True)
 Token.set_extension("is_sha1", getter=is_sha1, force=True)
 Token.set_extension("is_sha256", getter=is_sha256, force=True)
 Token.set_extension("is_sha512", getter=is_sha512, force=True)
+Token.set_extension("is_mitre", getter=is_mitre, force=True)

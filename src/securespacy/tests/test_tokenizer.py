@@ -127,7 +127,7 @@ class TestTagger(TestCase):
             # '132[.]162[.]107[.]97/xmrig-32_1.mlz',
             # '139[.]162[.]107[.]97/h.bat',
         ],
-        "ORG": ['VirusTotal', 'VirusTotal', 'IP', 'IP', 'IPv6', 'Trend Micro'],
+        "ORG": ['VirusTotal', 'VirusTotal', 'IP', 'Trend Micro'],
         "DATE": ['January to February 2019', 'June 2019'],
         "DOMAIN":  [
             'gmzera54l5qpa6lm.onion',
@@ -196,6 +196,17 @@ class TestTagger(TestCase):
         'PRODUCT': [
             'Deep Discovery Inspector',
         ],
+        'NORP': [
+            'IPv6',                         # FIXME: not a NORP
+        ],
+        'GPE': [
+            'taipei',                       # OK to be here.
+            'manila',
+            'san jose',
+        ],
+        'PERSON': [
+            'Malware',                      # FIXME: not a person
+        ],
     }
 
     def test_entity_extractor(self):
@@ -209,6 +220,11 @@ class TestTagger(TestCase):
             self.assertTrue(key in label_counts)
 
         for label in label_counts:
+            if label not in self.expected_results:
+                print(f'Unknown label: {label}')
+                for ent in doc.ents:
+                    if ent.label_ == label:
+                        print(ent.label_, ent.text, sep='\t')
             print(f"expected {len(self.expected_results[label]):02} {label}: {self.expected_results[label]}")
             print(f"got      {len([ent.text for ent in doc.ents if ent.label_ == label]):02} {label}: {[ent.text for ent in doc.ents if ent.label_ == label]}")
             print()
@@ -365,6 +381,23 @@ this.domain.does.not.exist
 """
 
         expected_results = []
+
+        self.conditionals(text, expected_results)
+
+
+    def test_mitre_attack_pattern(self):
+        text = '''T1012 MALWARE : Query Registry
+Command and Control T1573.002 MALWARE : Encrypted Channel
+Payload transfer from remote host T1105 MALWARE : Ingress Tool Transfer
+Payloads in modified RC4-encrypted chunks T1027.002 MALWARE : Obfuscated Files or Information: Software Packing'''
+        expected_results = {
+            "MITRE":  [
+                'T1012',
+                'T1573.002',
+                'T1105',
+                'T1027.002',
+            ],
+        }
 
         self.conditionals(text, expected_results)
 

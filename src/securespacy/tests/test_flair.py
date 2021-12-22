@@ -118,6 +118,16 @@ class TestFlairWrapper(unittest.TestCase):
         self.assertEqual(sentence.get_spans('ner')[3].start_pos, 119)
         self.assertEqual(sentence.get_spans('ner')[3].end_pos, 142)
 
+    def test_mitre_attack_pattern(self):
+        text = '''T1012 MALWARE : Query Registry
+Command and Control T1573.002 MALWARE : Encrypted Channel: Asymmetric Cryptography
+Payload transfer from remote host T1105 MALWARE : Ingress Tool Transfer
+Payloads in modified RC4-encrypted chunks T1027.002 MALWARE : Obfuscated Files or Information: Software Packing'''
+        sentence = Sentence(text, use_tokenizer=self.wrapper.tokenizer)
+        self.wrapper.phrase_matcher(sentence)
+        self.assertEqual(sentence.get_spans('ner')[0].text, 'T1012')
+        self.assertEqual(sentence.get_spans('ner')[0].labels[0].value, 'MITRE')
+
 
 if __name__ == "__main__":
     unittest.main()

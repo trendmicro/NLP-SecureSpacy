@@ -147,3 +147,7 @@ md5_expr = r"""(?:^[a-f0-9]{32}$)"""
 sha1_expr = r"""(?:^[a-f0-9]{40}$)"""
 sha256_expr = r"""(?:^[a-f0-9]{64}$)"""
 sha512_expr = r"""(?:^[a-f0-9]{128}$)"""
+
+# MITRE
+# Does not support CAPEC-1 ... CAPEC-999
+mitre_expr = r'''(?:^(?:[TSGM]|TA)[0-9]{4}(?:[.][0-9]{3})?$)'''
