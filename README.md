@@ -26,24 +26,24 @@ Alternatively, you can download and install from the latest binary release here:
 ## Usage
 
 ```
->>> import spacy
->>>
->>> import securespacy
->>> from securespacy import tagger
->>> from securespacy.tokenizer import custom_tokenizer
->>> from securespacy.patterns import add_entity_ruler_pipeline
->>>
->>> text = ('The quick brown fox owns the domain quickbrownfox[.]sh with the ip address 10.231.31.8 '
->>>         'with the server located in Manila, Philippines.')
->>>
->>> nlp = spacy.load("en_core_web_sm")
->>> nlp.tokenizer = custom_tokenizer(nlp)
->>> add_entity_ruler_pipeline(nlp)
->>> doc = nlp(text)
->>>
->>> for ent in doc.ents:
-...     print(f"{ent.label_:<15} {ent}")
-...
+import spacy
+
+import securespacy
+from securespacy import tagger
+from securespacy.tokenizer import custom_tokenizer
+from securespacy.patterns import add_entity_ruler_pipeline
+
+text = ('The quick brown fox owns the domain quickbrownfox[.]sh with the ip address 10.231.31.8 '
+'with the server located in Manila, Philippines.')
+
+nlp = spacy.load("en_core_web_sm")
+nlp.tokenizer = custom_tokenizer(nlp)
+add_entity_ruler_pipeline(nlp)
+doc = nlp(text)
+
+for ent in doc.ents:
+    print(f"{ent.label_:<15} {ent}")
+
 DOMAIN          quickbrownfox[.]sh
 IP              10.231.31.8
 CITY            Manila
