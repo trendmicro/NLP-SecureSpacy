@@ -17,11 +17,9 @@
 
 ## Installation
 ```bash
-$ pip install git+ssh://git@github.trendmicro.com/CoreTech-FTR/securespacy.git
+$ pip install https://github.com/trendmicro/NLP-SecureSpacy.git
 ```
 
-Alternatively, you can download and install from the latest binary release here:
-- https://github.trendmicro.com/CoreTech-FTR/securespacy/releases
 
 ## Usage
 
