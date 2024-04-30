@@ -17,7 +17,7 @@
 
 ## Installation
 ```bash
-$ pip install https://github.com/trendmicro/NLP-SecureSpacy.git
+pip install git+https://github.com/trendmicro/NLP-SecureSpacy.git
 ```
 
 
