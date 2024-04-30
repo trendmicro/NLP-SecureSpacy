@@ -17,6 +17,7 @@ Agrius
 AirNaine
 Ajax Security Team
 AjaxTM
+Akira
 Akira.v1
 Aleksandr Volosovik
 ALLANITE
@@ -125,12 +126,15 @@ APT-Q-29
 APT-Q-36
 APT-Q-41
 apt_sofacy
+Aqua Blizzard
+Aquatic Panda
 AQUATIC PANDA
 Ares
 Arid Viper
 AridViper
 Armada Collective
 Armageddon
+Arsippe
 Astaroth
 Astro Locker Team
 ATK 104
@@ -158,12 +162,16 @@ BARIUM
 BE2 APT
 BeagleBoyz
 BeeBus
+Beijing Group
 Belugasturgeon
+BELUGASTURGEON
 Berserk Bear
 BianLian
+Big Bang APT
 Billbug
 BISMUTH
 Bisonal
+BITTER
 Bitter APT
 BITTER APT
 Bitter Group
@@ -174,6 +182,7 @@ Black-Byte
 BlackByte
 Black Energy
 BlackEnergy
+BlackEnergy (Group)
 Blackfly
 Blackgear
 BlackGuard
@@ -191,6 +200,7 @@ Blind Eagle
 BlueAlpha
 bluebottle
 BlueBravo
+Blue Kitsune
 Blue Mockingbird
 Blue Mushroom
 Bluenoroff
@@ -203,6 +213,8 @@ Boss Spider
 BOSS SPIDER
 Bouncing Golf
 Boyusec
+Brass Typhoon
+BROMINE
 Bronze Atlas
 BRONZE ATLAS
 BRONZE BUTLER
@@ -225,6 +237,7 @@ Bronze President
 BRONZE PRESIDENT
 Bronze Riverside
 BRONZE RIVERSIDE
+BRONZE SILHOUETTE
 BRONZE STARLIGHT
 BRONZE UNION
 BRONZE VINEWOOD
@@ -253,7 +266,9 @@ Calypso APT
 Calypso group
 Camaro Dragon
 Camerashy
+Camouflage Tempest
 Candiru
+Canvas Cyclone
 Capricorn Organisation
 Carbanak
 Carbanak Group
@@ -264,12 +279,16 @@ CCA
 ccweb
 CDRThief
 Chafer
+Charcoal Typhoon
 Charming Kitten
 ChessMaster
+CHIMBORAZO
 Chimera
 Chinastrats
 ChinaZ
+CHROMIUM
 Cicada
+Cinnamon Tempest
 CIRCUIT PANDA
 CIRCUS SPIDER
 Citadel
@@ -292,6 +311,7 @@ COBALT GIPSY
 CobaltGoblin
 Cobalt Group
 Cobalt Gypsy
+COBALT GYPSY
 Cobalt Hacking Group
 COBALT HICKMAN
 COBALT ILLUSION
@@ -313,7 +333,9 @@ Confucius
 Confucius APT
 Conimes
 Conti
+ControlX
 Cookie Monster
+COPERNICIUM
 COPPER FIELDSTONE
 CopperStealer
 CopyKitten
@@ -335,11 +357,13 @@ Cranefly
 Crawling Taurus
 Crimson
 Crimson Iron
+Crimson Sandstorm
 Crouching Yeti
 CrouchingYeti
 CryptXXX
 Crysis
 Crysis/Dharma/Phobos Threat Actors
+CURIUM
 Cutting Kitten
 CVNX
 Cyberbit
@@ -381,8 +405,13 @@ DEV-0133
 DEV-0139
 DEV-0157
 DEV-0166
+DEV-0193
 DEV-0196
+DEV-0206
 DEV-0228
+DEV-0243
+DEV-0401
+DEV-0500
 DEV-0530
 DEV-0537
 DEV-0586
@@ -392,6 +421,7 @@ DEV-0861
 DEV-1028
 Dexter
 Dharma
+Diamond Sleet
 DiceyF
 Diicot
 DLTMiner
@@ -445,6 +475,7 @@ Earth Kitsune
 Earth Kui
 Earth Kumiho
 Earth Longzhi
+Earth Lusca
 Earth Lushu
 Earth Nidhogg
 Earth Owlman
@@ -460,6 +491,7 @@ Echobot
 EGoManiac
 Egregor RaaS group
 EHDevel
+ELBRUS
 Elderwood
 Elderwood Gang
 ELECTRUM
@@ -469,6 +501,7 @@ Eli
 El Machete
 ElTest
 Ember Bear
+Emerald Sleet
 Emissary Panda
 Emotet
 Emperor Dragonfly
@@ -481,6 +514,7 @@ Eternity
 EuroAPT
 EUROPIUM
 Evasive Panda
+Evasive Serpens
 Evil Corp
 EvilCorp
 Evil Eye
@@ -488,6 +522,7 @@ EvilGrab
 Evilnum
 Evilnum Group
 Exotic Lily
+EXOTIC LILY
 Extreme Jackal
 EyePyramid
 FakeUpdates
@@ -504,6 +539,7 @@ FIN10
 FIN11
 FIN 12
 FIN12
+FIN13
 FIN4
 FIN5
 FIN 6
@@ -520,10 +556,13 @@ Flowerlady/Flowershow
 Flowershow
 FlowingFrog
 Flying Kitten
+Forest Blizzard
 Foudre
 Fox Kitten
 Frankenstein
 Fritillary
+FROZENBARENTS
+FROZENLAKE
 FSB 16th & 18th Centers
 FTCODE
 Fucobha
@@ -539,6 +578,7 @@ GAMAREDON
 Gamaredon Group
 Gamarue
 GamblingPuppet
+Gaza Cybergang
 Gaza Hackers Team
 Gaza Hacker Team
 GCMAN
@@ -548,9 +588,11 @@ Geumseong121
 Gh0st
 Ghambar
 Ghimob
+Ghost Blizzard
 GhostCringe
 Ghostminer
 Ghostwriter
+Gingham Typhoon
 GlowSpark
 Glupteba
 Goblin Panda
@@ -573,6 +615,8 @@ Goldmouse
 Gold Mouse
 GoldMouse
 GOLD NIAGARA
+GOLD PRELUDE
+GOLD SAHARA
 GOLD SOUTHFIELD
 GOLD SWATHMORE
 GOLD TAHOE
@@ -589,6 +633,7 @@ Graboid
 Graceful Spider
 GRACEFUL SPIDER
 Granite Taurus
+Granite Typhoon
 Grayfly
 Greenbug
 Green Havildar
@@ -596,11 +641,17 @@ Green Stone
 GREF
 Grey Energy
 GreyEnergy
+Grey Karkadann
 Grim Spider
 GRIM SPIDER
 Grizzly Steppe
 Groundbait
+Group123
 Group-4127
+Group5
+Group 72
+Group 74
+Group 88
 Guardian of Peace
 Guardians of Peace
 Guru Spider
@@ -619,6 +670,7 @@ Harvester
 Haskers Gang
 Hastati Group
 Havex
+Hazel Sandstorm
 Heartbeat
 Heatstroke-Jun-2020
 Hecamede
@@ -672,6 +724,7 @@ InvisiMole
 InvisiMole Group
 IRGC
 Iridium
+IRIDIUM
 IRN2
 Iron Cyber Group
 Iron Group
@@ -697,6 +750,7 @@ ITG10
 ITG12
 ITG14
 ITG18
+ITG23
 Itroublve
 Ixeshe
 IXESHE
@@ -722,6 +776,7 @@ Ke3Chang
 Keksec Group
 Kek Security
 KeyBoy
+Keyhole Panda
 Killnet
 Kimsuki
 Kimsuky
@@ -740,6 +795,7 @@ Kryptonite Panda
 KungFu Kittens
 Labyrinth Chollima
 Lamberts
+LAPSUS$
 Lazarus
 Lazarus Group
 LazyMeerkat
@@ -748,6 +804,7 @@ LEAD
 Leafminer
 Lebanese Cedar
 Lemon Group
+Lemon Sandstorm
 Leverage
 Leviathan
 LIFARS
@@ -797,11 +854,16 @@ Magnitude
 MAKERSMARK
 Makop
 mallox
+Malteiro
 MAN1
+Manatee Tempest
 MANGANESE
+Mango Sandstorm
 Manic Menagerie
 Manling Flower
 Manlinghua
+Mantis
+Marigold Sandstorm
 MartyMcFly
 Maze
 Maze Team
@@ -820,6 +882,7 @@ Midnight Blizzard
 Mikroceen
 Mikroceen/Vicious Panda
 Minidionis
+Mint Sandstorm
 Mirage
 Mirai
 Mispadu
@@ -829,6 +892,7 @@ ModifiedElephant
 Mofang
 Molerats
 Monsoon
+MONSOON
 Monster Libra
 Monti
 MONTY SPIDER
@@ -838,6 +902,7 @@ Morpho
 Moses Staff
 Moshen Dragon
 Moskalvzapoe
+MoustachedBouncer
 Mozi
 MSUpdater
 MUDCARP
@@ -847,10 +912,12 @@ MuddyWater
 Muddy Waters
 Muhstik
 Muhstik Gang
+Mulberry Typhoon
 Mule Libra
 Mummy Spider
 MUMMY SPIDER
 Mustang Panda
+Mustard Tempest
 MyKings
 Mythic Leopard
 MYTHIC LEOPARD
@@ -897,6 +964,7 @@ NSO Group
 NuclearCrisis
 Numbered Panda
 Nuo Chong Lions
+Nylon Typhoon
 Nymaim
 Obscure Serpens
 Ocean Buffalo
@@ -904,6 +972,7 @@ Ocean Lotus
 OceanLotus
 OceanLotus Group
 Oceansalt
+Octo Tempest
 Office Monkeys
 OfficeMonkeys
 OilAlpha
@@ -912,6 +981,13 @@ OilRig
 Oktropys
 Oldgremlin
 Olympic Destroyer
+Onyx Sleet
+Operation Exchange Marauder
+Operation Hangover
+Operation Molerats
+Operation Saffron Rose
+Operation Wocao
+Operation Woolen-Goldfish
 Orangeworm
 Outlaw
 Override Panda
@@ -935,6 +1011,8 @@ PawnStorm
 PcCastle
 PcShare
 PEACEPIPE
+Peach Sandstorm
+Periwinkle Tempest
 PerSwaysion
 Pfinet
 Phorpiex
@@ -948,7 +1026,9 @@ Pirate Panda
 Pirpi
 PittyTiger
 PKPLUG
+Plaid Rain
 PLA Navy
+PLATINUM
 PLATINUM TERMINAL
 PLA Unit 61398
 PLA Unit 61486
@@ -961,6 +1041,7 @@ PLAY.v1
 Plead
 Ploutus
 Ploutus Team
+PLUTONIUM
 Poison Carp
 PoisonIvyMongol
 POLONIUM
@@ -988,6 +1069,7 @@ Prometheus
 PROMETHIUM
 PROPHET SPIDER
 PsiXBot
+PUNK SPIDER
 Putter Panda
 PuzzleMaker
 PyXie
@@ -996,6 +1078,7 @@ Quedagh
 Quedagh Group
 Quilted Tiger
 Racquet Bear
+RADIUM
 Rafiki
 Ragnarok
 Ragua
@@ -1005,6 +1088,7 @@ Rancor group
 Rancor Group
 Rancoz
 RandomU
+Raspberry Typhoon
 Raspite
 RATicate
 Ratopak
@@ -1049,6 +1133,7 @@ Ricochet Chollima
 RIDDLE SPIDER
 Roaming Mantis
 Roaming Tiger
+Roasted 0ktapus
 Roboto
 Rocke
 Rocke Group
@@ -1064,6 +1149,7 @@ Royal APT
 RoyalAPT
 Royal.v1
 RTM
+RUBIDIUM
 Rusha
 Ryuk
 Saaiwc
@@ -1076,7 +1162,9 @@ SamSa
 SamSam
 Sandworm
 Sandworm Team
+Sangria Tempest
 Sapphire Mushroom
+Sapphire Sleet
 Sarit
 Sauron
 SCANDIUM
@@ -1090,8 +1178,10 @@ SeaDuke
 Sea Lotus
 SeaLotus
 SearchFire
+Seashell Blizzard
 Sea Turtle
 SeaTurtle
+Secret Blizzard
 SectorA01
 SectorC08
 SectorE02
@@ -1117,12 +1207,14 @@ Siamesekitten
 SideCopy
 Sidewinder
 SideWinder
+Silence
 Silence APT group
 Silence Group
 Silencer Lion
 SilencerLion
 Silent Chollima
 Silent Librarian
+Silk Typhoon
 Silver Fox
 SilverTerrier
 Skeleton Spider
@@ -1147,10 +1239,12 @@ Sodinokibi
 Sofacy
 Soft Cell
 SOLAR SPIDER
+SolarStorm
 Solorigate
 SOURGUM
 Sowbug
 Space Pirates
+Spandex Tempest
 SparklingGoblin
 Spelevo
 Sphinx Moth
@@ -1173,9 +1267,11 @@ Stolen Pencil
 Stonedrill
 Stonefly
 Stone Panda
+Storm-0875
 Storm-0978
 Storm Cloud
 StrangeU
+Strawberry Tempest
 Strider
 StrongPity
 STRONTIUM
@@ -1191,6 +1287,7 @@ Swallowtail
 SWEED
 Syrian Electronic Army
 Syrphid
+Syssphinx
 SystemBC
 TA2101
 TA2541
@@ -1209,12 +1306,12 @@ TA450
 TA451
 TA453
 TA454
+TA456
 TA4563
 TA459
 TA471
 TA473
 TA499
-TA505
 TA505
 TA511
 TA542
@@ -1223,11 +1320,13 @@ TA545
 TA551
 TA551 Shathak
 TA558
+TA569
 TA570
 TA575
 TA577
 TA578
 TA866
+TAAL
 TAG_0530
 TAG_0700
 TAG-16
@@ -1235,6 +1334,7 @@ TAG-22
 TAG22
 TAG-28
 TAG-56
+TAG-63
 Taidoor
 TAIDOOR
 Tailgater Team
@@ -1255,6 +1355,13 @@ TECHNETIUM
 Telebots
 TeleBots
 Temper Panda
+TEMP.Isotope
+TEMP.Jumper
+TEMP.MixMaster
+TEMP.Periscope
+TEMP.Reaper
+TEMP.Veles
+TEMP.Zagros
 TG-0110
 TG-0416
 TG-1314
@@ -1269,6 +1376,7 @@ TG-8223
 TH-261
 TH3Bug
 Thallium
+THALLIUM
 Thamar Reservoir
 The Big Bang
 The Dukes
@@ -1296,6 +1404,7 @@ topgear
 TopHat
 Tor2Mine
 Tortoiseshell
+Tortoise Shell
 Transparent Tribe
 TravNet
 TrickBot Group
@@ -1334,6 +1443,7 @@ UAC-0096
 UAC-0114
 UCC
 UltraRank
+UNC1543
 UNC1878
 UNC1945
 UNC215
@@ -1381,6 +1491,7 @@ Vermin
 Viceroy Tiger
 vice-society
 VICIOUS PANDA
+Violet Typhoon
 Violin Panda
 Vivin
 Vixen Panda
@@ -1404,7 +1515,6 @@ Water Clurichaun
 Water Kappa
 Water Labbu
 Water Minyades
-Arsippe
 Water Nue
 Water Roc
 Water Sirin
@@ -1453,6 +1563,7 @@ YTTRIUM
 Zacinlo
 Zebrocy
 ZeroT
+Zigzag Hail
 Zinc
 ZINC
 ZINC EMERSON

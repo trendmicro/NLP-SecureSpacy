@@ -1,37 +1,28 @@
-ProLock
-Lemon Duck
-CICADA
-KurdishCoder
-Operation Poison Needle
-Operation Pawn Storm
-Mirrorthief
-ReactGet
-Soula
-Operation Overtrap
-ShadowGate
-KOVCOREG
-Evil Eye
-MAGECART
-ShadowHammer
-UNC2452
+2015 Ukraine Electric Power Attack
+2016 Ukraine Electric Power Attack
+2022 Ukraine Electric Power Attack
+Advtravel
 Aggah
 AppleJeus
-MSI overload
-Spalax
-OceanLotus
-PhantomLance
-Operation DRBControl
-Egregor
-NightScout
-WatchDog
-DustySky
-Operation Emmental
-Operation Huyao
-EITest
 Arid Viper
-Advtravel
-Shrouded Crossbow
-WaterBear
+CICADA
+CostaRicto
+Cutting Edge
+DustySky
+Egregor
+EITest
+Evil Eye
+Frankenstein
+FunnyDream
+KOVCOREG
+KurdishCoder
+Lemon Duck
+MAGECART
+Mirrorthief
+MSI overload
+Night Dragon
+NightScout
+OceanLotus
 Operation AppleJeus
 Operation Armageddon
 Operation Aurora
@@ -40,16 +31,29 @@ Operation C-Major
 Operation CuckooBees
 Operation DarkSeoul
 Operation Daybreak
+Operation DRBControl
+Operation Dream Job
+Operation Dust Storm
+Operation Emmental
 Operation Erebus
 Operation Exchange Marauder
+Operation Ghost
 Operation GhostSecret
 Operation Hangover
+Operation Honeybee
+Operation Huyao
+Operation Interception
 Operation Layover
 Operation Mermaid
+Operation North Star
+Operation Overtrap
+Operation Pawn Storm
+Operation Poison Needle
 Operation Saffron Rose
 Operation ShadowHammer
 Operation Sharpshooter
 Operation Soft Cell
+Operation Spalax
 Operation Transparent Tribe
 Operation Tropic Trooper
 Operation Troy
@@ -58,3 +62,16 @@ operation wocao
 Operation Wocao
 Operation Woolen Goldfish
 Operation Woolen-Goldfish
+PhantomLance
+ProLock
+ReactGet
+ShadowGate
+ShadowHammer
+Shrouded Crossbow
+SolarWinds Compromise
+Soula
+Spalax
+Triton Safety Instrumented System Attack
+UNC2452
+WatchDog
+WaterBear
