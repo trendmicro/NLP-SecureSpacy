@@ -74,3 +74,16 @@ The type of sentence is `flair.data.sentence`.
 
 ## References
 - https://spacy.io/usage/rule-based-matching#entityruler
+
+
+## Maintenance
+
+To import the latest data from [MITRE ATT&CK Techniques](https://github.com/mitre-attack/attack-stix-data/tree/master/enterprise-attack), download the latest JSON and run
+`./src/securespacy/data/convert-mitre-enterprise.py`. Do a manual pass before mergin the converted files, as
+short software names (such as `Net`, `at`, `at.exe`) can cause false classifications.
+
+Merge `mitre-malware.txt` into the case-sensitive list `malware-cased.txt`.
+
+## License
+
+See LICENSE.
