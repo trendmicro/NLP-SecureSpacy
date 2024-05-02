@@ -22,7 +22,7 @@ setuptools.setup(
     author="Joey Costoya",
     author_email="joey_costoya@trendmicro.com",
     description="Custom Spacy tokenizer and NER extractor for IoCs",
-    license="MIT",
+    license="Apache Software License 2.0",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.trendmicro.com/CoreTech-FTR/securespacy",
@@ -31,7 +31,7 @@ setuptools.setup(
     },
     classifiers=[
         "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: MIT License",
+        "License :: OSI Approved :: Apache Software License",
         "Operating System :: OS Independent",
     ],
     package_dir={"": "src"},
