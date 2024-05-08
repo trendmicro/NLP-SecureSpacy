@@ -1,4 +1,4 @@
-
+# -*- coding: utf8 -*-
 import os
 import re
 import spacy
@@ -14,37 +14,37 @@ from .expressions import (
 
 
 pwd = os.path.dirname(os.path.realpath(__file__))
-with open(os.path.join(pwd, "data", "intrusion_set.txt"), "r") as fh:
+with open(os.path.join(pwd, "data", "intrusion_set.txt"), "r", encoding='utf-8') as fh:
     INTRUSION_SETS = [l.strip() for l in fh]
 
-with open(os.path.join(pwd, "data", "countries.txt"), "r") as fh:
+with open(os.path.join(pwd, "data", "countries.txt"), "r", encoding='utf-8') as fh:
     COUNTRIES = [l.strip() for l in fh]
 
-with open(os.path.join(pwd, "data", "cities.txt"), "r") as fh:
+with open(os.path.join(pwd, "data", "cities.txt"), "r", encoding='utf-8') as fh:
     CITIES = [l.strip() for l in fh]
 
-with open(os.path.join(pwd, "data", "campaigns.txt"), "r") as fh:
+with open(os.path.join(pwd, "data", "campaigns.txt"), "r", encoding='utf-8') as fh:
     CAMPAIGNS = [l.strip() for l in fh]
 
-with open(os.path.join(pwd, "data", "malware.txt"), "r") as fh:
+with open(os.path.join(pwd, "data", "malware.txt"), "r", encoding='utf-8') as fh:
     MALWARE = [l.strip() for l in fh]
 
-with open(os.path.join(pwd, "data", "malware-cased.txt"), "r") as fh:
+with open(os.path.join(pwd, "data", "malware-cased.txt"), "r", encoding='utf-8') as fh:
     MALWARE_CASED = [l.strip() for l in fh]
 
-with open(os.path.join(pwd, "data", "tools.txt"), "r") as fh:
+with open(os.path.join(pwd, "data", "tools.txt"), "r", encoding='utf-8') as fh:
     TOOLS = [l.strip() for l in fh]
 
-with open(os.path.join(pwd, "data", "orgs.txt"), "r") as fh:
+with open(os.path.join(pwd, "data", "orgs.txt"), "r", encoding='utf-8') as fh:
     ORGS = [l.strip() for l in fh]
 
-with open(os.path.join(pwd, "data", "products.txt"), "r") as fh:
+with open(os.path.join(pwd, "data", "products.txt"), "r", encoding='utf-8') as fh:
     PRODUCTS = [l.strip() for l in fh]
 
-with open(os.path.join(pwd, "data", "vulnerabilities.txt"), "r") as fh:
+with open(os.path.join(pwd, "data", "vulnerabilities.txt"), "r", encoding='utf-8') as fh:
     VULNERABILITIES = [l.strip() for l in fh]
 
-with open(os.path.join(pwd, "data", "regions.txt"), "r") as fh:
+with open(os.path.join(pwd, "data", "regions.txt"), "r", encoding='utf-8') as fh:
     REGIONS = [l.strip() for l in fh]
 
 def token_match(text):
